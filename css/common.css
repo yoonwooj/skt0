@@ -1,0 +1,218 @@
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button, select, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  word-break: break-all;
+  font-family: 'appleGothicNeo','sf-ui-display','NotoSansKR','roboto','sans-serif';
+  font-style: normal;
+  font-weight: 400;
+  color: #111;
+}
+
+:before, :after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  letter-spacing: -0.02em;
+}
+
+article, aside, canvas, details, figure, figcaption, footer, header, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 10px;
+  width: 100%;
+  letter-spacing: -0.5px;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+  line-height: 1.3;
+  -webkit-text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  cursor: default;
+  overflow-x: hidden;
+}
+
+img {
+  vertical-align: middle;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+caption {
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+}
+
+:lang(ko) * {
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+img {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+*, *:focus {
+  outline: none !important;
+}
+
+a,
+span,
+i {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+input:disabled {
+  opacity: 1;
+  -webkit-text-fill-color: inherit;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+}
+
+input:-ms-input-placeholder {
+  color: #999;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+
+textarea:-ms-input-placeholder {
+  color: #999;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+}
+
+.hidden {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'sf-ui-display';
+  font-weight: 400;
+  src: url("../font/SF_UI_display/SF-UI-Display-Regular.otf") format("ttf");
+}
+
+@font-face {
+  font-family: 'sf-ui-display';
+  font-weight: 500;
+  src: url("../font/SF_UI_display/SF-UI-DISPLAY-MEDIUM.otf") format("ttf");
+}
+
+@font-face {
+  font-family: 'sf-ui-display';
+  font-weight: 700;
+  src: url("../font/SF_UI_display/SF-UI-DISPLAY-BOLD.otf") format("ttf");
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 400;
+  src: url("file:///android_asset/fonts/NOTOSANSKR-REGULAR.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 500;
+  src: url("file:///android_asset/fonts/NOTOSANSKR-MEDIUM.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-weight: 700;
+  src: url("file:///android_asset/fonts/NOTOSANSKR-BOLD.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/Roboto/ROBOTO-REGULAR.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/Roboto/ROBOTO-MEDIUM.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'roboto';
+  font-weight: 700;
+  src: url("../font/Roboto/ROBOTO-BOLD.ttf") format("ttf");
+}
+
+/*# sourceMappingURL=../maps/common.css.map */
