@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0, viewport-fit=cover">
+
+	<title>0한동</title>
+	<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+    <div id="document" class="wrapper">
+        <!-- header -->
+        <header id="header">
+	<!-- 
+    <button id="btnMainMenu">▤</button>
+    <button id="btnMyPage">＠</button> 
+	-->
+	<div class="header-top">
+		<h1 class="hidden">0 한동</h1>
+		<div class="nav-btn-wrap">
+      <h2 class="header__title"></h2>
+			<div class="btn-arrow">
+				<a href="#" class="btn-prev white">
+					<img src="../../images/common/ico_arrow_prev_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next white">
+					<img src="../../images/common/ico_arrow_next_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-prev black">
+					<img src="../../images/common/ico_arrow_prev_b.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next black">
+					<img src="../../images/common/ico_arrow_next_b.png" alt="prev button">
+				</a>
+			</div>
+
+			<div class="btn-navi">
+				<a href="#" class="btn-menu white">
+					<img src="../../images/common/ico_menu_w.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close white">
+					<img src="../../images/common/ico_close_w.png" alt="close button">
+				</a>
+				<a href="#" class="btn-menu black">
+					<img src="../../images/common/ico_menu_b.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close black">
+					<img src="../../images/common/ico_close_b.png" alt="close button">
+				</a>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<!-- gnb -->
+<div id="gnb" class="gnb">
+  <div class="gnb__inner">
+    <div class="gnb__toparea">
+      <!-- 220114 gnb__titlebox 삭제 -->
+      <!-- <div class="gnb__titlebox">
+        <p class="gnb__title ft-sf-b">MENU</p>
+      </div> -->
+      <div class="gnb__head">
+        <!-- 220114 login info 수정 case | 로그인 상태 -->
+        <div class="gnb__headinner" style="display: none;">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <img src="../../images/common/profile.png" alt="이모지">
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">김*동</span>님
+              </a>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 있는 경우 -->
+            <p class="gnb__description">
+              <span class="gnb__phone-number ft-sf-m">010-12**-56**</span>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 없는 경우 -->
+            <p class="gnb__description" style="display: none;">
+              <span class="gnb__phone-number">보유하신 SKT 회선이 없습니다.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 로그인 상태 -->
+
+        <!-- 220114 login info 수정 case | 비로그인 상태 -->
+        <div class="gnb__headinner">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <!-- 프필 이미지 영역 -->
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">로그인</span>
+              </a>
+            </p>
+            <p class="gnb__description">
+              <!-- 0207 문구변경 -->
+              <span class="gnb__phone-number">T아이디로 로그인해 주세요.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 비로그인 상태 -->
+      </div>
+    </div>
+    <div class="gnb__scroll">
+      <div class="gnb__contents">
+        <div class="gnb__menu">
+          <ul class="gnb__accordion"> <!-- 220114 data-element="accordion" 삭제 -->
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">서비스</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0캠퍼스</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0히어로</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0틴</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">추천 요금제</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">데이터스테이션</a>
+                  </li> -->
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <!-- 0207 문구변경 -->
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">브랜드 &middot; 콘텐츠</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">ABOUT 0</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0잘알</a>
+                  </li> -->
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">MAGAZINE 0</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="gnb__anchor-wrap"> <!-- 220114 anchor-wrap 클래스 추가-->
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--event">이벤트</a> <!-- 220114 gnb__anchor--event 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <!-- 0204 active 삭제 -->
+              <a href="#none" class="gnb__anchor gnb__anchor--notice">공지사항</a> <!-- 220114 gnb__anchor--notice 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--faq">FAQ</a> <!-- 220114 gnb__anchor--faq 클래스 추가-->
+            </div>
+          </div>
+        </div>
+  
+        <!-- 220114 gnb__logout 삭제 | footer로 이동 -->
+        <!-- <div class="gnb__logout">
+          <button type="button" class="gnb__logout-button">
+            <span class="gnb__logout-text">로그아웃</span>
+          </button>
+        </div> -->
+      </div>
+      <div class="footer-wrap">
+    <div class="footer-loginbox">
+      <a href="#none" class="footer-login">로그아웃</a>
+    </div>
+    <div class="footer-bottom">
+        <div class="service-list">
+            <a href="">이용약관</a>
+            <a href="">개인정보처리방침</a>
+            <!-- 220121 메뉴 추가 -->
+            <a href="" class="footer-gnb-check">오픈소스 라이선스</a>
+        </div>
+        <!-- 220121 &copy; 텍스트 제거 -->
+        <div class="copyright">SK TELECOM CO. LTD</div>
+    </div>
+</div>
+      <button type="button" class="gnb__close" aria-label="메뉴 닫기"></button>
+    </div><!-- // scroll -->
+    
+  </div>
+</div>
+
+        <!-- // header -->
+        <!-- main -->
+        <div id="main" class="sub-main">
+            <div class="plan sv15">
+                <div class="wrap">
+                    <div class="main-kv"></div>
+                    <h1 class="hidden">0 한동</h1>
+                    <h2 class="hidden">추천 요금제</h2><!-- 0225 텍스트 변경 -->
+                    <div class="app-contents">
+                        <div class="app-contents__section">
+                            <div class="line-tab" data-element="tab">
+                                <ul class="line-tab__list">
+                                    <li class="line-tab__item" data-element="tab__list">
+                                        <button type="button" class="line-tab__anchor" data-element="tab__anchor">20대</button>
+                                    </li>
+                                    <li class="line-tab__item" data-element="tab__list">
+                                        <button type="button" class="line-tab__anchor" data-element="tab__anchor">10대</button>
+                                    </li>
+                                    <li class="line-tab__item" data-element="tab__list">
+                                        <button type="button" class="line-tab__anchor" data-element="tab__anchor">군인</button>
+                                    </li>
+                                </ul>
+                                <div class="line-tab__contents" data-element="tab__panel">
+                                    <!-- <div class="plan">
+                                        <div class="plan__section">
+                                            <div class="plan__image"><img src="../../images/content/plan/img_plan01.jpg" alt=""></div>
+                                            <div class="plan__title"><span class="ft-sf-b">0</span>플랜 라지</div>
+                                            <p class="plan__text">‘0’(영, Young)은 SK텔레콤(이하 SKT)가 런칭한 10대, 20대(Young) 전용 컬처 브랜드입니다. ‘0’은 기존의 통신상품을 넘어 10대, 20대를 응원하고 지지하고 지원하는, Young을 지칭하는 새로운 이름이 되고자 합니다. 원하는 것과 좋아하는 것과 생각하는 것, 그 무엇이든 될 수 있는 0을 위해 Young만을 위한 지금껏 세상에 없던 컬처 브랜드가 출발합니다.(2018년 버전)</p>
+                                            <a href="https://skt.sh/mQryn" class="plan__anchor" target="_blank"><span class="ft-sf-b">T</span>월드에서 자세히 보기</a>
+                                        </div>
+                                        <div class="plan__section">
+                                            <div class="plan__image"><img src="../../images/content/plan/img_plan02.jpg" alt=""></div>
+                                            <div class="plan__title"><span class="ft-sf-b">5GX</span> 프라임</div>
+                                            <p class="plan__text">0한동은 0의 모바일 채널, 각종 혜택 제공하는 곳. ‘0’(영, Young)은 SK텔레콤(이하 SKT)가 런칭한 10대, 20대(Young) 전용 컬처 브랜드입니다. ‘0’은 기존의 통신상품을 넘어 10대, 20대를 응원하고 지지하고 지원하는, Young을 지칭하는 새로운 이름이 되고자 합니다. 원하는 것과 좋아하는 것과 생각하는 것, </p>
+                                            <a href="https://skt.sh/42cIO" class="plan__anchor" target="_blank"><span class="ft-sf-b">T</span>월드에서 자세히 보기</a>
+                                        </div>
+                                    </div> -->
+                                    <!-- 0224 수정 -->
+                                    <div class="plan__box">
+                                        <div class="plan__title">0플랜 라지</div>
+                                        <ul class="plan__list">
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--data"></i>
+                                                <div class="plan__benefit-title">데이터</div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">100GB</span></div>
+                                            </li>
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--family"></i>
+                                                <div class="plan__benefit-title"><span class="ft-sf-m">T</span>가족모아데이터</div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">20GB</span></div>
+                                            </li>
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--flo-wavve"></i>
+                                                <div class="plan__benefit-title"><span class="ft-sf-m">FLO · wavve</span></div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">70%</span> 할인</div>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__text">만 24세 이하 LTE 이용 고객님을 위한 요금제입니다. 
+                                            매월 데이터 100GB가 기본으로 제공되며, 이 중
+                                            최대 20GB까지는 가족들에게 공유할 수 있습니다.
+                                            0플랜 라지 이용 고객에게 제공되는 ① T멤버십 VIP
+                                            승급, ② FLO · wavve 앤 데이터 70% 할인 및
+                                            우주패스 all 5천 원 할인 혜택도 놓치지 마세요.(①,
+                                            ② 중 택일)</div>
+                                        <a href="https://skt.sh/mQryn" class="plan__anchor" target="_blank">T월드에서 <span class="spot-blue">0플랜 라지</span> 요금제 자세히 보기</a>
+                                    </div>
+                                    <div class="plan__box">
+                                        <div class="plan__title">5GX 프라임</div>
+                                        <ul class="plan__list">
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--data"></i>
+                                                <div class="plan__benefit-title">데이터</div>
+                                                <div class="plan__benefit-text">무제한</div>
+                                            </li>
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--olkpass-wavve"></i>
+                                                <div class="plan__benefit-title">우주패스 <span class="ft-sf-m">all · wavve</span></div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">5</span>천원 할인</div>
+                                            </li>
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--membership"></i>
+                                                <div class="plan__benefit-title"><span class="ft-sf-m">T</span>멤버십</div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">VIP</span></div>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__text">SK텔레콤의 대표 5G 전용 요금제입니다. 데이터
+                                            완전 무제한으로  속도 · 용량 걱정 없이 이용할 수 
+                                            있고, 월 30GB까지 공유 및 테더링이 가능합니다.
+                                            또한 ① T멤버십 VIP 승급, ② FLO · wavve 앤
+                                            데이터 70% 할인, ③ 우주패스 all 5천 원 할인
+                                            ④ 5G 태블릿 · 스마트워치 1회선 무료 혜택도  모두
+                                            중복으로 받을 수 있습니다.</div>
+                                        <a href="https://skt.sh/42cIO" class="plan__anchor" target="_blank">T월드에서 <span class="spot-blue">5GX 프라임</span> 요금제 자세히 보기</a>
+                                    </div>
+                                    <!-- //0224 수정 -->
+                                </div>
+                                <div class="line-tab__contents" data-element="tab__panel">
+                                    <!-- <div class="plan">
+                                        <div class="plan__section">
+                                            <div class="plan__image"><img src="../../images/content/plan/img_plan03.jpg" alt=""></div>
+                                            <div class="plan__title"><span class="ft-sf-b">0</span>틴플랜 라지</div>
+                                            <p class="plan__text">‘0’(영, Young)은 SK텔레콤(이하 SKT)가 런칭한 10대, 20대(Young) 전용 컬처 브랜드입니다. ‘0’은 기존의 통신상품을 넘어 10대, 20대를 응원하고 지지하고 지원하는, Young을 지칭하는 새로운 이름이 되고자 합니다. 원하는 것과 좋아하는 것과 생각하는 것, 그 무엇이든 될 수 있는 0을 위해 Young만을 위한 지금껏 세상에 없던 컬처 브랜드가 출발합니다.(2018년 버전)</p>
+                                            <a href="https://skt.sh/hmnqh" class="plan__anchor" target="_blank"><span class="ft-sf-b">T</span>월드에서 자세히 보기</a>
+                                        </div>
+                                        <div class="plan__section">
+                                            <div class="plan__image"><img src="../../images/content/plan/img_plan04.jpg" alt=""></div>
+                                            <div class="plan__title"><span class="ft-sf-b">0</span>틴 <span class="ft-sf-b">5G</span></div>
+                                            <p class="plan__text">0한동은 0의 모바일 채널, 각종 혜택 제공하는 곳. ‘0’(영, Young)은 SK텔레콤(이하 SKT)가 런칭한 10대, 20대(Young) 전용 컬처 브랜드입니다. ‘0’은 기존의 통신상품을 넘어 10대, 20대를 응원하고 지지하고 지원하는, Young을 지칭하는 새로운 이름이 되고자 합니다. 원하는 것과 좋아하는 것과 생각하는 것, </p>
+                                            <a href="https://skt.sh/Nwy5Y" class="plan__anchor" target="_blank"><span class="ft-sf-b">T</span>월드에서 자세히 보기</a>
+                                        </div>
+                                    </div> -->
+                                    <!-- 0224 수정 -->
+                                    <div class="plan__box">
+                                        <div class="plan__title">0틴플랜 라지</div>
+                                        <ul class="plan__list">
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--data"></i>
+                                                <div class="plan__benefit-title">데이터</div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">100GB</span></div>
+                                            </li>
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--ebs"></i>
+                                                <div class="plan__benefit-title"><span class="ft-sf-m">EBS</span> 데이터팩(청소년)</div>
+                                                <div class="plan__benefit-text">무료</div>
+                                            </li>
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--flo-wavve"></i>
+                                                <div class="plan__benefit-title"><span class="ft-sf-m">FLO · wavve</span></div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">70%</span> 할인</div>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__text">만 18세 이하 LTE 이용 고객님을 위한 요금제입니다. 
+                                            매월 데이터 100GB가 제공되며, ① T멤버십 VIP 승급, 
+                                            ② FLO · wavve 앤 데이터 70% 할인 및 우주패스 all 
+                                            5천 원 할인 혜택도 받을 수 있습니다.(①, ② 중 택일) 
+                                            또한 EBSi, EBS중학, EBSMath 등 EBS 콘텐츠 10종을 
+                                            위한 전용 데이터 서비스인 EBS데이터팩(청소년)도 
+                                            무료로 지원됩니다.</div>
+                                        <a href="https://skt.sh/hmnqh" class="plan__anchor" target="_blank">T월드에서 <span class="spot-blue">0틴플랜 라지</span> 요금제 자세히 보기</a>
+                                    </div>
+                                    <div class="plan__box">
+                                        <div class="plan__title">0틴 5G</div>
+                                        <ul class="plan__list">
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--data"></i>
+                                                <div class="plan__benefit-title">데이터</div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">9GB<span>+1Mbps</span></span></div>
+                                            </li>
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--5g"></i>
+                                                <div class="plan__benefit-title">청소년을 위한</div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">5G</span> 요금제</div>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__text">만 18세 이하 청소년 고객님을 위한 5G 전용 요금제
+                                            입니다. 매월 9GB의 데이터를 제공하며, 이후에도 
+                                            1Mbps의 속도로 끊김없이  사용할 수 있습니다.</div>
+                                        <a href="https://skt.sh/Nwy5Y" class="plan__anchor" target="_blank">T월드에서 <span class="spot-blue">0틴 5G</span> 요금제 자세히 보기</a>
+                                    </div>
+                                    <!-- //0224 수정 -->
+                                </div>
+                                <div class="line-tab__contents" data-element="tab__panel">
+                                    <!-- <div class="plan">
+                                        <div class="plan__section">
+                                            <div class="plan__image"><img src="../../images/content/plan/img_plan05.jpg" alt=""></div>
+                                            <div class="plan__title"><span class="ft-sf-b">0</span>플랜 슈퍼히어로</div>
+                                            <p class="plan__text">‘0’(영, Young)은 SK텔레콤(이하 SKT)가 런칭한 10대, 20대(Young) 전용 컬처 브랜드입니다. ‘0’은 기존의 통신상품을 넘어 10대, 20대를 응원하고 지지하고 지원하는, Young을 지칭하는 새로운 이름이 되고자 합니다. 원하는 것과 좋아하는 것과 생각하는 것, 그 무엇이든 될 수 있는 0을 위해 Young만을 위한 지금껏 세상에 없던 컬처 브랜드가 출발합니다.(2018년 버전)</p>
+                                            <a href="https://skt.sh/JMQpD" class="plan__anchor" target="_blank"><span class="ft-sf-b">T</span>월드에서 자세히 보기</a>
+                                        </div>
+                                        <div class="plan__section">
+                                            <div class="plan__image"><img src="../../images/content/plan/img_plan06.jpg" alt=""></div>
+                                            <div class="plan__title"><span class="ft-sf-b">0</span>히어로 할인제도</div>
+                                            <p class="plan__text">0한동은 0의 모바일 채널, 각종 혜택 제공하는 곳. ‘0’(영, Young)은 SK텔레콤(이하 SKT)가 런칭한 10대, 20대(Young) 전용 컬처 브랜드입니다. ‘0’은 기존의 통신상품을 넘어 10대, 20대를 응원하고 지지하고 지원하는, Young을 지칭하는 새로운 이름이 되고자 합니다. 원하는 것과 좋아하는 것과 생각하는 것, </p>
+                                            <a href="https://skt.sh/YQ5as" class="plan__anchor" target="_blank"><span class="ft-sf-b">T</span>월드에서 자세히 보기</a>
+                                        </div>
+                                    </div> -->
+                                    <!-- 0224 수정 -->
+                                    <div class="plan__box">
+                                        <div class="plan__title">0플랜 슈퍼히어로</div>
+                                        <ul class="plan__list">
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--data"></i>
+                                                <div class="plan__benefit-title">데이터</div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">100GB</span></div>
+                                            </li>
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--olkpass-wavve"></i>
+                                                <div class="plan__benefit-title">우주패스 <span class="ft-sf-m">all · wavve</span></div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">5</span>천원 할인</div>
+                                            </li>
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--flo-wavve"></i>
+                                                <div class="plan__benefit-title"><span class="ft-sf-m">FLO · wavve</span></div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">70%</span> 할인</div>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__text">군 사병 전용 LTE 요금제로, 0플랜 라지와 동일하게 
+                                            매월 데이터 100GB가 기본으로 제공되지만 월정액은
+                                            약 20% 더 저렴합니다. 여가 시간 중 콘텐츠 감상을
+                                            많이 하는 히어로들을 위해 FLO · wavve 앤 데이터 
+                                            70% 할인 및 우주패스 all 5천원 할인 혜택이 
+                                            제공됩니다.</div>
+                                        <a href="https://skt.sh/JMQpD" class="plan__anchor" target="_blank">T월드에서 <span class="spot-blue">0플랜 슈퍼히어로</span> 요금제 자세히 보기</a>
+                                    </div>
+                                    <div class="plan__box">
+                                        <div class="plan__title">0히어로 할인제도</div>
+                                        <ul class="plan__list">
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--monthly-amount"></i>
+                                                <div class="plan__benefit-title">요금제 월정액 할인</div>
+                                                <div class="plan__benefit-text"><span class="ft-sf-b">20%</span> 할인</div>
+                                            </li>
+                                            <li class="plan__item">
+                                                <i class="plan__icon plan__icon--data"></i>
+                                                <div class="plan__benefit-title">추가데이터</div>
+                                                <div class="plan__benefit-text">매일 <span class="ft-sf-b">2G</span></div>
+                                            </li>
+                                        </ul>
+                                        <div class="plan__text">0플랜 히어로 · 슈퍼히어로 이외의 요금제를 이용하는
+                                            군 사병들을 위한 요금 할인 혜택입니다. 0히어로
+                                            할인제도를 가입하면 이용 중인 요금제의 월정액
+                                            20%를 추가로 할인받을 수 있고, 선택약정할인,
+                                            결합할인, 복지할인과도 중복 적용됩니다. 또한
+                                            월정액 4만 원 이상의 요금제를 사용 중이라면, 평일
+                                            18시~22시와 주말 · 공휴일에 매일 2GB의 추가
+                                            데이터도 받을 수 있습니다.
+                                            </div>
+                                        <a href="https://skt.sh/YQ5as" class="plan__anchor" target="_blank">T월드에서 <span class="spot-blue">0히어로 할인제도</span> 자세히 보기</a>
+                                    </div>
+                                    <!-- //0224 수정 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // main -->
+        <!-- top버튼 -->
+        <div class="top-button">
+  <button type="button" class="top-button__anchor" aria-label="화면 상단으로 이동"></button>
+</div>
+        <!-- // top버튼 -->
+    </div>
+    <!-- lib js -->
+<script src="../../js/lib/jquery_3.6.0.js" type="text/javascript"></script>
+<script src="../../js/lib/swiper-7.4.1.min.js" type="text/javascript"></script>
+<script src="../../js/lib/pualugin.js" type="text/javascript"></script>
+<script src="../../js/lib/jquery-barcode.js" type="text/javascript"></script>
+<!-- js -->
+<script src="../../js/common.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0, viewport-fit=cover">
+
+   <title>0한동 Guide</title>
+   <link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/components.css">
+   <style>.guide,.wrap {    color: #222}.guide {    font-size: 14px}.guide__lnb {    position: fixed;    top: 65px;    left: 0;    width: 200px;    height: calc(100vh - 65px);    padding: 20px 30px;    border-right: 1px solid #e0e0e0;    overflow-y: auto}.guide__lnb--list {    margin-top: 15px}.guide__lnb--list:first-child {    margin-top: 0}.guide__lnb--anchor {    display: block;    font-size: 16px;    color: #969696}.guide__lnb--anchor.is-active {    color: #000;    font-weight: 700}.guide__container {    width: calc(100% - 200px);    margin-left: 200px;    padding: 20px 30px}.guide__container--tab {    display: none}/*# sourceMappingURL=../maps/guide.css.map */.guide--header {    padding: 20px;    border-bottom: 1px solid #eee;}.guide--header > p{    font-size: 24px;    font-weight: bold;    line-height: 1;}p.title{line-height: 1.5;font-weight: bold;}</style>  
+</head>
+<body id="document">
+  <div class="guide--header"><p>0한동 팝업</p></div>
+  <br>
+  <a href="#a" class="btn__small gray" onclick="layerOpen('popup01')">알림 팝업(타이틀 없음)</a> 
+  <a href="#a" class="btn__small gray" onclick="layerOpen('popup02')">알림 팝업(타이틀 있음&버튼2개)</a> 
+  <a href="#a" class="btn__small gray" onclick="layerOpen('popup03')">알림 팝업(타이틀 있음&버튼1개)</a> 
+  <a href="#a" class="btn__small gray" onclick="layerOpen('popup04')">약관 팝업</a> 
+  <a href="./full_popup.html" class="btn__small gray">풀팝업</a>
+  <!-- layerPop start -->
+  <div class="layerPopup layerPopup-button alert popup01" data-role="layerOpen">
+      <div class="layerPopup-contents">
+        <p class="alert-msg">0히어로 서비스는 0플랜 히어로/<br>슈퍼히어로 요금제, 또는 0히어로 할인제도 <br>가입 후 이용하실 수 있습니다.</p>
+      </div>
+      <div class="layerPopup-full-button">
+          <button type="button" class="btn-laerPopup blue" data-popup="layerClose">확인</button>
+      </div>
+  </div>
+  <!-- //layerPop end -->
+
+  <!-- layerPop start -->
+  <div class="layerPopup layerPopup-button alert popup02" data-role="layerOpen">
+    <div class="layerPopup-header">
+        <div class="layerPopup-title">알림</div>
+    </div>
+    <div class="layerPopup-contents">
+        <p class="alert-msg">이미 사용중인 아이디 입니다.</p>
+    </div>
+    <div class="layerPopup-full-button">
+        <button type="button" class="btn-laerPopup gray" data-popup="layerClose">취소</button>
+        <button type="button" class="btn-laerPopup blue">확인</button>
+    </div>
+  </div>
+  <!-- //layerPop end -->
+
+  <!-- layerPop start -->
+  <div class="layerPopup layerPopup-button alert popup03" data-role="layerOpen">
+    <div class="layerPopup-header">
+        <div class="layerPopup-title">알림</div>
+    </div>
+    <div class="layerPopup-contents">
+        <p class="alert-msg">이미 사용중인 아이디 입니다.</p>
+    </div>
+    <div class="layerPopup-full-button">
+        <button type="button" class="btn-laerPopup blue" data-popup="layerClose">확인</button>
+    </div>
+  </div>
+  <!-- //layerPop end -->
+
+  <!-- layerPop start -->
+  <div class="layerPopup layerPopup-button popup04" data-role="layerOpen">
+      <div class="layerPopup-header">
+          <div class="layerPopup-title">위치 정보수집 및 이용 약관</div>
+      </div>
+      <div class="layerPopup-contents">
+          <div class="terms">
+              <div class="terms__section">
+                  <div class="terms__main-text">(“O 캠퍼스”) 서비스(이하 “서비스”라 한다)와 관련하여, 본인은 동의내용을 숙지하였으며, 이에 따라 귀사(SK텔레콤주식회사)가 수집한 본인의 개인위치정보를 이용하여 위치기반서비스를 제공하는 것에 대해 동의합니다.</div>
+              </div>
+              <div class="terms__section">
+                  <div class="terms__title">개인위치정보를 이용한 위치기반서비스 제공 동의</div>
+                  <ol class="terms__number-list">
+                      <li class="terms__number-item"><span class="number">(1)</span>본인은 서비스에서 제공되는 위치기반서비스를 이용하기 위하여, 아래 (2)의 내용 및 회사의 위치기반서비스 이용약관의 내용에 동의합니다. (www.tworld.co.kr에서 동 이용약관의 내용을 확인하실 수 있습니다)</li>
+                      <li class="terms__number-item"><span class="number">(2)</span>서비스에서 제공하는 위치기반서비스의 내용<br>- 캠퍼스 Zone 전용 데이터 혜택 제공 목적</li>
+                      <li class="terms__number-item"><span class="number">(3)</span>위치기반서비스 사업자의 상호, 주소, 전화번호 그 밖의 연락처 / 개인위치정보주체 및 법정대리인의 권리와 그 행사방법 / 위치기반서비스사업자가 제공하고자 하는 위치기반서비스의 내용 / 위치정보 이용∙제공사실 확인자료의 보유근거 및 보유기간 등은 회사의 위치기반 서비스 이용약관에 기재된 바에 따릅니다.</li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+      <div class="layerPopup-full-button">
+          <button type="button" class="btn-laerPopup blue">동의</button>
+      </div>
+      <button type="button" class="layerPopup-close" data-popup="layerClose" aria-label="레이어팝업 닫기"></button>
+  </div>
+  <!-- //layerPop end -->
+</body>
+<!-- lib js -->
+<script src="../../js/lib/jquery_3.6.0.js" type="text/javascript"></script>
+<script src="../../js/lib/swiper-7.4.1.min.js" type="text/javascript"></script>
+<script src="../../js/lib/pualugin.js" type="text/javascript"></script>
+<script src="../../js/lib/jquery-barcode.js" type="text/javascript"></script>
+<!-- js -->
+<script src="../../js/common.js" type="text/javascript"></script>
+
+</html>

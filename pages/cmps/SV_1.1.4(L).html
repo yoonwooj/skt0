@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0, viewport-fit=cover">
+
+  <title>0한동</title>
+  <link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/components.css">
+</head>
+<body class="body-scroll-lock">
+    <div id="document" class="wrapper">
+        <!-- header -->
+        <header id="header">
+	<!-- 
+    <button id="btnMainMenu">▤</button>
+    <button id="btnMyPage">＠</button> 
+	-->
+	<div class="header-top">
+		<h1 class="hidden">0 한동</h1>
+		<div class="nav-btn-wrap">
+      <h2 class="header__title"></h2>
+			<div class="btn-arrow">
+				<a href="#" class="btn-prev white">
+					<img src="../../images/common/ico_arrow_prev_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next white">
+					<img src="../../images/common/ico_arrow_next_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-prev black">
+					<img src="../../images/common/ico_arrow_prev_b.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next black">
+					<img src="../../images/common/ico_arrow_next_b.png" alt="prev button">
+				</a>
+			</div>
+
+			<div class="btn-navi">
+				<a href="#" class="btn-menu white">
+					<img src="../../images/common/ico_menu_w.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close white">
+					<img src="../../images/common/ico_close_w.png" alt="close button">
+				</a>
+				<a href="#" class="btn-menu black">
+					<img src="../../images/common/ico_menu_b.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close black">
+					<img src="../../images/common/ico_close_b.png" alt="close button">
+				</a>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<!-- gnb -->
+<div id="gnb" class="gnb">
+  <div class="gnb__inner">
+    <div class="gnb__toparea">
+      <!-- 220114 gnb__titlebox 삭제 -->
+      <!-- <div class="gnb__titlebox">
+        <p class="gnb__title ft-sf-b">MENU</p>
+      </div> -->
+      <div class="gnb__head">
+        <!-- 220114 login info 수정 case | 로그인 상태 -->
+        <div class="gnb__headinner" style="display: none;">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <img src="../../images/common/profile.png" alt="이모지">
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">김*동</span>님
+              </a>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 있는 경우 -->
+            <p class="gnb__description">
+              <span class="gnb__phone-number ft-sf-m">010-12**-56**</span>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 없는 경우 -->
+            <p class="gnb__description" style="display: none;">
+              <span class="gnb__phone-number">보유하신 SKT 회선이 없습니다.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 로그인 상태 -->
+
+        <!-- 220114 login info 수정 case | 비로그인 상태 -->
+        <div class="gnb__headinner">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <!-- 프필 이미지 영역 -->
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">로그인</span>
+              </a>
+            </p>
+            <p class="gnb__description">
+              <!-- 0207 문구변경 -->
+              <span class="gnb__phone-number">T아이디로 로그인해 주세요.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 비로그인 상태 -->
+      </div>
+    </div>
+    <div class="gnb__scroll">
+      <div class="gnb__contents">
+        <div class="gnb__menu">
+          <ul class="gnb__accordion"> <!-- 220114 data-element="accordion" 삭제 -->
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">서비스</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0캠퍼스</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0히어로</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0틴</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">추천 요금제</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">데이터스테이션</a>
+                  </li> -->
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <!-- 0207 문구변경 -->
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">브랜드 &middot; 콘텐츠</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">ABOUT 0</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0잘알</a>
+                  </li> -->
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">MAGAZINE 0</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="gnb__anchor-wrap"> <!-- 220114 anchor-wrap 클래스 추가-->
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--event">이벤트</a> <!-- 220114 gnb__anchor--event 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <!-- 0204 active 삭제 -->
+              <a href="#none" class="gnb__anchor gnb__anchor--notice">공지사항</a> <!-- 220114 gnb__anchor--notice 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--faq">FAQ</a> <!-- 220114 gnb__anchor--faq 클래스 추가-->
+            </div>
+          </div>
+        </div>
+  
+        <!-- 220114 gnb__logout 삭제 | footer로 이동 -->
+        <!-- <div class="gnb__logout">
+          <button type="button" class="gnb__logout-button">
+            <span class="gnb__logout-text">로그아웃</span>
+          </button>
+        </div> -->
+      </div>
+      <div class="footer-wrap">
+    <div class="footer-loginbox">
+      <a href="#none" class="footer-login">로그아웃</a>
+    </div>
+    <div class="footer-bottom">
+        <div class="service-list">
+            <a href="">이용약관</a>
+            <a href="">개인정보처리방침</a>
+            <!-- 220121 메뉴 추가 -->
+            <a href="" class="footer-gnb-check">오픈소스 라이선스</a>
+        </div>
+        <!-- 220121 &copy; 텍스트 제거 -->
+        <div class="copyright">SK TELECOM CO. LTD</div>
+    </div>
+</div>
+      <button type="button" class="gnb__close" aria-label="메뉴 닫기"></button>
+    </div><!-- // scroll -->
+    
+  </div>
+</div>
+
+        <!-- // header -->
+        <!-- main -->
+        <div id="main" class="sub-main">
+          <div class="cmps sv11">
+            <div class="wrap">
+                <h1 class="hidden">0 한동</h1>
+                <h2 class="hidden">0캠퍼스</h2>
+                <div class="main-kv">
+                  <div class="submain-visual">
+                    <div class="submain-visual__slide swiper-container">
+                      <ul class="submain-visual__list swiper-wrapper">
+                        <li class="submain-visual__item swiper-slide">
+                          <a href="#" class="submain-visual__anchor">
+                            <img src="../../images/content/cmps/bg_submain_visual01.png" alt="">
+                          </a>
+                        </li>
+                        <li class="submain-visual__item swiper-slide">
+                          <a href="#" class="submain-visual__anchor">
+                            <img src="../../images/content/cmps/bg_submain_visual02.png" alt="">
+                          </a>
+                        </li>
+                        <li class="submain-visual__item swiper-slide">
+                          <a href="#" class="submain-visual__anchor">
+                            <img src="../../images/content/cmps/bg_submain_visual03.png" alt="">
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="submain-visual__pagination swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-wrap">
+                  <div class="subpage">
+                    <div class="subpage__section">
+                      <div class="subpage__inner subpage__inner--flex">
+                        <div class="subpage__info">
+                          <p class="subpage__infotext"><span class="item-data ft-sf-b spot-blue">LV.2</span> 서울대학교</p>
+                          <p class="subpage__infodesc">컴퓨터공학과 21학번 김한동님</p>
+                          <!-- 220113 정보수정 팝업 onclick 추가 -->
+                          <a href="#none" class="subpage__infolink" onclick="layerOpen('changeInfo')">정보수정</a>
+                        </div>
+                        <div class="subpage__mark">
+                          <img src="../../images/content/cmps/bg_submain_dummy06.png" alt="대학로고">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subpage__section subpage__section--white-box">
+                      <div class="subpage__inner">
+                        <span class="subpage__topic">0캠퍼스 인증</span>
+                        <div class="subpage__titlebox">
+                          <a href="#none" class="subpage__title subpage__title--link">
+                            우리학교 캠퍼스 인증</a>
+                        </div>
+                        <div class="subpage__contents subpage__contents--short">
+                          <div class="subpage__item">
+                            <div class="graph-bar">
+                              <span class="graph-bar__gagebox">
+                                <span class="graph-bar__gage" style="width: 67%;"></span>
+                                <span class="graph-bar__info" style="left: 67%;">
+                                  <span class="ft-sf-b number">1,236명</span><span class="ft-sf-b percent">67%</span>
+                                </span>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="subpage__item">
+                            <div class="subpage__item-inner subpage__item-inner--flexBetween">
+                              <div class="subpage__item-left">
+                                <p class="subpage__item-text">
+                                  <span class="ft-sf-b spot-blue">1,064명</span>을 더 모아<br>
+                                  <span class="ft-sf-b spot-blue">LV.3</span>의 혜택을 누려보세요!
+                                </p>
+                              </div>
+                              <div class="subpage__item-right">
+                                <a href="#none" class="btn__small" onclick="layerOpen('invite')">친구 초대</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="subpage__item">
+                            <div class="subpage__item-inner subpage__item-inner--flexBetween">
+                              <div class="subpage__item-left">
+                                <p class="subpage__item-text">
+                                  <span class="item-data item-data--black">우리학교 0캠퍼스 랭킹</span><br>
+                                  <span class="item-data">인증자수 <span class="ft-sf-b spot-blue">42위</span></span>
+                                  <span class="item-data">인증율 <span class="ft-sf-b spot-blue">56위</span></span>
+                                </p>
+                              </div>
+                              <div class="subpage__item-right">
+                                <a href="#none" class="btn__small" onclick="layerOpen('ranking')">전체 랭킹</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subpage__section subpage__section--shadow-box">
+                      <div class="submain-banner">
+                        <div class="submain-banner__slide swiper-container">
+                          <ul class="submain-banner__list swiper-wrapper">
+                            <li class="submain-banner__item swiper-slide">
+                              <a href="#" class="submain-banner__anchor">
+                                <img src="../../images/content/cmps/bg_submain_banner01.png" alt="">
+                              </a>
+                            </li>
+                            <li class="submain-banner__item swiper-slide">
+                              <a href="#" class="submain-banner__anchor">
+                                <img src="../../images/content/cmps/bg_submain_banner02.png" alt="">
+                              </a>
+                            </li>
+                            <li class="submain-banner__item swiper-slide">
+                              <a href="#" class="submain-banner__anchor">
+                                <img src="../../images/content/cmps/bg_submain_banner01.png" alt="">
+                              </a>
+                            </li>
+                          </ul>
+                          <span class="submain-banner__pagination swiper-pagination"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subpage__section subpage__section--white-box">
+                      <div class="subpage__inner">
+                        <span class="subpage__topic">기본혜택</span>
+                        <div class="subpage__titlebox">
+                          <storng href="#none" class="subpage__title">0캠퍼스 <span class="ft-sf-b spot-blue">Level 2</span> 혜택</strong>
+                        </div>
+                        <div class="subpage__contents">
+                          <div class="subpage__item">
+                            <div class="subpage__item-inner subpage__item-inner--flex">
+                              <div class="subpage__item-left">
+                                <div class="subpage__item-image">
+                                  <img src="../../images/content/cmps/bg_submain_dummy01.png" alt="">
+                                </div>
+                              </div>
+                              <div class="subpage__item-right subpage__item-right--space">
+                                <p class="subpage__benefit">캠퍼스 데이터 3GB</p>
+                                <div class="subpage__benefit-button">
+                                  <a href="#none" class="btn__small">혜택 받기</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="subpage__item">
+                            <div class="subpage__item-inner subpage__item-inner--flex">
+                              <div class="subpage__item-left">
+                                <div class="subpage__item-image">
+                                  <img src="../../images/content/cmps/bg_submain_dummy02.png" alt="">
+                                </div>
+                              </div>
+                              <div class="subpage__item-right subpage__item-right--space">
+                                <p class="subpage__benefit">wavve 앤 데이터 90%</p>
+                                <div class="subpage__benefit-button">
+                                  <a href="#none" class="btn__small disabled">이용중</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="subpage__item">
+                            <div class="subpage__item-inner subpage__item-inner--flex">
+                              <div class="subpage__item-left">
+                                <div class="subpage__item-image">
+                                  <img src="../../images/content/cmps/bg_submain_dummy03.png" alt="">
+                                </div>
+                              </div>
+                              <div class="subpage__item-right subpage__item-right--space">
+                                <p class="subpage__benefit">FLO 앤 데이터 90% 할인</p>
+                                <div class="subpage__benefit-button">
+                                  <a href="#none" class="btn__small">혜택 받기</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="subpage__contents-bottom subpage__contents-bottom--coupon">
+                          <a href="#none" class="subpage__bottom-link">
+                            <p class="subpage__bottom-title">한동님을 위한<br>캠퍼스 소확행 쿠폰</p>
+                            <span class="subpage__bottom-desc">쿠폰 보러가기</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subpage__section subpage__section--shadow-box">
+                      <a href="#none">
+                        <img src="../../images/content/cmps/bg_submain_dummy05.png" alt="모일수록 더 커지는 0캠퍼스 혜택, 캠퍼스끼리 많이 모일수록 혜택도 UP!">
+                      </a>
+                    </div>
+                    <div class="subpage__section subpage__section--white-box">
+                      <div class="subpage__inner">
+                        <span class="subpage__topic">FAQ</span>
+                        <div class="subpage__titlebox">
+                          <a href="#none" class="subpage__title subpage__title--link">
+                            0캠퍼스가 자주 찾는 질문</a>
+                        </div>
+                        <div class="subpage__contents subpage__contents--short">
+                          <div class="subpage__item">
+                            <ul>
+                              <li class="subpage__faqlist">
+                                <a href="#none">
+                                  <p class="subpage__faqtext"><span class="ft-sf-m spot-blue">Q.</span> 캠퍼스 전용 데이터 3GB는 언제 사용할 수 있나요.</p>
+                                </a>
+                              </li>
+                              <li class="subpage__faqlist">
+                                <a href="#none">
+                                  <p class="subpage__faqtext"><span class="ft-sf-m spot-blue">Q.</span> 모이는 인원에 따라 혜택이 다른가요?</p>
+                                </a>
+                              </li>
+                              <li class="subpage__faqlist">
+                                <a href="#none">
+                                  <p class="subpage__faqtext"><span class="ft-sf-m spot-blue">Q.</span> 대학생을 위한 제휴 혜택은 어디에서 확인할 수 있나요?</p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="subpage__section">
+                      <div class="subpage__inner subpage__inner--last">
+                        <p class="subpage__linkstext">0한동 0친과 함께 해0!</p>
+                        <div class="subpage__links">
+                          <a href="#none" class="subpage__link-button subpage__link-button--kakao" aria-label="카카오톡으로 공유하기"></a>
+                          <!-- 0222 마크업 순서 변경 -->
+                          <a href="#none" class="subpage__link-button subpage__link-button--twitter" aria-label="트위터로 공유하기"></a>
+                          <a href="#none" class="subpage__link-button subpage__link-button--facebook" aria-label="페이스북 메신저로 공유하기"></a>
+                          <!-- //0222 마크업 순서 변경 -->
+                          <a href="#none" class="subpage__link-button subpage__link-button--url" aria-label="url 공유하기"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- // main -->
+        <!-- top버튼 -->
+        <div class="top-button">
+  <button type="button" class="top-button__anchor" aria-label="화면 상단으로 이동"></button>
+</div>
+        <!-- // top버튼 -->
+        <!-- layerPop start -->
+        <!-- 220113 정보수정 팝업 추가 | data-role="layerOpen" 추가 -->
+        <div class="layer-popup-content layerPopup changeInfo" data-role="layerOpen" style="display: block;">
+            <div class="layer-group">
+                <div class="title-box">
+                    <h3 class="tit">0캠퍼스 가입 정보 수정</h3> <!-- 0207 : 문구 변경 -->
+                    <p class="desc">학과명과 학번을 수정할 수 있습니다. <br> 소속 학교 변경을 원하실 경우, 0캠퍼스를 해지하고 새로운 학교 인증을 통해 다시 가입하셔야 합니다.</p> <!-- 0207 : 문구 변경 -->
+                </div>
+                <hr class="mn-line" />
+                <div class="signup-content">
+                    <h4 class="tit2">학과명</h4>
+                    <div class="text-field">
+                        <!-- 0119 수정 -->
+                        <input type="text" id="schoolName" class="schoolname-input" placeholder="학과명 입력" />
+                        <!-- 0119 수정 -->
+                    </div>
+                </div>
+                <div class="signup-content">
+                    <h4 class="tit2">학번</h4>
+                    <div class="text-field">
+                        <select name="학번을 선택해주세요" id="" class="class-num">
+                            <!-- 0119 수정 -->
+                            <option value="01">학번 선택</option>
+                            <!-- //0119 수정 -->
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                            <option value="99">99</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="layer-group full">
+                <a href="#" class="btn-modify">수정하기</a>
+            </div>
+            <button type="button" class="btn-layer-close" aria-label="레이어팝업 닫기"></button>
+        </div>
+        <!-- //layerPop end -->
+
+        <!-- layerPop start -->
+        <div class="layerPopup invite" data-role="layerOpen">
+            <div class="layerPopup-header">
+                <div class="layerPopup-title">친구초대</div>
+            </div>
+            <div class="layerPopup-contents">
+                <!-- 0124 수정 -->
+                <div class="invite-box">
+                  <p class="invite-box__title">0캠퍼스로 친구를 초대해보세요!</p>
+                  <!-- <p class="invite-box__title">함께 하면 <br><span class="spot-blue">늘어나는 0캠!</span></p> -->
+                  <p class="invite-box__text">모여서 혜택받자 너도 가입해~</p>
+                  <p class="invite-box__text">0캠에서는 <span class="spot-blue">함께하면 혜택이 더 늘어나요!</span></p>
+              </div>
+            <!-- //0124 수정 -->
+                <div class="share-list">
+                    <a href="#" class="share-anchor kakao"><span class="hidden">카카오톡 공유하기</span></a>
+                    <a href="#" class="share-anchor twitter"><span class="hidden">트위터 공유하기</span></a>
+                    <a href="#" class="share-anchor facebook"><span class="hidden">페이스북 메신저 공유하기</span></a>
+                    <a href="#" class="share-anchor linkcopy"><span class="hidden">URL 공유하기</span></a>
+                </div>
+            </div>
+            <button type="button" class="layerPopup-close" data-popup="layerClose" aria-label="레이어팝업 닫기"></button>
+        </div>
+
+        <!-- layerPop start -->
+        <div class="layerPopup ranking" data-role="layerOpen">
+          <div class="layerPopup-header">
+              <div class="layerPopup-title">전체 랭킹 리스트</div>
+          </div>
+          <div class="layerPopup-contents">
+              <div class="invite-box">
+                  <p class="invite-box__text invite-box__text--space">캠퍼스 멤버가 많아질수록 혜택도 업그레이드!</p>
+                  <p class="invite-box__title">현재 <span class="spot-blue">서울대학교</span> 랭킹 <span class="spot-blue">42</span>위</p>
+                  <p class="invite-box__text">2021년 12월 xx일 기준<br>랭킹은 매일 업데이트 됩니다.</p>
+              </div>
+              <div class="ranking-tab" data-element="tab"> <!-- 220107 수정사항 tab 추가 -->
+                <div class="ranking-tab__head">
+                  <div class="ranking-tab__anchor" data-element="tab__list"><a href="#" class="is-active" data-element="tab__anchor">멤버참여율</a></div>
+                  <div class="ranking-tab__anchor" data-element="tab__list"><a href="#" data-element="tab__anchor">인증멤버수</a></div>
+                </div>
+                <!-- 0125 디자인 셀렉트 적용 -->
+                <div class="ranking-tab__selectbox pualugin-select">
+                  <select class="ranking-tab__select" data-element="select">
+                    <option value="1" selected>001-100위</option>
+                    <option value="2">101-200위</option>
+                    <option value="3">201-300위</option>
+                    <option value="4">301-400위</option>
+                  </select>
+                </div>
+                <!-- //0125 디자인 셀렉트 적용 -->
+                <div class="ranking-tab__contents">
+                  <div class="ranking-tab__panel is-active" data-element="tab__panel">
+                    <table class="table">
+                      <colgroup>
+                        <col style="width: 15%;">
+                        <col style="width: 15%;">
+                        <col style="width: auto;">
+                        <col style="width: 15%;">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th colspan="2" class="table__th">랭킹/현황</th>
+                          <th class="table__th left">캠퍼스</th>
+                          <th class="table__th">레벨</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center"><span>-</span></td>
+                          <td>덕성여자대학교</td>
+                          <td class="center">3</td>
+                        </tr>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center"><span>-</span></td>
+                          <td>이화여자대학교</td>
+                          <td class="center">3</td>
+                        </tr>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center"><span>-</span></td>
+                          <td>서울교육대학교</td>
+                          <td class="center">3</td>
+                        </tr>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center"><span>-</span></td>
+                          <td>서울여자대학교</td>
+                          <td class="center">3</td>
+                        </tr>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center"><span>-</span></td>
+                          <td>서울여자간호대학교</td>
+                          <td class="center">3</td>
+                        </tr>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center">
+                            <span class="up">1</span>
+                          </td>
+                          <td>성신여자대학교</td>
+                          <td class="center">3</td>
+                        </tr>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center">
+                            <span class="down">1</span>
+                          </td>
+                          <td>숙명여자대학교</td>
+                          <td class="center">3</td>
+                        </tr>
+    
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="ranking-tab__panel" data-element="tab__panel">
+                    <table class="table">
+                      <colgroup>
+                        <col style="width: 15%;">
+                        <col style="width: 15%;">
+                        <col style="width: auto;">
+                        <col style="width: 15%;">
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th colspan="2" class="table__th">랭킹/현황</th>
+                          <th class="table__th left">캠퍼스</th>
+                          <th class="table__th">레벨</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center"><span>-</span></td>
+                          <td>덕성여자대학교2</td>
+                          <td class="center">3</td>
+                        </tr>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center"><span>-</span></td>
+                          <td>이화여자대학교2</td>
+                          <td class="center">3</td>
+                        </tr>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center"><span>-</span></td>
+                          <td>서울교육대학교2</td>
+                          <td class="center">3</td>
+                        </tr>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center"><span>-</span></td>
+                          <td>서울여자대학교</td>
+                          <td class="center">3</td>
+                        </tr>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center"><span>-</span></td>
+                          <td>서울여자간호대학교</td>
+                          <td class="center">3</td>
+                        </tr>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center">
+                            <span class="up">1</span>
+                          </td>
+                          <td>성신여자대학교</td>
+                          <td class="center">3</td>
+                        </tr>
+                        <tr>
+                          <td class="center">1</td>
+                          <td class="center">
+                            <span class="down">1</span>
+                          </td>
+                          <td>숙명여자대학교</td>
+                          <td class="center">3</td>
+                        </tr>
+    
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <button type="button" class="layerPopup-close" data-popup="layerClose" aria-label="레이어팝업 닫기"></button>
+        </div>
+        <!-- //layerPop end -->
+        <!-- 페이지 확인을 위한 영역 -->
+        <div class="body-mask active"></div>
+        <!-- //페이지 확인을 위한 영역 -->
+        <!-- bottomSheet -->
+        <!-- 0112 수정 -->
+<div id="bottomSheet">
+	<div class="bottom-sheet__wrap">
+		<button type="button" class="bottom-sheet__btn btn-show"></button>
+		<button type="button" class="bottom-sheet__btn btn-hide"></button>
+	</div>
+	<!-- 0119 수정 -->
+	<!-- case 01 미로그인시 -->
+	<div class="greeting-area" style="display: none;">
+		<!-- 0207 문구수정 -->
+		<div class="greeting title"><span class="spot-blue">회원가입 &middot; 로그인</span>하고</div>
+		<div class="greeting message">0한동의 혜택을 받아 보세요</div>
+		<button type="button" class="btn__small blue greeting__login-button">로그인</button>
+	</div>
+	<!-- //case 01 미로그인시 -->
+	<!-- case 02 로그인시 -->
+	<div class="greeting-area">
+		<div class="greeting title"><span class="spot-blue">김한동</span>님을 위한</div>
+		<!-- 0207 문구수정 -->
+		<div class="greeting message">0한동의 혜택을 확인해 보세요</div>
+	</div>
+	<!-- //case 02 로그인시 -->
+	<!-- case 03 오류시 -->
+	<div class="greeting-area" style="display: none;">
+		<div class="greeting message">0한동 고객님, 현재 접속이 원활하지 않네요.</div>
+		<div class="greeting message">아쉽지만, 우리 다시 만나요!</div>
+	</div>
+	<!-- //case 03 오류시 -->
+	<!-- //0119 수정 -->
+	<div class="greeting-wrap">
+		<!-- 0119 수정 -->
+		<!-- case 01 로그인Y & 서비스 미가입시 -->
+		<div class="greeting-area">
+			<p class="name"><span class="spot-blue">한동</span>님을 위한</p>
+			<p class="notice">0한동의 혜택을</p>
+			<p class="notice">확인해 보세요</p>
+		</div>
+		<!-- //case 01 -->
+		<!-- case 02 로그인Y & 0캠퍼스 가입 -->
+		<div class="greeting-area" style="display: none;">
+			<p class="name"><span class="spot-blue">한동</span>님,</p>
+			<p class="notice">0캠퍼스 <span class="spot-blue">LV.2</span> 혜택을</p>
+			<p class="notice">받고 있어요</p>
+		</div>
+		<!-- //case 02 -->
+		<!-- //0119 수정 -->
+	
+		<!-- 0119 수정 -->
+		<!-- case 01 -->
+		<div class="card myInfo">
+			<!-- 0207 문구수정 -->
+			<p class="card__subtitle">가입하신 서비스가 없습니다.</p>
+			<a href="#a" class="myInfo__title">대학생을 위한 <span class="spot-blue">0캠퍼스</span> 추천</a>
+			<div class="my-profile">
+				<div class="my-profile__wrap">
+					<div class="category-info">
+						캠퍼스 전용데이터 
+						<span class="category-level">최대 3GB</span>
+					</div>
+					<div class="category-info">
+						FLO, wavve
+						<span class="category-level">최대 90% 할인</span>
+					</div>
+				</div>
+			<!-- //0207 문구수정 -->
+				<div class="pic-profile">
+					<img class="pic-profile__img" src="../../images/common/img_bottomsheet_frofile.png" />
+				</div>
+			</div>
+		</div>
+		<!-- //case 01 -->
+		<!-- case 02 -->
+		<div class="card myInfo" style="display: none;">
+			<!-- 0207 문구수정 -->
+			<p class="card__subtitle">나의 서비스</p>
+			<!-- 0125 수정 -->
+			<a href="#a" class="myInfo__title myInfo__title-big">0캠퍼스</a>
+			<!-- //0125 수정 -->
+			<div class="my-profile">
+				<div class="my-profile__wrap">
+					<div class="category-info">
+						소속 학교
+						<span class="category-level">서울대학교</span>
+					</div>
+					<div class="category-info">
+						혜택 등급
+						<span class="category-level">LV2</span>
+					</div>
+				</div>
+			<!-- //0207 문구수정 -->
+				<div class="pic-profile">
+					<img class="pic-profile__img" src="../../images/common/img_bottomsheet_frofile.png" />
+				</div>
+			</div>
+		</div>
+		<!-- //case 02 -->
+		<!-- case 03 미가입 -->
+		<div class="card myInfo" style="display: none;">
+			<!-- 0207 문구수정 -->
+			<p class="card__subtitle">가입하신 서비스가 없습니다.</p>
+			<a href="#a" class="myInfo__title">SKT 10대, 20대 혜택 채널</a>
+			<div class="my-profile">
+				<div class="my-profile__wrap">
+					<div class="category-info">
+						가입하실 수 있는 서비스를<br>확인해 보세요.
+					</div>
+				</div>
+				<!-- //0207 문구수정 -->
+				<div class="pic-profile">
+					<img class="pic-profile__img" src="../../images/common/img_bottomsheet_frofile.png" />
+				</div>
+			</div>
+		</div>
+		<!-- //case 03 미가입 -->
+		<!-- //0119 수정 -->
+	
+		<!-- 0119 수정 쿠폰 이미지 변경 -->
+		<div class="frame cate-coupon">
+			<!-- 0207 문구수정 -->
+			<div class="card__title">
+				MY 쿠폰
+			</div>
+			<div class="cate-coupon__content swiper-container">
+				<div class="card-list swiper-wrapper">
+					<a href="#" class="card cate-coupon__item swiper-slide">
+						<!-- 0126 수정 -->
+						<div class="coupon-item__kind coupon-item__kind--cmps">0캠퍼스 상시</div>
+						<div class="cate-coupon__img"><img src="../../images/common/img_coupon_bg_normal.png" alt=""></div>
+						<div class="cate-coupon__bg">
+							<div class="cate-coupon__frofile">
+								<img class="cate-coupon__frofile__content" src="../../images/common/img_coupon_frofile.png" />
+							</div>
+							<div class="cate-coupon__text-box">
+								<div class="cate-coupon__text">
+									스코피 3
+								</div>
+								<div class="cate-coupon__desc">
+									<p class="cate-coupon__desc-title">포토북 무료 제작쿠폰</p>
+									<p class="cate-coupon__under-desc">소프트커버,  88, 24P</p>
+									<p class="coupon-item__date">2021년 11월 11일 발급</p>
+								</div>
+							</div>
+						<!-- //0126 수정 -->
+						</div>
+					</a>
+					<a href="#" class="card cate-coupon__item swiper-slide">
+						<!-- 0126 수정 -->
+						<div class="coupon-item__kind coupon-item__kind--cmps">0캠퍼스 상시</div>
+						<div class="cate-coupon__img"><img src="../../images/common/img_coupon_bg_normal.png" alt=""></div>
+						<div class="cate-coupon__bg">
+							<div class="cate-coupon__frofile">
+								<img class="cate-coupon__frofile__content" src="../../images/common/img_coupon_frofile.png" />
+							</div>
+							<div class="cate-coupon__text-box">
+								<div class="cate-coupon__text">
+									스코피 3
+								</div>
+								<div class="cate-coupon__desc">
+									<p class="cate-coupon__desc-title">포토북 무료 제작쿠폰</p>
+									<p class="cate-coupon__under-desc">소프트커버,  88, 24P</p>
+									<p class="coupon-item__date">2021년 11월 11일 발급</p>
+								</div>
+							</div>
+						<!-- //0126 수정 -->
+						</div>
+					</a>
+					<a href="#" class="card cate-coupon__item swiper-slide">
+						<!-- 0126 수정 -->
+						<div class="coupon-item__kind coupon-item__kind--cmps">0캠퍼스 상시</div>
+						<div class="cate-coupon__img"><img src="../../images/common/img_coupon_bg_normal.png" alt=""></div>
+						<div class="cate-coupon__bg">
+							<div class="cate-coupon__frofile">
+								<img class="cate-coupon__frofile__content" src="../../images/common/img_coupon_frofile.png" />
+							</div>
+							<div class="cate-coupon__text-box">
+								<div class="cate-coupon__text">
+									스코피 3
+								</div>
+								<div class="cate-coupon__desc">
+									<p class="cate-coupon__desc-title">포토북 무료 제작쿠폰</p>
+									<p class="cate-coupon__under-desc">소프트커버,  88, 24P</p>
+									<p class="coupon-item__date">2021년 11월 11일 발급</p>
+								</div>
+							</div>
+						<!-- //0126 수정 -->
+						</div>
+					</a>
+					<a href="#" class="card cate-coupon__item swiper-slide">
+						<!-- 0126 수정 -->
+						<div class="coupon-item__kind coupon-item__kind--cmps">0캠퍼스 상시</div>
+						<div class="cate-coupon__img"><img src="../../images/common/img_coupon_bg_normal.png" alt=""></div>
+						<div class="cate-coupon__bg">
+							<div class="cate-coupon__frofile">
+								<img class="cate-coupon__frofile__content" src="../../images/common/img_coupon_frofile.png" />
+							</div>
+							<div class="cate-coupon__text-box">
+								<div class="cate-coupon__text">
+									스코피 3
+								</div>
+								<div class="cate-coupon__desc">
+									<p class="cate-coupon__desc-title">포토북 무료 제작쿠폰</p>
+									<p class="cate-coupon__under-desc">소프트커버,  88, 24P</p>
+									<p class="coupon-item__date">2021년 11월 11일 발급</p>
+								</div>
+							</div>
+						<!-- //0126 수정 -->
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- //0119 수정 쿠폰 이미지 변경 -->
+
+		<!-- 0114 삭제 -->
+		<!-- <div class="bs-event">
+			<p class="card__subtitle">이벤트</p>
+			<div class="card__title">혜택 가득한 캠퍼스 라이프</div>
+			<div class="bs-event__wrap">
+				<ul class="bs-event__list">
+						<li class="bs-event__item">
+							<a class="bs-event__anchor" href="">
+								<img class="bs-event__thumbnail" src="../../images/content/bottom-sheet/icon_event01.png" alt="" />
+								<div class="bs-event__text-box">
+										<p class="bs-event__title">엘라고 무선충전기 증정</p>
+										<p class="bs-event__sub-title">2020.01.20 ~ 2021.02.22</p>
+								</div>
+							</a>
+						</li>
+						<li class="bs-event__item">
+							<a class="bs-event__anchor" href="">
+								<img class="bs-event__thumbnail" src="../../images/content/bottom-sheet/icon_event02.png" alt="" />
+								<div class="bs-event__text-box">
+										<p class="bs-event__title">구름처럼 폭신한 침구 10%</p>
+										<p class="bs-event__sub-title"><span class="ft-sf-m">2020.01.20 ~ 2021.02.22</p>
+								</div>
+							</a>
+						</li>
+						<li class="bs-event__item">
+							<a class="bs-event__anchor" href="">
+								<img class="bs-event__thumbnail" src="../../images/content/bottom-sheet/icon_event03.png" alt="" />
+								<div class="bs-event__text-box">
+										<p class="bs-event__title">드롭탑 커피 100% 증정</p>
+										<p class="bs-event__sub-title">2020.01.20 ~ 2021.02.22</p>
+								</div>
+							</a>
+						</li>
+				</ul>
+			</div>
+		</div> -->
+		<!--// 0114 삭제 -->
+
+	</div>
+</div>
+<!-- //0112 수정 -->
+
+        <!-- // bottomSheet -->
+    </div>
+    <!-- lib js -->
+<script src="../../js/lib/jquery_3.6.0.js" type="text/javascript"></script>
+<script src="../../js/lib/swiper-7.4.1.min.js" type="text/javascript"></script>
+<script src="../../js/lib/pualugin.js" type="text/javascript"></script>
+<script src="../../js/lib/jquery-barcode.js" type="text/javascript"></script>
+<!-- js -->
+<script src="../../js/common.js" type="text/javascript"></script>
+
+
+<script>
+  $(document).ready(function() {
+    var swiper = new Swiper(".submain-visual__slide", {
+      loop: true,
+      touchReleaseOnEdges: true,
+      pagination: {
+        el: ".submain-visual__pagination",
+        clickable: true
+      }
+    });
+
+    var swiper = new Swiper(".submain-banner__slide", {
+      loop: true,
+      touchReleaseOnEdges: true,
+      pagination: {
+        el: ".submain-banner__pagination",
+        type: "fraction"
+      }
+    });
+
+    var swiper = new Swiper(".benefit-content2", {
+        loop:true,
+        touchReleaseOnEdges:true,
+        slidesPerView: "auto",
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     type: "fraction",
+        // }
+    }); 
+    var swiper = new Swiper(".cate-coupon__content", {
+        loop:true,
+        touchReleaseOnEdges:true,
+        slidesPerView: "auto",
+        pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+        }
+    });
+  });
+</script>
+</body>
+</html>

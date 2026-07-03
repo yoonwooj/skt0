@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0, viewport-fit=cover">
+
+  <title>0한동</title>
+  <link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/components.css">
+</head>
+
+<body>
+  <div id="document" class="wrapper">
+    <!-- header -->
+    <header id="header">
+	<!-- 
+    <button id="btnMainMenu">▤</button>
+    <button id="btnMyPage">＠</button> 
+	-->
+	<div class="header-top">
+		<h1 class="hidden">0 한동</h1>
+		<div class="nav-btn-wrap">
+      <h2 class="header__title"></h2>
+			<div class="btn-arrow">
+				<a href="#" class="btn-prev white">
+					<img src="../../images/common/ico_arrow_prev_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next white">
+					<img src="../../images/common/ico_arrow_next_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-prev black">
+					<img src="../../images/common/ico_arrow_prev_b.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next black">
+					<img src="../../images/common/ico_arrow_next_b.png" alt="prev button">
+				</a>
+			</div>
+
+			<div class="btn-navi">
+				<a href="#" class="btn-menu white">
+					<img src="../../images/common/ico_menu_w.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close white">
+					<img src="../../images/common/ico_close_w.png" alt="close button">
+				</a>
+				<a href="#" class="btn-menu black">
+					<img src="../../images/common/ico_menu_b.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close black">
+					<img src="../../images/common/ico_close_b.png" alt="close button">
+				</a>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<!-- gnb -->
+<div id="gnb" class="gnb">
+  <div class="gnb__inner">
+    <div class="gnb__toparea">
+      <!-- 220114 gnb__titlebox 삭제 -->
+      <!-- <div class="gnb__titlebox">
+        <p class="gnb__title ft-sf-b">MENU</p>
+      </div> -->
+      <div class="gnb__head">
+        <!-- 220114 login info 수정 case | 로그인 상태 -->
+        <div class="gnb__headinner" style="display: none;">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <img src="../../images/common/profile.png" alt="이모지">
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">김*동</span>님
+              </a>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 있는 경우 -->
+            <p class="gnb__description">
+              <span class="gnb__phone-number ft-sf-m">010-12**-56**</span>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 없는 경우 -->
+            <p class="gnb__description" style="display: none;">
+              <span class="gnb__phone-number">보유하신 SKT 회선이 없습니다.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 로그인 상태 -->
+
+        <!-- 220114 login info 수정 case | 비로그인 상태 -->
+        <div class="gnb__headinner">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <!-- 프필 이미지 영역 -->
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">로그인</span>
+              </a>
+            </p>
+            <p class="gnb__description">
+              <!-- 0207 문구변경 -->
+              <span class="gnb__phone-number">T아이디로 로그인해 주세요.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 비로그인 상태 -->
+      </div>
+    </div>
+    <div class="gnb__scroll">
+      <div class="gnb__contents">
+        <div class="gnb__menu">
+          <ul class="gnb__accordion"> <!-- 220114 data-element="accordion" 삭제 -->
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">서비스</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0캠퍼스</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0히어로</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0틴</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">추천 요금제</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">데이터스테이션</a>
+                  </li> -->
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <!-- 0207 문구변경 -->
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">브랜드 &middot; 콘텐츠</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">ABOUT 0</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0잘알</a>
+                  </li> -->
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">MAGAZINE 0</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="gnb__anchor-wrap"> <!-- 220114 anchor-wrap 클래스 추가-->
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--event">이벤트</a> <!-- 220114 gnb__anchor--event 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <!-- 0204 active 삭제 -->
+              <a href="#none" class="gnb__anchor gnb__anchor--notice">공지사항</a> <!-- 220114 gnb__anchor--notice 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--faq">FAQ</a> <!-- 220114 gnb__anchor--faq 클래스 추가-->
+            </div>
+          </div>
+        </div>
+  
+        <!-- 220114 gnb__logout 삭제 | footer로 이동 -->
+        <!-- <div class="gnb__logout">
+          <button type="button" class="gnb__logout-button">
+            <span class="gnb__logout-text">로그아웃</span>
+          </button>
+        </div> -->
+      </div>
+      <div class="footer-wrap">
+    <div class="footer-loginbox">
+      <a href="#none" class="footer-login">로그아웃</a>
+    </div>
+    <div class="footer-bottom">
+        <div class="service-list">
+            <a href="">이용약관</a>
+            <a href="">개인정보처리방침</a>
+            <!-- 220121 메뉴 추가 -->
+            <a href="" class="footer-gnb-check">오픈소스 라이선스</a>
+        </div>
+        <!-- 220121 &copy; 텍스트 제거 -->
+        <div class="copyright">SK TELECOM CO. LTD</div>
+    </div>
+</div>
+      <button type="button" class="gnb__close" aria-label="메뉴 닫기"></button>
+    </div><!-- // scroll -->
+    
+  </div>
+</div>
+
+    <!-- // header -->
+    <!-- main -->
+    <!-- 0117 top-white 삭제 -->
+    <div id="main" class="sub-main">
+      <div class="teen sv_1_2_1"></div>
+      <div class="wrap">
+        <h1 class="hidden">0 한동</h1>
+        <!-- 0119 수정 -->
+        <!-- 0207 : 문구 변경 -->
+        <h2 class="hidden">0틴 이용 안내</h2>
+        <!-- 0117 비주얼 영역 수정 -->
+        <div class="submain-visual">
+          <div class="submain-visual__image">
+            <img src="../../images/content/teen/bg_kv_0teen_01.png" alt="0틴 가입하고 중, 고등학생을 위한 혜택 GET 부족한 데이터 무료로 혜택받자!">
+          </div>
+        </div>
+        <!-- //0117 비주얼 영역 수정 -->
+        <div class="content-wrap">
+          <div class="teen-guide gray">
+            <div class="title-area">
+              <!-- 0207 : 문구 변경 -->
+              <strong class="title">0틴 가입 방법</strong>
+            </div>
+            <!-- 0207 : 문구 변경 -->
+            <div class="teen-guide__contents">
+              <div class="teen-info">
+                <div class="teen-info__item">
+                  <strong class="teen-info__title">0틴은 중고생 고객님을 위한 SK텔레콤의 무료 부가서비스입니다.</strong>
+                  <div class="teen-info__textwrap">
+                    <p class="teen-info__text">14~19세 또는 청소년 전용 요금제를 이용 중인 SK텔레콤 고객님이라면 즉시 가입하실 수 있습니다.</p>
+                  </div>
+                </div>
+              </div>
+              <!--0308 문구수정-->
+              <a href="#" class="btn__square btn--full"><span class="sf-ft-b">0</span>틴 가입</a>
+              <p>※ 이용 중인 요금제에 따라 가입이 제한될 수 있습니다.</p>
+              <!-- //0207 : 문구 변경 -->
+            </div>
+          </div>
+          <div class="teen-guide top-short">
+            <!-- 0117 삭제 -->
+            <!-- <div class="teen-guide__contents">
+                      <div class="teen-benefit">
+                        <ul class="teen-benefit__list">
+                          <li class="teen-benefit__item">
+                            <div class="teen-benefit__image">
+                              <img src="../../images/content/teen/bg_guide_img01.png" alt="">
+                            </div>
+                            <div class="teen-benefit__textarea">
+                              <p class="teen-benefit__title">무료 데이터</p>
+                              <p class="teen-benefit__text">데이터 S.O.S &amp;<br>데이터 슈퍼패스</p>
+                            </div>
+                          </li>
+                          <li class="teen-benefit__item">
+                            <div class="teen-benefit__image">
+                              <img src="../../images/content/teen/bg_guide_img02.png" alt="">
+                            </div>
+                            <div class="teen-benefit__textarea">
+                              <p class="teen-benefit__title">1318 전용 쿠폰</p>
+                              <p class="teen-benefit__text">0틴 멤버만을 위한 혜택</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div> -->
+            <!-- //0117 삭제 -->
+            <div class="title-area">
+              <!-- 0117 수정 -->
+              <!-- 0207 문구 변경 -->
+              <strong class="title">0틴을 위한 데이터 혜택</strong>
+            </div>
+            <div class="teen-guide__contents">
+              <ul class="teen-benefit__list teen-benefit__list--full">
+                <li class="teen-benefit__item">
+                  <div class="teen-benefit__image">
+                    <img src="../../images/content/teen/bg_banner_img01.png" alt="">
+                  </div>
+                  <div class="teen-benefit__textarea">
+                    <!-- 0117 수정 -->
+                    <!-- 0207 문구 변경 -->
+                    <p class="teen-benefit__sub-title">데이터S.O.S</p>
+                    <p class="teen-benefit__title">0틴 3명이 모이면 1일 데이터 무제한</p>
+                    <p class="teen-benefit__text">S.O.S 방을 만들어 친구 2명을 초대하거나, 친구가 만든 방에 참여해 보세요. 1일 데이터 무제한 쿠폰을 드립니다.</p>
+                    <div class="teen-benefit__linkbox">
+                      <a href="#none" class="teen-benefit__link">
+                        <span class="teen-benefit__link-text">데이터 S.O.S 방 만들기</span>
+                      </a>
+                    </div>
+                    <!-- //0207 문구 변경 -->
+                    <!-- 0117 수정 -->
+                  </div>
+                </li>
+                <li class="teen-benefit__item">
+                  <div class="teen-benefit__image">
+                    <img src="../../images/content/teen/bg_banner_img02.png" alt="">
+                  </div>
+                  <div class="teen-benefit__textarea">
+                    <!-- 0117 수정 -->
+                    <!-- 0207 문구 변경 -->
+                    <p class="teen-benefit__sub-title">0틴 위크</p>
+                    <p class="teen-benefit__title">0틴을 위한 특별한 주간</p>
+                    <p class="teen-benefit__text">1주일 동안 이용할 수 있는 데이터 2GB를 드립니다. <br>0틴 위크가 시작되는 날을 확인해 보세요.</p>
+                    <div class="teen-benefit__linkbox">
+                      <a href="#none" class="teen-benefit__link">
+                        <span class="teen-benefit__link-text">0틴 위크 자세히 보기</span>
+                      </a>
+                    </div>
+                    <!-- //0207 문구 변경 -->
+                    <!-- 0117 수정 -->
+                  </div>
+                </li>
+                <li class="teen-benefit__item">
+                  <div class="teen-benefit__image">
+                    <img src="../../images/content/teen/bg_banner_img03.png" alt="">
+                  </div>
+                  <div class="teen-benefit__textarea">
+                    <!-- 0117 수정 -->
+                    <p class="teen-benefit__sub-title">데이터슈퍼패스</p>
+                    <!-- 0207 문구 변경 -->
+                    <p class="teen-benefit__title">0한동과 제휴한 앱은 데이터 프리</p>
+                    <p class="teen-benefit__text">0틴 가입 고객이라면 제휴 앱을 5G · LTE 데이터로 이용해도 요금제의 기본 제공 데이터가 소진되지 않아요.</p>
+                    <div class="teen-benefit__linkbox">
+                      <a href="#none" class="teen-benefit__link">
+                        <span class="teen-benefit__link-text">데이터슈퍼패스 제휴 앱 확인하기</span>
+                      </a>
+                    </div>
+                    <!-- //0207 문구 변경 -->
+                    <!-- 0117 수정 -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 0119 수정 -->
+          <!-- 0207 문구 변경 -->
+          <div class="campus-guide campus-notice">
+            <div class="campus-notice__title">0틴 유의 사항</div>
+            <dl class="campus-notice__list">
+              <dt>0틴 가입 관련 유의 사항</dt>
+              <dd>0틴은 한국 나이 기준 14~19세 또는 SK텔레콤 청소년 요금제를 이용 중인 고객님만 가입하실 수 있습니다.</dd>
+              <dd>0틴 가입 및 해지는 하루 한 번만 가능합니다. 0틴을 해지한 경우 당일에는 다시 가입하실 수 없으며, 다음 날부터 다시 가입 가능합니다.</dd>
+              <dd>0틴 가입 후 데이터S.O.S, 0틴 위크, 데이터슈퍼패스 등의 혜택을 이용하실 수 있습니다.</dd>
+              <dt>데이터S.O.S 유의 사항</dt>
+              <dd>데이터S.O.S는 본인이 방장으로 참여한 경우와 방장의 초대를 받아 참여한 경우를 구분하지 않고 매달 최대 2번까지 이용하실 수 있습니다.</dd>
+              <dd>요금제의 기본 제공 데이터를 모두 소진한 0틴 가입 고객님만 데이터S.O.S 방을 만들고, 방장이 되어 친구를 초대하실 수 있습니다.</dd>
+              <dd>0틴 가입 고객님 3명이 모여 방이 완성되면 1일 데이터 무제한 쿠폰이 3명 모두에게 제공되며 ,쿠폰은 받은 달의 원하는 날짜에 사용하실 수 있습니다. 그달 안에 사용하지 않은 쿠폰은
+                다음 달 1일에 소멸됩니다. </dd>
+              <dd>1일 데이터 무제한 쿠폰은 사용 시점을 기준으로 당일 23시 59분 59초까지 적용됩니다.</dd>
+              <dd>1일 데이터 무제한 쿠폰 사용 시 데이터 1GB를 쓴 뒤에는 최대 400kbps 속도로 계속 사용하실 수 있습니다..</dd>
+              <dt>0틴 위크 유의 사항</dt>
+              <dd>0틴 위크 데이터 2GB 쿠폰은 신청 즉시 적용됩니다.</dd>
+              <dd>0틴 위크 데이터 2GB 쿠폰은 최대 7일 동안 사용할 수 있으며, 2GB를 다 쓰면 요금제의 기본 제공 데이터가 소진됩니다.</dd>
+              <dd>7일 안에 다 쓰지 못하고 남은 데이터는 자동으로 소멸됩니다.</dd>
+              <dd>0틴 위크 데이터 2GB 쿠폰은 신청일 기준 그달 안에만 이용하실 수 있습니다. 7일이 경과되지 않은 시점에 달이 바뀐 경우 남은 데이터는 자동으로 소멸됩니다.</dd>
+              <dt>데이터슈퍼패스 유의 사항</dt>
+              <dd>데이터슈퍼패스는 0한동의 제휴 앱을 이용할 때만 적용됩니다.</dd>
+              <dd>제휴 앱과 SK텔레콤의 사정에 따라, 광고, 외부 페이지 로딩, 앱 내 영상 재생 등은 데이터슈퍼패스가 적용되지 않습니다.</dd>
+              <dd>App Store, 구글 Play 등에서 앱 다운로드·업데이트를 하거나, 앱에서 로그인 및 버전 업데이트 등을 할 때에는 데이터슈퍼패스가 적용되지 않습니다. </dd>
+              <dd>요금제의 기본 제공 데이터를 모두 사용하여 데이터 사용이 차단된 이후에는 데이터슈퍼패스가 적용되지 않습니다. (이 경우 데이터S.O.S를 이용해 주세요.)</dd>
+              <dd>제휴 앱과 SK텔레콤의 사정에 따라, 앱별 데이터슈퍼패스 적용 여부가 사전 안내 없이 변경될 수 있습니다.</dd>
+              <dt>데이터 소진 순서</dt>
+              <dd>① 유료 부가서비스(FLO 앤 데이터 등) &gt; ② 단기 데이터 쿠폰, 주말엔 팅 요금제 주말 데이터 &gt; ③ 0틴 데이터S.O.S(최초 1GB) &gt; ④ 0캠퍼스 캠퍼스
+                데이터 &gt; ⑤ 0틴 위크 &gt; ⑥ 0틴 데이터스테이션 &gt; ⑦ 데이터 리필 쿠폰 &gt; ⑧ 선물 받은 데이터 &gt; ⑨ 요금제의 기본 제공 데이터 &gt; ⑩ 데이터 쿠폰
+                &gt; ⑪ 0틴 데이터S.O.S(400kbps 속도 제한) </dd>
+            </dl>
+          </div>
+          <!-- //0207 문구 변경 -->
+          <!-- //0119 수정 -->
+          <!-- 0117 버튼  영역 수정-->
+          <div class="teen-guide close">
+            <div class="teen-guide__closebox">
+              <a href="#a" class="btn-normal btn-normal--gray">서비스 해지</a>
+            </div>
+          </div>
+          <!-- // 0117 버튼  영역 수정 -->
+        </div>
+      </div>
+    </div>
+    <!-- // main -->
+    <!-- top버튼 -->
+    <div class="top-button">
+  <button type="button" class="top-button__anchor" aria-label="화면 상단으로 이동"></button>
+</div>
+    <!-- // top버튼 -->
+  </div>
+  <!-- lib js -->
+<script src="../../js/lib/jquery_3.6.0.js" type="text/javascript"></script>
+<script src="../../js/lib/swiper-7.4.1.min.js" type="text/javascript"></script>
+<script src="../../js/lib/pualugin.js" type="text/javascript"></script>
+<script src="../../js/lib/jquery-barcode.js" type="text/javascript"></script>
+<!-- js -->
+<script src="../../js/common.js" type="text/javascript"></script>
+
+</body>
+
+</html>

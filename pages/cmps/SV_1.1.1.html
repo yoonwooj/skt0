@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0, viewport-fit=cover">
+
+  <title>0한동</title>
+  <link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/components.css">
+</head>
+
+<body>
+  <div id="document" class="wrapper">
+    <!-- header -->
+    <header id="header">
+	<!-- 
+    <button id="btnMainMenu">▤</button>
+    <button id="btnMyPage">＠</button> 
+	-->
+	<div class="header-top">
+		<h1 class="hidden">0 한동</h1>
+		<div class="nav-btn-wrap">
+      <h2 class="header__title"></h2>
+			<div class="btn-arrow">
+				<a href="#" class="btn-prev white">
+					<img src="../../images/common/ico_arrow_prev_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next white">
+					<img src="../../images/common/ico_arrow_next_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-prev black">
+					<img src="../../images/common/ico_arrow_prev_b.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next black">
+					<img src="../../images/common/ico_arrow_next_b.png" alt="prev button">
+				</a>
+			</div>
+
+			<div class="btn-navi">
+				<a href="#" class="btn-menu white">
+					<img src="../../images/common/ico_menu_w.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close white">
+					<img src="../../images/common/ico_close_w.png" alt="close button">
+				</a>
+				<a href="#" class="btn-menu black">
+					<img src="../../images/common/ico_menu_b.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close black">
+					<img src="../../images/common/ico_close_b.png" alt="close button">
+				</a>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<!-- gnb -->
+<div id="gnb" class="gnb">
+  <div class="gnb__inner">
+    <div class="gnb__toparea">
+      <!-- 220114 gnb__titlebox 삭제 -->
+      <!-- <div class="gnb__titlebox">
+        <p class="gnb__title ft-sf-b">MENU</p>
+      </div> -->
+      <div class="gnb__head">
+        <!-- 220114 login info 수정 case | 로그인 상태 -->
+        <div class="gnb__headinner" style="display: none;">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <img src="../../images/common/profile.png" alt="이모지">
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">김*동</span>님
+              </a>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 있는 경우 -->
+            <p class="gnb__description">
+              <span class="gnb__phone-number ft-sf-m">010-12**-56**</span>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 없는 경우 -->
+            <p class="gnb__description" style="display: none;">
+              <span class="gnb__phone-number">보유하신 SKT 회선이 없습니다.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 로그인 상태 -->
+
+        <!-- 220114 login info 수정 case | 비로그인 상태 -->
+        <div class="gnb__headinner">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <!-- 프필 이미지 영역 -->
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">로그인</span>
+              </a>
+            </p>
+            <p class="gnb__description">
+              <!-- 0207 문구변경 -->
+              <span class="gnb__phone-number">T아이디로 로그인해 주세요.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 비로그인 상태 -->
+      </div>
+    </div>
+    <div class="gnb__scroll">
+      <div class="gnb__contents">
+        <div class="gnb__menu">
+          <ul class="gnb__accordion"> <!-- 220114 data-element="accordion" 삭제 -->
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">서비스</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0캠퍼스</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0히어로</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0틴</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">추천 요금제</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">데이터스테이션</a>
+                  </li> -->
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <!-- 0207 문구변경 -->
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">브랜드 &middot; 콘텐츠</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">ABOUT 0</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0잘알</a>
+                  </li> -->
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">MAGAZINE 0</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="gnb__anchor-wrap"> <!-- 220114 anchor-wrap 클래스 추가-->
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--event">이벤트</a> <!-- 220114 gnb__anchor--event 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <!-- 0204 active 삭제 -->
+              <a href="#none" class="gnb__anchor gnb__anchor--notice">공지사항</a> <!-- 220114 gnb__anchor--notice 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--faq">FAQ</a> <!-- 220114 gnb__anchor--faq 클래스 추가-->
+            </div>
+          </div>
+        </div>
+  
+        <!-- 220114 gnb__logout 삭제 | footer로 이동 -->
+        <!-- <div class="gnb__logout">
+          <button type="button" class="gnb__logout-button">
+            <span class="gnb__logout-text">로그아웃</span>
+          </button>
+        </div> -->
+      </div>
+      <div class="footer-wrap">
+    <div class="footer-loginbox">
+      <a href="#none" class="footer-login">로그아웃</a>
+    </div>
+    <div class="footer-bottom">
+        <div class="service-list">
+            <a href="">이용약관</a>
+            <a href="">개인정보처리방침</a>
+            <!-- 220121 메뉴 추가 -->
+            <a href="" class="footer-gnb-check">오픈소스 라이선스</a>
+        </div>
+        <!-- 220121 &copy; 텍스트 제거 -->
+        <div class="copyright">SK TELECOM CO. LTD</div>
+    </div>
+</div>
+      <button type="button" class="gnb__close" aria-label="메뉴 닫기"></button>
+    </div><!-- // scroll -->
+    
+  </div>
+</div>
+
+    <!-- // header -->
+    <!-- main -->
+    <!-- 0117 top-white 삭제 -->
+    <div id="main" class="sub-main">
+      <div class="cmps sv111">
+        <div class="wrap">
+          <h1 class="hidden">0 한동</h1>
+          <!-- 0119 수정 -->
+          <h2 class="hidden">0캠퍼스 이용 안내</h2> <!-- 0207 : 문구 변경 -->
+          <!-- 0117 비주얼 영역 수정 -->
+          <div class="submain-visual">
+            <div class="submain-visual__image">
+              <img src="../../images/content/cmps/bg_kv_sv111_01.png"
+                alt="0캠퍼스 가입하고 young한 혜택 누리자! 데이터 할인받고, 음악 & 콘텐츠 감상까지">
+            </div>
+          </div>
+          <!-- 0117 비주얼 영역 수정 -->
+          <div class="content-wrap">
+            <div class="campus-guide gray">
+              <div class="title-area">
+                <strong class="title">0캠퍼스 가입</strong> <!-- 0207 : 문구 변경 -->
+              </div>
+              <div class="campus-guide__contents">
+                <div class="campus-info">
+                  <div class="campus-info__item">
+                    <!-- 0207 : 문구 변경 -->
+                    <strong class="campus-info__title">0캠퍼스는 만 29세 이하 대학생을 위한 SK텔레콤의 무료 부가서비스입니다.</strong>
+                    <div class="campus-info__textwrap">
+                      <p class="campus-info__text">소속 대학교 재학생을 인증하여 가입할 수 있습니다.</p>
+                      <!-- <p class="campus-info__text">재학증명서 or 학생증을 가지고 있어요!<br>(서류 인증)</p> -->
+                    </div>
+                    <!-- // 0207 : 문구 변경 -->
+                  </div>
+                  <!-- 0207 : 문구 변경 -->
+                  <!-- <div class="campus-info__item">
+                          <strong class="campus-info__title">만26세 ~ 만30세</strong>
+                          <div class="campus-info__textwrap">
+                            <p class="campus-info__text">지금 재학증명서를 가지고 있어요!</p>
+                            <p class="campus-info__text-space">or</p>
+                            <p class="campus-info__text">지금 학생증을 가지고 있어요!</p>
+                          </div>
+                        </div> -->
+                  <!-- // 0207 : 문구 변경 -->
+                </div>
+                <div class="campus-info__bottom">
+                  <div class="campus-info__bottom-item">
+                    <p class="campus-info__bottom-title">이메일 인증</p>
+                    <p class="campus-info__bottom-text">소속 학교 이메일 계정(OOO.ac.kr)으로 인증 메일이 발송됩니다.</p>
+                    <!-- 0207 : 문구 변경 -->
+                  </div>
+                  <div class="campus-info__bottom-item">
+                    <p class="campus-info__bottom-title">학생증 · 재학증명서 인증</p>
+                    <p class="campus-info__bottom-text">학생증 또는 재학증명서를 촬영 후 업로드하면, 운영사무국에서 확인 후 승인됩니다.</p>
+                    <!-- 0207 : 문구 변경 -->
+                  </div>
+                  <!-- 0207 : 문구 변경 -->
+                  <div class="campus-info__bottom-item">
+                    <p class="campus-info__bottom-text">※ 만 25세 이상 대학생은 재학증명서 인증을 통해서만 가입하실 수 있습니다.</p>
+                  </div>
+                  <!-- // 0207 : 문구 변경 -->
+                </div>
+                <!-- 0121  문구 변경 -->
+                <a href="#" class="btn__square btn--full blue"><span class="sf-ft-b">0</span>캠퍼스 가입</a>
+              </div>
+            </div>
+            <div class="campus-guide top-short">
+              <div class="title-area">
+                <strong class="title">0캠퍼스만의 혜택</strong>
+              </div>
+              <div class="campus-guide__contents">
+                <div class="campus-benefit">
+                  <ul class="campus-benefit__list">
+                    <li class="campus-benefit__item">
+                      <div class="campus-benefit__image">
+                        <img src="../../images/content/cmps/bg_guide_img01.png" alt="">
+                      </div>
+                      <div class="campus-benefit__textarea">
+                        <p class="campus-benefit__title">캠퍼스 데이터</p>
+                        <!-- 0119 p태그 a태그로 수정 -->
+                        <a href="#none" class="campus-benefit__text">최대 3GB 제공</a> <!-- 0207 : 문구 변경 -->
+                      </div>
+                    </li>
+                    <li class="campus-benefit__item">
+                      <div class="campus-benefit__image">
+                        <img src="../../images/content/cmps/bg_guide_img02.png" alt="">
+                      </div>
+                      <div class="campus-benefit__textarea">
+                        <p class="campus-benefit__title">0캠퍼스 제휴</p> <!-- 0207 : 문구 변경 -->
+                        <!-- 0119 p태그 a태그로 수정 -->
+                        <a href="#none" class="campus-benefit__text">대학생 전용 무료 · 할인 쿠폰</a> <!-- 0207 : 문구 변경 -->
+                      </div>
+                    </li>
+                    <li class="campus-benefit__item">
+                      <div class="campus-benefit__image">
+                        <img src="../../images/content/cmps/bg_guide_img03.png" alt="">
+                      </div>
+                      <div class="campus-benefit__textarea">
+                        <p class="campus-benefit__title">FLO 앤 데이터</p> <!-- 0207 : 문구 변경 -->
+                        <!-- 0119 p태그 a태그로 수정 -->
+                        <a href="#none" class="campus-benefit__text">최대 90% 할인</a> <!-- 0207 : 문구 변경 -->
+                      </div>
+                    </li>
+                    <li class="campus-benefit__item">
+                      <div class="campus-benefit__image">
+                        <img src="../../images/content/cmps/bg_guide_img04.png" alt="">
+                      </div>
+                      <div class="campus-benefit__textarea">
+                        <p class="campus-benefit__title">wavve 앤 데이터</p> <!-- 0207 : 문구 변경 -->
+                        <!-- 0119 p태그 a태그로 수정 -->
+                        <a href="#none" class="campus-benefit__text">최대 90% 할인</a> <!-- 0207 : 문구 변경 -->
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="campus-guide full">
+              <div class="campus-banner mt40">
+                <a href="#none" class="campus-banner__inner" onclick="layerOpen('dataPlan')">
+                  <img src="../../images/content/cmps/bg_banner_img01.png" alt="">
+                  <!-- <p class="campus-banner__text">0 전용 요금제가 궁금하다면?</p>
+                        <p class="campus-banner__strong">요금제 변경하고<br>더 많은 혜택 누리세요!</p>
+                        <p class="campus-banner__check">가입가능 요금제 정보 확인</p> -->
+                </a>
+              </div>
+            </div>
+            <div class="campus-guide">
+              <div class="title-area">
+                <strong class="title">우리학교도 0캠퍼스?<br>대상 학교를 확인해보세요</strong> <!-- 0207 : 문구 변경 -->
+              </div>
+              <div class="campus-guide__contents">
+                <ul class="campus-benefit__list campus-benefit__list--full">
+                  <li class="campus-benefit__item">
+                    <div class="campus-benefit__image">
+                      <img src="../../images/content/cmps/bg_banner_img02.png" alt="">
+                    </div>
+                    <div class="campus-benefit__textarea">
+                      <!-- 0311 문구 수정 -->
+                      <p class="campus-benefit__title">가입 대상 학교를 확인해보세요.</p>
+                      <p class="campus-benefit__text">0캠퍼스는 교육부에서 공시한 대학교를 대상으로 서비스를 제공하고 있습니다.</p>
+                      <div class="campus-benefit__linkbox">
+                        <a href="#none" class="campus-benefit__link" onclick="layerOpen('onlyCampus')">
+                          <span class="campus-benefit__link-text">0캠퍼스 가입 대상 학교 보기</span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- 0121 추가 -->
+                  <li class="campus-benefit__item">
+                    <div class="campus-benefit__image">
+                      <img src="../../images/content/cmps/bg_banner_img09.png" alt="">
+                    </div>
+                    <div class="campus-benefit__textarea">
+                      <p class="campus-benefit__title">일부 학교는 레벨1 혜택만 제공됩니다.</p>
+                      <p class="campus-benefit__text">교육부 공시 자료를 기준으로 재학생 수가 적거나 사이버대학, 방송통신대학 등은 가입율과 관계없이 레벨1의 혜택만
+                        제공됩니다.</p>
+                      <div class="campus-benefit__linkbox">
+                        <a href="#none" class="campus-benefit__link" onclick="layerOpen('onlyCampus')">
+                          <span class="campus-benefit__link-text">ONLY 레벨1 학교 보기</span> <!-- 0207 : 문구 변경 -->
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- //0121 추가 -->
+                  <li class="campus-benefit__item">
+                    <div class="campus-benefit__image">
+                      <img src="../../images/content/cmps/bg_banner_img03.png" alt="">
+                    </div>
+                    <!-- 0207 : 문구 변경 -->
+                    <div class="campus-benefit__textarea">
+                      <!-- 0311 문구수정 -->
+                      <p class="campus-benefit__title">캠퍼스 데이터 제공 학교를 확인해 보세요.</p>
+                      <p class="campus-benefit__text">0캠퍼스에서 제공하는 ‘캠퍼스 데이터’는 별도의 망 구축 작업이 완료된 학교 내에서만 사용할 수 있습니다. 학교별
+                        지리적 상황에 따라 캠퍼스 데이터가 제공되지 않을 수 있습니다.</p>
+                      <div class="campus-benefit__linkbox">
+                        <a href="#none" class="campus-benefit__link" onclick="layerOpen('joinTargetSchool')">
+                          <span class="campus-benefit__link-text">캠퍼스 데이터 제공 학교 보기</span>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- // 0207 : 문구 변경 -->
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 0119 수정 -->
+            <div class="campus-guide campus-notice">
+              <div class="campus-notice__title">0캠퍼스 유의사항</div>
+              <!-- 0207 : 문구 변경 및 태그 변경 -->
+              <ul class="campus-notice__list">
+                <li>0캠퍼스 가입 대상 대학교 및 가입율 산정을 위한 학교별 재학생 수는 교육부 공시 자료에 근거하며, 매년 업데이트 됩니다.</li>
+                <li>일부 학교는 레벨1의 혜택만 제공됩니다.</li>
+                <li>0캠퍼스 레벨은 월말 까지의 누적 가입율을 기반으로 다음 달 1일에 재산정됩니다.</li>
+                <li>일부 요금제 및 band YT 요금제 &lt;캠퍼스 데이터&gt; 옵션을 이용 중인 고객은 0캠퍼스를 가입하실 수 없습니다.</li>
+                <li>0캠퍼스는 대학생 전용 서비스로 재학 여부를 확인하기 위해 재인증을 요구할 수 있습니다. 대상 고객에게는 사전 고지되며 지정된 기간 내 재인증하지 않는 경우 0캠퍼스 가입이 자동
+                  해지됩니다.</li>
+                <!-- <dd>0캠퍼스 가입 대상 대학교 및 가입율 산정을 위한 학교별 재학생 수는 교육부 공시 자료에 근거하며, 매년 업데이트 됩니다. <br>일부 학교는 레벨1의 혜택만 제공됩니다.</dd>
+                      <dd>캠퍼스 레벨은 월말 까지의 누적 가입율을 기반으로 다음 달 1일에 재산정됩니다. 일부 요금제 및 band YT 요금제 &lt;캠퍼스 데이터&gt; 옵션을 이용 중인 고객은 0캠퍼스를 가입하실 수없습니다. 0캠퍼스는 대학생 전용 서비스로 재학 여부를 확인하기 위해 재인증을 요구할 수 있습니다. 대상 고객에게는 사전 고지되며 지정된 기간 내 재인증하지 않는 경우 0캠퍼스 가입이 자동해지됩니다.</dd> -->
+                <!-- 0121 삭제 -->
+                <!-- <dt>-캠퍼스 데이터 유의사항</dt>
+                      <dd>
+                        캠퍼스 데이터는 캠퍼스존으로 지정된 학교의 주소지 내에서만 사용할 수 있습니다.
+                      </dd>
+                      <dt>-콘텐츠 혜택 유의사항</dt>
+                      <dd>
+                        FLO, wavve 할인 혜택은 FLO 앤 데이터, wavve 앤 데이터 부가서비스 가입 및 인증 후 적용됩니다.
+                      </dd>
+                      <dd>
+                        FLO, wavve 할인 혜택은 정상 적용 다음 날부터 T월드 실시간 이용 요금에서 일별 할인 금액을 확인할 수 있습니다. (T월드 앱 &gt; 실시간 이용 요금 &gt; 통신서비스요금 &gt; 요금할인 &gt; FLO/wavve_0캠퍼스 할인)
+                      </dd>
+                      <dd>
+                        FLO, wavve 할인 혜택은 FLO, wavve와의 제휴를 기반으로 한 한시적 프로모션으로, 제휴 계약 변경/종료에 따라 월정액 및 할인액이 변경되거나 이용이 중단될 수 있으며, 이 경우 0한동에서 사전 고지할 예정입니다.
+                      </dd> -->
+                <!-- //0121 삭제 -->
+              </ul>
+              <!-- // 0207 : 문구 변경 및 태그 변경 -->
+            </div>
+            <!-- //0119 수정 -->
+            <!-- 0117 버튼  영역 수정-->
+            <div class="campus-guide close">
+              <div class="campus-guide__closebox">
+                <a href="#a" class="btn-normal btn-normal--gray">서비스 해지</a>
+              </div>
+            </div>
+            <!-- // 0117 버튼  영역 수정 -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // main -->
+    <!-- top버튼 -->
+    <div class="top-button">
+  <button type="button" class="top-button__anchor" aria-label="화면 상단으로 이동"></button>
+</div>
+    <!-- // top버튼 -->
+    <!-- layerPop start -->
+    <div class="layerPopup layerPopup-button dataPlan" data-role="layerOpen">
+      <div class="layerPopup-header">
+        <div class="layerPopup-title">가입 가능 요금제</div> <!-- 0207 : 문구 변경 -->
+      </div>
+      <div class="layerPopup-contents">
+        <table class="table table--bottom-space">
+          <colgroup>
+            <col style="width: 19%">
+            <col style="width: auto">
+          </colgroup>
+          <thead>
+            <tr>
+              <th class="table__th">구분</th>
+              <th class="table__th">요금제명</th> <!-- 0207 : 문구 변경 -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="center">통합</td>
+              <td>
+                <ul class="terms__list">
+                  <li class="terms__item">T끼리 35/45/55/65</li>
+                  <li class="terms__item">전국민 무한 69/75/85/100</li>
+                  <li class="terms__item">T끼리 맞춤형, 뉴 T끼리 맞춤형</li>
+                  <li class="terms__item">band 데이터 세이브~T 시그니처 Classic (구)/Master(구)</li>
+                  <li class="terms__item">T 시그니처 Classic/Master</li>
+                  <li class="terms__item">band YT 세이브~퍼펙트</li>
+                  <li class="terms__item">T 글로벌 세이브~퍼펙트S</li>
+                  <li class="terms__item">ZEM플랜 스마트(구. 쿠키즈 18), ZEM 플랜 라이트(구. 쿠키즈 미니) band 팅세이브/2.0G/3.0G, 주말엔 팅 세이브 ~
+                    5.0G</li>
+                  <li class="terms__item">소리사랑 34/42/52, 손사랑 34/42/52</li>
+                  <li class="terms__item">소리사랑 온가족 37/45/55, 손사랑 온가족 37/45/55</li>
+                  <li class="terms__item">손누리 1.5G/3.0G/4.5G, 소리누리 1.0G/2.0G/3.0G</li>
+                  <li class="terms__item">온가족 행복플랜 38/48/58/68/72/78/85/100, 온가족 행복 플랜 팅 37/47/57</li>
+                  <li class="terms__item">클럽T 스탠다드/프리미엄</li>
+                  <li class="terms__item">구) T플랜 (스몰/레귤러/미디엄/라지/패밀리/인피니티)</li>
+                  <li class="terms__item">0플랜(스몰/미디엄/라지)</li>
+                  <li class="terms__item">0플랜 히어로/슈퍼히어로</li>
+                  <li class="terms__item">T플랜(세이브/안심2.5G/안심4G/에센스/스페셜/맥스)</li>
+                  <li class="terms__item">0틴플랜 (라지/미디엄플러스/미디엄/스몰)</li>
+                  <li class="terms__item">LTE ZEM플랜(베스트)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="center">5G</td>
+              <td>
+                <ul class="terms__list">
+                  <li class="terms__item">슬림, 5GX 스탠다드/레귤러/레귤러플러스/ 프라임/플래티넘</li>
+                  <li class="terms__item">0틴 5G 요금제</li>
+                  <li class="terms__item">5G 언택트 38/52/62</li>
+                  <li class="terms__item">5G ZEM플랜(퍼펙트/베스트)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="center">LTE</td>
+              <td>
+                <ul class="terms__list">
+                  <li class="terms__item">LTE 34/42/52/62/72/85/100</li>
+                  <li class="terms__item">LTE 맞춤형(LTE 청춘팩 포함)</li>
+                  <li class="terms__item">LTE 팅 24/34/42/52, LTE T끼리 팅 35/45/52</li>
+                  <li class="terms__item">LTE 복지 150+, LTE 복지 210+</li>
+                  <li class="terms__item">LTE 커플 52/62/72/85/100</li>
+                  <li class="terms__item">LTE 특수 34/42/52/62/72/85/100</li>
+                  <li class="terms__item">LTE 언택트 22/35/48</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="center">3G</td>
+              <td>
+                <ul class="terms__list">
+                  <li class="terms__item">올인원 34/44, 올인원 커플 44, 올인원 특수 34/44, 올인원 손사랑 34, 올인원 소리사랑 34</li>
+                  <li class="terms__item">맞춤형 요금제</li>
+                  <li class="terms__item">쿠키즈 워치, 쿠키즈 워치(문자) 요금제</li>
+                  <li class="terms__item">올인원 팅 34/44, 팅 스마트 19/24/29, 3G T끼리 팅 35/45/55, 3G band 팅 세이브/2.0G/3.0G</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button type="button" class="layerPopup-close" data-popup="layerClose" aria-label="레이어팝업 닫기"></button>
+    </div>
+    <!-- //layerPop end -->
+
+    <!-- layerPop start -->
+    <div class="layerPopup layerPopup-button onlyCampus" data-role="layerOpen">
+      <div class="layerPopup-header">
+        <div class="layerPopup-title">ONLY 레벨1 학교</div> <!-- 0207 : 문구 변경 -->
+      </div>
+      <div class="layerPopup-contents">
+        <div class="layerPopup-toparea">
+          <p class="layerPopup-toparea__description">방송통신대학 및 사이버대학, 재학생이 200명 미만인
+            대학교 또는 공시 정보가 없는 대학교의 경우, 가입율과 관계없이 레벨1 혜택만 제공합니다.</p> <!-- 0207 : 문구 변경 -->
+          <p class="layerPopup-toparea__title">ONLY 레벨1 학교<br>(총 34개 대학/가나다순)</p> <!-- 0207 : 문구 변경 -->
+        </div>
+        <table class="table table--university">
+          <colgroup>
+            <col style="width: 50%;">
+            <col style="width: auto;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th colspan="2" class="table__th">방송통신대학 / 사이버대학</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>건양사이버대학교</td>
+              <td>경희사이버대학교</td>
+            </tr>
+            <tr>
+              <td>고려사이버대학교</td>
+              <td>국제사이버대학교</td>
+            </tr>
+            <tr>
+              <td>글로벌사이버대학교</td>
+              <td>대구사이버대학교</td>
+            </tr>
+            <tr>
+              <td>디지털서울문화예술</td>
+              <td>부산디지털대학교</td>
+            </tr>
+            <tr>
+              <td>사이버한국외국어대학교</td>
+              <td>서울디지털대학교</td>
+            </tr>
+            <tr>
+              <td>서울사이버대학교</td>
+              <td>세종사이버대학교</td>
+            </tr>
+            <tr>
+              <td>숭실사이버대학교</td>
+              <td>영진사이버대학교</td>
+            </tr>
+            <tr>
+              <td>원광디지털대학교</td>
+              <td>한국방송통신대학교</td>
+            </tr>
+            <tr>
+              <td>한국복지사이버대학</td>
+              <td>한국열린사이버대학교</td>
+            </tr>
+            <tr>
+              <td>한양사이버대학교</td>
+              <td>화신사이버대학교</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table--university">
+          <colgroup>
+            <col style="width: 50%;">
+            <col style="width: auto;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th colspan="2" class="table__th">재학생 200명 미만</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>광주가톨릭대학교</td>
+              <td>대전가톨릭대학교</td>
+            </tr>
+            <tr>
+              <td>대전신학대학교</td>
+              <td>수원가톨릭대학교</td>
+            </tr>
+            <tr>
+              <td>순복음총회신학교</td>
+              <td>영산선학대학교</td>
+            </tr>
+            <tr>
+              <td>정석대학</td>
+              <td>중앙승가대학교</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table--university">
+          <colgroup>
+            <col style="width: 50%;">
+            <col style="width: auto;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th colspan="2" class="table__th">공시정보 없음</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>경찰대학</td>
+              <td>국제예술대학</td>
+            </tr>
+            <tr>
+              <td>라사라패션직업전문학교</td>
+              <td>백석예술대학교</td>
+            </tr>
+            <tr>
+              <td>서울현대전문학교</td>
+              <td>서울호텔종합전문학교</td>
+            </tr>
+            <tr>
+              <td>정화예술대학교</td>
+              <td>한국뉴욕주립대학교(인천)</td>
+            </tr>
+          </tbody>
+
+        </table>
+
+      </div>
+      <button type="button" class="layerPopup-close" data-popup="layerClose" aria-label="레이어팝업 닫기"></button>
+    </div>
+    <!-- //layerPop end -->
+
+    <!-- layerPop start -->
+    <div class="layerPopup layerPopup-button joinTargetSchool" data-role="layerOpen">
+      <div class="layerPopup-header">
+        <div class="layerPopup-title">가입 대상 학교</div>
+      </div>
+      <div class="layerPopup-contents">
+        <div class="layerPopup-toparea">
+          <p class="layerPopup-toparea__description">교육부에서 운영하는 ‘대학알리미’ 공시 자료를 기준으로 2-4년제 대학교(대학원 및 대학원 대학, 폐교 및 통폐합 학교
+            제외)가 포함되며 대상 학교는 변경될 수 있습니다.</p> <!-- 0207 : 문구 변경 -->
+          <p class="layerPopup-toparea__title"><span class="spot-blue">0캠퍼스</span>에 가입할 수 있는 학교<br>(총 386개 대학/가나다 순)</p>
+          <!-- 0207 : 문구 변경 -->
+        </div>
+        <table class="table table--university">
+          <colgroup>
+            <col style="width: 50%;">
+            <col style="width: auto;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th colspan="2" class="table__th">캠퍼스명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ICT폴리텍대학</td>
+              <td>가야대학교</td>
+            </tr>
+            <tr>
+              <td>가천대학교</td>
+              <td>가톨릭관동대학교</td>
+            </tr>
+            <tr>
+              <td>가톨릭대학교</td>
+              <td>가톨릭상지대학교</td>
+            </tr>
+            <tr>
+              <td>감리교신학대학교</td>
+              <td>강남대학교</td>
+            </tr>
+            <tr>
+              <td>강동대학교</td>
+              <td>강릉영동대학교</td>
+            </tr>
+            <tr>
+              <td>강릉원주대학교(강릉)</td>
+              <td>강릉원주대학교(원주)</td>
+            </tr>
+            <tr>
+              <td>강원관광대학교</td>
+              <td>강원대학교(삼척/도계)</td>
+            </tr>
+            <tr>
+              <td>강원대학교(춘천)</td>
+              <td>강원도립대학교</td>
+            </tr>
+            <tr>
+              <td>거제대학교</td>
+              <td>건국대학교(글로컬)</td>
+            </tr>
+            <tr>
+              <td>건국대학교(서울)</td>
+              <td>건양대학교</td>
+            </tr>
+            <tr>
+              <td>건양사이버대학교</td>
+              <td>경기과학기술대학교</td>
+            </tr>
+            <tr>
+              <td>경기대학교(서울)</td>
+              <td>경기대학교(수원)</td>
+            </tr>
+            <tr>
+              <td>경남과학기술대학교</td>
+              <td>경남대학교</td>
+            </tr>
+            <tr>
+              <td>경남도립거창대학</td>
+              <td>경남도립남해대학</td>
+            </tr>
+            <tr>
+              <td>경남정보대학교</td>
+              <td>경동대학교(설악)</td>
+            </tr>
+            <tr>
+              <td>경동대학교(양주)</td>
+              <td>경동대학교(원주문막)</td>
+            </tr>
+            <tr>
+              <td>경민대학교</td>
+              <td>경복대학교</td>
+            </tr>
+            <tr>
+              <td>경북과학대학교</td>
+              <td>경북대학교</td>
+            </tr>
+            <tr>
+              <td>경북도립대학교</td>
+              <td>경북보건대학교</td>
+            </tr>
+            <tr>
+              <td>경북전문대학교</td>
+              <td>경상국립대학교</td>
+            </tr>
+            <tr>
+              <td>경성대학교</td>
+              <td>경운대학교</td>
+            </tr>
+            <tr>
+              <td>경인교육대학교</td>
+              <td>경인여자대학교</td>
+            </tr>
+            <tr>
+              <td>경일대학교</td>
+              <td>경주대학교</td>
+            </tr>
+            <tr>
+              <td>경찰대학</td>
+              <td>경희대학교</td>
+            </tr>
+            <tr>
+              <td>경희사이버대학교</td>
+              <td>계명대학교</td>
+            </tr>
+            <tr>
+              <td>계명문화대학교</td>
+              <td>계원예술대학교</td>
+            </tr>
+            <tr>
+              <td>고구려대학교</td>
+              <td>고려대학교(세종)</td>
+            </tr>
+            <tr>
+              <td>고려대학교(안암)</td>
+              <td>고려사이버대학교</td>
+            </tr>
+            <tr>
+              <td>고신대학교</td>
+              <td>공주교육대학교</td>
+            </tr>
+            <tr>
+              <td>공주대학교</td>
+              <td>광신대학교</td>
+            </tr>
+            <tr>
+              <td>광양보건대학교</td>
+              <td>광운대학교</td>
+            </tr>
+            <tr>
+              <td>광주가톨릭대학교</td>
+              <td>광주과학기술원</td>
+            </tr>
+            <tr>
+              <td>광주교육대학교</td>
+              <td>광주대학교</td>
+            </tr>
+            <tr>
+              <td>광주보건대학교</td>
+              <td>광주여자대학교</td>
+            </tr>
+            <tr>
+              <td>구미대학교</td>
+              <td>국민대학교</td>
+            </tr>
+            <tr>
+              <td>국제대학교</td>
+              <td>국제사이버대학교</td>
+            </tr>
+            <tr>
+              <td>국제예술대학</td>
+              <td>군산간호대학교</td>
+            </tr>
+            <tr>
+              <td>군산대학교</td>
+              <td>군장대학교</td>
+            </tr>
+            <tr>
+              <td>극동대학교</td>
+              <td>글로벌사이버대학교</td>
+            </tr>
+            <tr>
+              <td>금강대학교</td>
+              <td>금오공과대학교</td>
+            </tr>
+            <tr>
+              <td>기독간호대학교</td>
+              <td>김천대학교</td>
+            </tr>
+            <tr>
+              <td>김포대학교</td>
+              <td>김해대학교</td>
+            </tr>
+            <tr>
+              <td>꽃동네대학교</td>
+              <td>나사렛대학교</td>
+            </tr>
+            <tr>
+              <td>남부대학교</td>
+              <td>남서울대학교</td>
+            </tr>
+            <tr>
+              <td>농협대학교</td>
+              <td>단국대학교(죽전)</td>
+            </tr>
+            <tr>
+              <td>단국대학교(천안)</td>
+              <td>대경대학교</td>
+            </tr>
+            <tr>
+              <td>대구가톨릭대학교</td>
+              <td>대구경북과학기술원</td>
+            </tr>
+            <tr>
+              <td>대구공업대학교</td>
+              <td>대구과학대학교</td>
+            </tr>
+            <tr>
+              <td>대구교육대학교</td>
+              <td>대구대학교</td>
+            </tr>
+            <tr>
+              <td>대구보건대학교</td>
+              <td>대구사이버대학교</td>
+            </tr>
+            <tr>
+              <td>대구예술대학교</td>
+              <td>대구한의대학교</td>
+            </tr>
+            <tr>
+              <td>대덕대학교</td>
+              <td>대동대학교</td>
+            </tr>
+            <tr>
+              <td>대림대학교</td>
+              <td>대신대학교</td>
+            </tr>
+            <tr>
+              <td>대원대학교</td>
+              <td>대전가톨릭대학교</td>
+            </tr>
+            <tr>
+              <td>대전과학기술대학교</td>
+              <td>대전대학교</td>
+            </tr>
+            <tr>
+              <td>대전보건대학교</td>
+              <td>대전신학대학교</td>
+            </tr>
+            <tr>
+              <td>대진대학교</td>
+              <td>덕성여자대학교</td>
+            </tr>
+            <tr>
+              <td>동강대학교</td>
+              <td>동국대학교(경주)</td>
+            </tr>
+            <tr>
+              <td>동국대학교(서울)</td>
+              <td>동남보건대학교</td>
+            </tr>
+            <tr>
+              <td>동덕여자대학교</td>
+              <td>동명대학교</td>
+            </tr>
+            <tr>
+              <td>동부산대학교</td>
+              <td>동서대학교</td>
+            </tr>
+            <tr>
+              <td>동서울대학교</td>
+              <td>동신대학교</td>
+            </tr>
+            <tr>
+              <td>동아대학교</td>
+              <td>동아방송예술대학교</td>
+            </tr>
+            <tr>
+              <td>동아보건대학교</td>
+              <td>동양대학교</td>
+            </tr>
+            <tr>
+              <td>동양미래대학교</td>
+              <td>동원과학기술대학교</td>
+            </tr>
+            <tr>
+              <td>동원대학교</td>
+              <td>동의과학대학교</td>
+            </tr>
+            <tr>
+              <td>동의대학교</td>
+              <td>동주대학교</td>
+            </tr>
+            <tr>
+              <td>두원공과대학교</td>
+              <td>디지털서울문화예술대학교</td>
+            </tr>
+            <tr>
+              <td>라사라패션직업전문학교</td>
+              <td>루터대학교</td>
+            </tr>
+            <tr>
+              <td>마산대학교</td>
+              <td>명지대학교(인문)</td>
+            </tr>
+            <tr>
+              <td>명지대학교(자연)</td>
+              <td>명지전문대학</td>
+            </tr>
+            <tr>
+              <td>목원대학교</td>
+              <td>목포가톨릭대학교</td>
+            </tr>
+            <tr>
+              <td>목포과학대학교</td>
+              <td>목포대학교</td>
+            </tr>
+            <tr>
+              <td>목포해양대학교</td>
+              <td>문경대학교</td>
+            </tr>
+            <tr>
+              <td>배재대학교</td>
+              <td>배화여자대학교</td>
+            </tr>
+            <tr>
+              <td>백석대학교</td>
+              <td>백석문화대학교</td>
+            </tr>
+            <tr>
+              <td>백석예술대학교</td>
+              <td>백제예술대학교</td>
+            </tr>
+            <tr>
+              <td>부경대학교</td>
+              <td>부산가톨릭대학교</td>
+            </tr>
+            <tr>
+              <td>부산경상대학교</td>
+              <td>부산과학기술대학교</td>
+            </tr>
+            <tr>
+              <td>부산교육대학교</td>
+              <td>부산대학교</td>
+            </tr>
+            <tr>
+              <td>부산디지털대학교</td>
+              <td>부산여자대학교</td>
+            </tr>
+            <tr>
+              <td>부산예술대학교</td>
+              <td>부산외국어대학교</td>
+            </tr>
+            <tr>
+              <td>부산장신대학교</td>
+              <td>부천대학교</td>
+            </tr>
+            <tr>
+              <td>사이버한국외국어대학교</td>
+              <td>삼육대학교</td>
+            </tr>
+            <tr>
+              <td>삼육보건대학교</td>
+              <td>상명대학교(서울)</td>
+            </tr>
+            <tr>
+              <td>상명대학교(천안)</td>
+              <td>상지대학교</td>
+            </tr>
+            <tr>
+              <td>상지영서대학교</td>
+              <td>서강대학교</td>
+            </tr>
+            <tr>
+              <td>서경대학교</td>
+              <td>서라벌대학교</td>
+            </tr>
+            <tr>
+              <td>서영대학교</td>
+              <td>서울과학기술대학교</td>
+            </tr>
+            <tr>
+              <td>서울교육대학교</td>
+              <td>서울기독대학교</td>
+            </tr>
+            <tr>
+              <td>서울대학교</td>
+              <td>서울디지털대학교</td>
+            </tr>
+            <tr>
+              <td>서울사이버대학교</td>
+              <td>서울시립대학교</td>
+            </tr>
+            <tr>
+              <td>서울신학대학교</td>
+              <td>서울여자간호대학교</td>
+            </tr>
+            <tr>
+              <td>서울여자대학교</td>
+              <td>서울예술대학교</td>
+            </tr>
+            <tr>
+              <td>서울장신대학교</td>
+              <td>서울한영대학교</td>
+            </tr>
+            <tr>
+              <td>서울현대전문학교</td>
+              <td>서울호텔종합전문학교</td>
+            </tr>
+            <tr>
+              <td>서원대학교</td>
+              <td>서일대학교</td>
+            </tr>
+            <tr>
+              <td>서정대학교</td>
+              <td>서해대학</td>
+            </tr>
+            <tr>
+              <td>선경대학교</td>
+              <td>선린대학교</td>
+            </tr>
+            <tr>
+              <td>선문대학교</td>
+              <td>성결대학교</td>
+            </tr>
+            <tr>
+              <td>성공회대학교</td>
+              <td>성균관대학교</td>
+            </tr>
+            <tr>
+              <td>성신여자대학교</td>
+              <td>성운대학교</td>
+            </tr>
+            <tr>
+              <td>세경대학교</td>
+              <td>세명대학교</td>
+            </tr>
+            <tr>
+              <td>세종대학교</td>
+              <td>세종사이버대학교</td>
+            </tr>
+            <tr>
+              <td>세한대학교</td>
+              <td>송곡대학교</td>
+            </tr>
+            <tr>
+              <td>송원대학교</td>
+              <td>송호대학교</td>
+            </tr>
+            <tr>
+              <td>수성대학교</td>
+              <td>수원가톨릭대학교</td>
+            </tr>
+            <tr>
+              <td>수원과학대학교</td>
+              <td>수원대학교</td>
+            </tr>
+            <tr>
+              <td>수원여자대학교</td>
+              <td>숙명여자대학교</td>
+            </tr>
+            <tr>
+              <td>순복음총회신학교</td>
+              <td>순천대학교</td>
+            </tr>
+            <tr>
+              <td>순천제일대학교</td>
+              <td>순천향대학교</td>
+            </tr>
+            <tr>
+              <td>숭실대학교</td>
+              <td>숭실사이버대학교</td>
+            </tr>
+            <tr>
+              <td>숭의여자대학교</td>
+              <td>신경대학교</td>
+            </tr>
+            <tr>
+              <td>신구대학교</td>
+              <td>신라대학교</td>
+            </tr>
+            <tr>
+              <td>신성대학교</td>
+              <td>신안산대학교</td>
+            </tr>
+            <tr>
+              <td>신한대학교</td>
+              <td>아세아연합신학대학교</td>
+            </tr>
+            <tr>
+              <td>아주대학교</td>
+              <td>아주자동차대학</td>
+            </tr>
+            <tr>
+              <td>안동과학대학교</td>
+              <td>안동대학교</td>
+            </tr>
+            <tr>
+              <td>안산대학교</td>
+              <td>안양대학교</td>
+            </tr>
+            <tr>
+              <td>여주대학교</td>
+              <td>연성대학교</td>
+            </tr>
+            <tr>
+              <td>연세대학교(신촌)</td>
+              <td>연세대학교(원주)</td>
+            </tr>
+            <tr>
+              <td>연암공과대학교</td>
+              <td>연암대학교</td>
+            </tr>
+            <tr>
+              <td>영남대학교</td>
+              <td>영남신학대학교</td>
+            </tr>
+            <tr>
+              <td>영남외국어대학</td>
+              <td>영남이공대학교</td>
+            </tr>
+            <tr>
+              <td>영산대학교</td>
+              <td>영산선학대학교</td>
+            </tr>
+            <tr>
+              <td>영진사이버대학교</td>
+              <td>영진전문대학</td>
+            </tr>
+            <tr>
+              <td>예수대학교</td>
+              <td>예원예술대학교(양주)</td>
+            </tr>
+            <tr>
+              <td>예원예술대학교(임실)</td>
+              <td>오산대학교</td>
+            </tr>
+            <tr>
+              <td>용인대학교</td>
+              <td>용인송담대학교</td>
+            </tr>
+            <tr>
+              <td>우석대학교</td>
+              <td>우송대학교</td>
+            </tr>
+            <tr>
+              <td>우송정보대학</td>
+              <td>울산과학기술원</td>
+            </tr>
+            <tr>
+              <td>울산과학대학교</td>
+              <td>울산대학교</td>
+            </tr>
+            <tr>
+              <td>웅지세무대학교</td>
+              <td>원광대학교</td>
+            </tr>
+            <tr>
+              <td>원광디지털대학교</td>
+              <td>원광보건대학교</td>
+            </tr>
+            <tr>
+              <td>위덕대학교</td>
+              <td>유원대학교</td>
+            </tr>
+            <tr>
+              <td>유한대학교</td>
+              <td>을지대학교(대전)</td>
+            </tr>
+            <tr>
+              <td>을지대학교(성남, 의정부)</td>
+              <td>이화여자대학교</td>
+            </tr>
+            <tr>
+              <td>인덕대학교</td>
+              <td>인제대학교</td>
+            </tr>
+            <tr>
+              <td>인천가톨릭대학교</td>
+              <td>인천대학교</td>
+            </tr>
+            <tr>
+              <td>인천재능대학교</td>
+              <td>인하공업전문대학</td>
+            </tr>
+            <tr>
+              <td>인하대학교</td>
+              <td>장로회신학대학교</td>
+            </tr>
+            <tr>
+              <td>장안대학교</td>
+              <td>전남과학대학교</td>
+            </tr>
+            <tr>
+              <td>전남대학교(광주)</td>
+              <td>전남대학교(여수)</td>
+            </tr>
+            <tr>
+              <td>전남도립대학교</td>
+              <td>전북과학대학교</td>
+            </tr>
+            <tr>
+              <td>전북대학교</td>
+              <td>전주교육대학교</td>
+            </tr>
+            <tr>
+              <td>전주기전대학</td>
+              <td>전주대학교</td>
+            </tr>
+            <tr>
+              <td>전주비전대학교</td>
+              <td>정석대학</td>
+            </tr>
+            <tr>
+              <td>정화예술대학교</td>
+              <td>제주관광대학교</td>
+            </tr>
+            <tr>
+              <td>제주국제대학교</td>
+              <td>제주대학교</td>
+            </tr>
+            <tr>
+              <td>제주한라대학교</td>
+              <td>조선간호대학교</td>
+            </tr>
+            <tr>
+              <td>조선대학교</td>
+              <td>조선이공대학교</td>
+            </tr>
+            <tr>
+              <td>중부대학교</td>
+              <td>중앙대학교(서울)</td>
+            </tr>
+            <tr>
+              <td>중앙대학교(안성)</td>
+              <td>중앙승가대학교</td>
+            </tr>
+            <tr>
+              <td>중원대학교</td>
+              <td>진주교육대학교</td>
+            </tr>
+            <tr>
+              <td>진주보건대학교</td>
+              <td>차의과학대학교</td>
+            </tr>
+            <tr>
+              <td>창신대학교</td>
+              <td>창원대학교</td>
+            </tr>
+            <tr>
+              <td>창원문성대학교</td>
+              <td>청강문화산업대학교</td>
+            </tr>
+            <tr>
+              <td>청암대학교</td>
+              <td>청운대학교</td>
+            </tr>
+            <tr>
+              <td>청주교육대학교</td>
+              <td>청주대학교</td>
+            </tr>
+            <tr>
+              <td>초당대학교</td>
+              <td>총신대학교</td>
+            </tr>
+            <tr>
+              <td>추계예술대학교</td>
+              <td>춘천교육대학교</td>
+            </tr>
+            <tr>
+              <td>춘해보건대학교</td>
+              <td>충남대학교</td>
+            </tr>
+            <tr>
+              <td>충남도립대학교</td>
+              <td>충북대학교</td>
+            </tr>
+            <tr>
+              <td>충북도립대학</td>
+              <td>충북보건과학대학교</td>
+            </tr>
+            <tr>
+              <td>충청대학교</td>
+              <td>칼빈대학교</td>
+            </tr>
+            <tr>
+              <td>케이씨대학교</td>
+              <td>평택대학교</td>
+            </tr>
+            <tr>
+              <td>포항공과대학교</td>
+              <td>포항대학교</td>
+            </tr>
+            <tr>
+              <td>한경대학교</td>
+              <td>한국골프대학교</td>
+            </tr>
+            <tr>
+              <td>한국과학기술원</td>
+              <td>한국관광대학교</td>
+            </tr>
+            <tr>
+              <td>한국교원대학교</td>
+              <td>한국교통대학교</td>
+            </tr>
+            <tr>
+              <td>한국국제대학교</td>
+              <td>한국기술교육대학교</td>
+            </tr>
+            <tr>
+              <td>한국농수산대학</td>
+              <td>한국뉴욕주립대학교</td>
+            </tr>
+            <tr>
+              <td>한국방송통신대학교</td>
+              <td>한국복지대학교</td>
+            </tr>
+            <tr>
+              <td>한국복지사이버대학</td>
+              <td>한국산업기술대학교</td>
+            </tr>
+            <tr>
+              <td>한국성서대학교</td>
+              <td>한국승강기대학교</td>
+            </tr>
+            <tr>
+              <td>한국열린사이버대학교</td>
+              <td>한국영상대학교</td>
+            </tr>
+            <tr>
+              <td>한국예술종합학교</td>
+              <td>한국외국어대학교</td>
+            </tr>
+            <tr>
+              <td>한국전통문화대학교</td>
+              <td>한국체육대학교</td>
+            </tr>
+            <tr>
+              <td>한국침례신학대학교</td>
+              <td>한국폴리텍대학교</td>
+            </tr>
+            <tr>
+              <td>한국항공대학교</td>
+              <td>한국해양대학교</td>
+            </tr>
+            <tr>
+              <td>한남대학교</td>
+              <td>한동대학교</td>
+            </tr>
+            <tr>
+              <td>한라대학교</td>
+              <td>한려대학교</td>
+            </tr>
+            <tr>
+              <td>한림대학교</td>
+              <td>한림성심대학교</td>
+            </tr>
+            <tr>
+              <td>한밭대학교</td>
+              <td>한서대학교</td>
+            </tr>
+            <tr>
+              <td>한성대학교</td>
+              <td>한세대학교</td>
+            </tr>
+            <tr>
+              <td>한신대학교</td>
+              <td>한양대학교(ERICA)</td>
+            </tr>
+            <tr>
+              <td>한양대학교(서울)</td>
+              <td>한양사이버대학교</td>
+            </tr>
+            <tr>
+              <td>한양여자대학교</td>
+              <td>한영대학교</td>
+            </tr>
+            <tr>
+              <td>한일장신대학교</td>
+              <td>협성대학교</td>
+            </tr>
+            <tr>
+              <td>혜전대학교</td>
+              <td>호남대학교</td>
+            </tr>
+            <tr>
+              <td>호남신학대학교</td>
+              <td>호산대학교</td>
+            </tr>
+            <tr>
+              <td>호서대학교</td>
+              <td>호원대학교</td>
+            </tr>
+            <tr>
+              <td>홍익대학교(서울)</td>
+              <td>홍익대학교(세종)</td>
+            </tr>
+            <tr>
+              <td>화신사이버대학교</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button type="button" class="layerPopup-close" data-popup="layerClose" aria-label="레이어팝업 닫기"></button>
+    </div>
+    <!-- //layerPop end -->
+
+  </div>
+  <!-- lib js -->
+<script src="../../js/lib/jquery_3.6.0.js" type="text/javascript"></script>
+<script src="../../js/lib/swiper-7.4.1.min.js" type="text/javascript"></script>
+<script src="../../js/lib/pualugin.js" type="text/javascript"></script>
+<script src="../../js/lib/jquery-barcode.js" type="text/javascript"></script>
+<!-- js -->
+<script src="../../js/common.js" type="text/javascript"></script>
+
+</body>
+
+</html>

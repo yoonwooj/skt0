@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0, viewport-fit=cover">
+
+  <title>0한동</title>
+  <link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/components.css">
+</head>
+<body class="body-scroll-lock">
+  <div id="document" class="wrapper">
+      <!-- header -->
+      <header id="header">
+	<!-- 
+    <button id="btnMainMenu">▤</button>
+    <button id="btnMyPage">＠</button> 
+	-->
+	<div class="header-top">
+		<h1 class="hidden">0 한동</h1>
+		<div class="nav-btn-wrap">
+      <h2 class="header__title"></h2>
+			<div class="btn-arrow">
+				<a href="#" class="btn-prev white">
+					<img src="../../images/common/ico_arrow_prev_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next white">
+					<img src="../../images/common/ico_arrow_next_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-prev black">
+					<img src="../../images/common/ico_arrow_prev_b.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next black">
+					<img src="../../images/common/ico_arrow_next_b.png" alt="prev button">
+				</a>
+			</div>
+
+			<div class="btn-navi">
+				<a href="#" class="btn-menu white">
+					<img src="../../images/common/ico_menu_w.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close white">
+					<img src="../../images/common/ico_close_w.png" alt="close button">
+				</a>
+				<a href="#" class="btn-menu black">
+					<img src="../../images/common/ico_menu_b.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close black">
+					<img src="../../images/common/ico_close_b.png" alt="close button">
+				</a>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<!-- gnb -->
+<div id="gnb" class="gnb">
+  <div class="gnb__inner">
+    <div class="gnb__toparea">
+      <!-- 220114 gnb__titlebox 삭제 -->
+      <!-- <div class="gnb__titlebox">
+        <p class="gnb__title ft-sf-b">MENU</p>
+      </div> -->
+      <div class="gnb__head">
+        <!-- 220114 login info 수정 case | 로그인 상태 -->
+        <div class="gnb__headinner" style="display: none;">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <img src="../../images/common/profile.png" alt="이모지">
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">김*동</span>님
+              </a>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 있는 경우 -->
+            <p class="gnb__description">
+              <span class="gnb__phone-number ft-sf-m">010-12**-56**</span>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 없는 경우 -->
+            <p class="gnb__description" style="display: none;">
+              <span class="gnb__phone-number">보유하신 SKT 회선이 없습니다.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 로그인 상태 -->
+
+        <!-- 220114 login info 수정 case | 비로그인 상태 -->
+        <div class="gnb__headinner">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <!-- 프필 이미지 영역 -->
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">로그인</span>
+              </a>
+            </p>
+            <p class="gnb__description">
+              <!-- 0207 문구변경 -->
+              <span class="gnb__phone-number">T아이디로 로그인해 주세요.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 비로그인 상태 -->
+      </div>
+    </div>
+    <div class="gnb__scroll">
+      <div class="gnb__contents">
+        <div class="gnb__menu">
+          <ul class="gnb__accordion"> <!-- 220114 data-element="accordion" 삭제 -->
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">서비스</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0캠퍼스</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0히어로</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0틴</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">추천 요금제</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">데이터스테이션</a>
+                  </li> -->
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <!-- 0207 문구변경 -->
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">브랜드 &middot; 콘텐츠</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">ABOUT 0</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0잘알</a>
+                  </li> -->
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">MAGAZINE 0</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="gnb__anchor-wrap"> <!-- 220114 anchor-wrap 클래스 추가-->
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--event">이벤트</a> <!-- 220114 gnb__anchor--event 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <!-- 0204 active 삭제 -->
+              <a href="#none" class="gnb__anchor gnb__anchor--notice">공지사항</a> <!-- 220114 gnb__anchor--notice 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--faq">FAQ</a> <!-- 220114 gnb__anchor--faq 클래스 추가-->
+            </div>
+          </div>
+        </div>
+  
+        <!-- 220114 gnb__logout 삭제 | footer로 이동 -->
+        <!-- <div class="gnb__logout">
+          <button type="button" class="gnb__logout-button">
+            <span class="gnb__logout-text">로그아웃</span>
+          </button>
+        </div> -->
+      </div>
+      <div class="footer-wrap">
+    <div class="footer-loginbox">
+      <a href="#none" class="footer-login">로그아웃</a>
+    </div>
+    <div class="footer-bottom">
+        <div class="service-list">
+            <a href="">이용약관</a>
+            <a href="">개인정보처리방침</a>
+            <!-- 220121 메뉴 추가 -->
+            <a href="" class="footer-gnb-check">오픈소스 라이선스</a>
+        </div>
+        <!-- 220121 &copy; 텍스트 제거 -->
+        <div class="copyright">SK TELECOM CO. LTD</div>
+    </div>
+</div>
+      <button type="button" class="gnb__close" aria-label="메뉴 닫기"></button>
+    </div><!-- // scroll -->
+    
+  </div>
+</div>
+
+      <!-- // header -->
+      <!-- main -->
+      <div id="main" class="sub-main">
+        <div class="hero sv13">
+          <div class="wrap">
+              <h1 class="hidden">0 한동</h1>
+              <h2 class="hidden">0히어로</h2>
+              <div class="main-kv">
+                <!-- 0119 메인 스와이퍼 동일하게 변경 -->
+                <div class="kv-slider submain-visual swiper-container">
+                  <!-- 20220106 수정 -->
+                  <ul class="kv-image-list swiper-wrapper">
+                      <li class="kv-imagevent-item swiper-slide player1">
+                          <a href="#" class="kv-img kv1">
+                            <img src="../../images/content/hero/bg_submain_visual01.png" alt="">
+                          </a>
+                      </li>
+                      <li class="kv-imagevent-item swiper-slide player1">
+                          <a href="#" class="kv-img kv1">
+                            <img src="../../images/content/hero/bg_submain_visual01.png" alt="">
+                          </a>
+                      </li>
+                      <li class="kv-imagevent-item swiper-slide player1">
+                          <a href="#" class="kv-img kv1">
+                            <img src="../../images/content/hero/bg_submain_visual01.png" alt="">
+                          </a>
+                      </li>
+                      <!-- multi list -->
+                  </ul>
+                  <div class="kv-controller">
+                      <div class="kv-pagination swiper-pagination">
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-wrap">
+                <div class="subpage">
+                  <div class="subpage__section">
+                    <div class="subpage__inner subpage__inner--flex">
+                      <div class="subpage__info">
+                        <p class="subpage__infotext">전역까지 <span class="text--Borange">183일</span></p>
+                        <p class="subpage__infodesc">김한동님 힘내세요!</p>
+                        <p class="subpage__infodesc">군종: <span class="text--Borange">육군</span></p>
+                        <a href="#none" class="subpage__infolink" onclick="layerOpen('discharge-day')">전역일 수정</a>
+                      </div>
+                      <div class="subpage__mark">
+                        <img src="../../images/content/hero/hero_dummy.png" alt="프로필이미지">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="subpage__section subpage__section--white-box">
+                    <div class="subpage__inner">
+                      <div class="subpage__titlebox">
+                        <storng href="#none" class="subpage__title">전역</strong>
+                      </div>
+                      <div class="subpage__item">
+                        <div class="graph-bar">
+                          <span class="graph-bar__gagebox">
+                            <span class="graph-bar__gage" style="width: 67%;"></span>
+                            <span class="graph-bar__info" style="left: 67%;">
+                              <span class="ft-sf-m number">355일/ 66%</span>
+                            </span>
+                          </span>
+                          <p class="graph-bar__date ft-sf-m text--Borange">2023.05.06</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- case2 -->
+                  <!-- <div class="subpage__section subpage__section--white-box">
+                    <div class="subpage__inner">
+                      <div class="unsubscribed">
+                          <div class="title-box">
+                            <span class="subpage__topic">축하 메세지</span>
+                            <h3 class="unsubscribed__title">“김한동님의 전역을 축하합니다!”</h3>
+                          </div>
+                          <div class="unsubscribed__content">
+                            <p class="unsubscribed__subTitle">565일동안 고생하셨어요!<br>사회로 힘찬 발걸음을 응원할게요!</p>
+                            <img class="unsubscribed__image" src="../../images/content/hero/img_hero_case1.png" alt="">
+                          </div>
+                          <button type="button" class="btn__square btn--full white">다른 서비스 가입하러 가기</button>
+                      </div>
+                    </div>
+                  </div> -->
+                  <!-- //case2 -->
+
+                  <!-- case3  -->
+                  <!-- <div class="subpage__section subpage__section--white-box">
+                    <div class="unsubscribed">
+                      <span class="subpage__topic">서비스 가입</span>
+                      <h3 class="unsubscribed__title">서비스에 가입해보세요!</h3>
+                      <div class="unsubscribed__content">
+                          <img class="unsubscribed__image" src="../../images/content/cmps/img_unsubscribed.png" alt="">
+                      </div>
+                      <button type="button" class="btn__square btn--full white">0히어로 가입하기</button>
+                      <a href="#" class="more">0히어로 서비스 상세보기<i class="icon-arrow black"></i></a>
+                    </div>
+                  </div> -->
+                  <!-- //case3  -->
+                  <div class="subpage__section subpage__section--shadow-box">
+                    <div class="submain-banner">
+                      <div class="submain-banner__slide swiper-container">
+                        <ul class="submain-banner__list swiper-wrapper">
+                          <li class="submain-banner__item swiper-slide">
+                            <a href="#" class="submain-banner__anchor">
+                              <img src="../../images/content/cmps/bg_submain_banner01.png" alt="">
+                            </a>
+                          </li>
+                          <li class="submain-banner__item swiper-slide">
+                            <a href="#" class="submain-banner__anchor">
+                              <img src="../../images/content/cmps/bg_submain_banner02.png" alt="">
+                            </a>
+                          </li>
+                          <li class="submain-banner__item swiper-slide">
+                            <a href="#" class="submain-banner__anchor">
+                              <img src="../../images/content/cmps/bg_submain_banner01.png" alt="">
+                            </a>
+                          </li>
+                        </ul>
+                        <span class="submain-banner__pagination swiper-pagination"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 0121 삭제 -->
+                  <!-- <div class="subpage__section subpage__section--white-box">
+                    <div class="subpage__inner">
+                      <span class="subpage__topic">쿠폰혜택</span>
+                      <div class="subpage__titlebox">
+                        <storng href="#none" class="subpage__title">0히어로 <span class="text--Borange">군인</span> 혜택</strong>
+                        </div>
+                        <div class="subpage__contents-bottom subpage__contents-bottom--coupon">
+                        <a href="#none" class="subpage__bottom-link">
+                          <p class="subpage__bottom-title">한동님을 위한<br>공부 쉬어가기 쿠폰</p>
+                          <span class="subpage__bottom-desc">쿠폰 보러가기</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div> -->
+                  <!-- //0121 삭제 -->
+                  <!-- 0121 추가 -->
+                  <div class="subpage__section subpage__section--botton-none">
+                    <div class="basic-coupon">
+                      <div class="basic-coupon__title">한동님을 위한 <span class="sf-ft-m">0</span>히어로 쿠폰</div>
+                      <a href="#" class="basic-coupon__anchor">쿠폰 보러가기</a>
+                      <img src="../../images/content/hero/bg_basic_coupon.png" alt="" class="basic-coupon__background">
+                    </div>
+                  </div>
+                  <!-- //0121 추가 -->
+                  <div class="subpage__section subpage__section--shadow-box">
+                    <a href="#none">
+                      <img src="../../images/content/hero/bg_submain_dummy.png" alt="모일수록 더 커지는 0캠퍼스 혜택, 캠퍼스끼리 많이 모일수록 혜택도 UP!">
+                    </a>
+                  </div>
+                  <div class="subpage__section board-content">
+                    <div class="title-box">
+                        <p class="tit__small ft-sf-b">FAQ</p>
+                        <a href="#a" class="tit">0히어로 자주 찾는 질문</a>
+                    </div>
+                    <div class="board">
+                        <ul class="board-list">
+                            <li class="board-item">
+                                <a href="#">
+                                    <span class="ft-sf-m spot-blue">Q.</span><!-- 0112 추가 -->
+                                    <span class="question">캠퍼스 전용 데이터 3GB는 언제 사용한지 알 수 있을까요?</span>
+                                </a>
+                            </li>
+                            <li class="board-item">
+                                <a href="#">
+                                    <span class="ft-sf-m spot-blue">Q.</span>
+                                    <span class="question">모이는 인원에 따라 어떻게 혜택이 다른가요?</span>
+                                </a>
+                            </li>
+                            <li class="board-item">
+                                <a href="#">
+                                    <span class="ft-sf-m spot-blue">Q.</span>
+                                    <span class="question">1주일 동안 이용할 수 있는 최대 데이터는 어떻게 되</span>                                            
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+
+                  <div class="subpage__section">
+                    <div class="subpage__inner subpage__inner--last">
+                      <p class="subpage__linkstext">0한동 0친과 함께 해0!</p>
+                      <div class="subpage__links">
+                        <a href="#none" class="subpage__link-button subpage__link-button--kakao" aria-label="카카오톡으로 공유하기"></a>
+                        <!-- 0222 마크업 순서 변경 -->
+                        <a href="#none" class="subpage__link-button subpage__link-button--twitter" aria-label="트위터로 공유하기"></a>
+                        <a href="#none" class="subpage__link-button subpage__link-button--facebook" aria-label="페이스북 메신저로 공유하기"></a>
+                        <!-- //0222 마크업 순서 변경 -->
+                        <a href="#none" class="subpage__link-button subpage__link-button--url" aria-label="url 공유하기"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- // main -->
+      <!-- top버튼 -->
+      <div class="top-button">
+  <button type="button" class="top-button__anchor" aria-label="화면 상단으로 이동"></button>
+</div>
+      <!-- // top버튼 -->
+      <div class="layer-popup-content layerPopup discharge-day" data-role="layerOpen" style="display: block;">
+        <div class="layerPopup-header">
+            <div class="layerPopup-title">전역일 수정</div>
+        </div>
+        <div class="layerPopup-contents">
+          <div class="signup-content">
+            <p class="line-change__title">전역일</p>
+            <div class="triple--layer">
+              <div class="text-field text-field--flex dateInput"><!-- 0214 dateInput 클래스 추가 -->
+                  <!-- 0208 input=text > date 로 변경 / 220126 날짜입력 data-type date 추가 -->
+                  <input type="date" data-type="date" id="enlistmentDate" class="enlistmentDate__input" placeholder="2022년 12월 2일">
+                  <button type="button" class="btn__small blue dischargeDate__button">수정</button>
+              </div>
+          </div>
+          <div class="attention-group">
+            <i class="icon-attention"></i>
+            <p class="attention-desc">전역예정일을 선택해주세요.</p>
+          </div>
+        </div>
+        <div class="layerPopup-full-button">
+            <button type="button" class="btn-laerPopup blue">등록하기</button>
+        </div>
+        <button type="button" class="layerPopup-close" data-popup="layerClose" aria-label="레이어팝업 닫기"></button>
+      </div>
+  </div>
+  <!-- 페이지 확인을 위한 영역 -->
+  <div class="body-mask active"></div>
+  <!-- //페이지 확인을 위한 영역 -->
+  <!-- lib js -->
+<script src="../../js/lib/jquery_3.6.0.js" type="text/javascript"></script>
+<script src="../../js/lib/swiper-7.4.1.min.js" type="text/javascript"></script>
+<script src="../../js/lib/pualugin.js" type="text/javascript"></script>
+<script src="../../js/lib/jquery-barcode.js" type="text/javascript"></script>
+<!-- js -->
+<script src="../../js/common.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function() {
+      var swiper = new Swiper(".submain-visual", {
+        loop: true,
+        touchReleaseOnEdges: true,
+        pagination: {
+          el: ".kv-pagination",
+          clickable: true
+        }
+      });
+
+      var swiper = new Swiper(".submain-banner__slide", {
+        loop: true,
+        touchReleaseOnEdges: true,
+        pagination: {
+          el: ".submain-banner__pagination",
+          type: "fraction"
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>

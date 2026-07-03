@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0, viewport-fit=cover">
+
+  <title>0한동</title>
+  <link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+    <div id="document" class="wrapper">
+        <header id="header">
+	<!-- 
+    <button id="btnMainMenu">▤</button>
+    <button id="btnMyPage">＠</button> 
+	-->
+	<div class="header-top">
+		<h1 class="hidden">0 한동</h1>
+		<div class="nav-btn-wrap">
+      <h2 class="header__title"></h2>
+			<div class="btn-arrow">
+				<a href="#" class="btn-prev white">
+					<img src="../../images/common/ico_arrow_prev_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next white">
+					<img src="../../images/common/ico_arrow_next_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-prev black">
+					<img src="../../images/common/ico_arrow_prev_b.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next black">
+					<img src="../../images/common/ico_arrow_next_b.png" alt="prev button">
+				</a>
+			</div>
+
+			<div class="btn-navi">
+				<a href="#" class="btn-menu white">
+					<img src="../../images/common/ico_menu_w.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close white">
+					<img src="../../images/common/ico_close_w.png" alt="close button">
+				</a>
+				<a href="#" class="btn-menu black">
+					<img src="../../images/common/ico_menu_b.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close black">
+					<img src="../../images/common/ico_close_b.png" alt="close button">
+				</a>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<!-- gnb -->
+<div id="gnb" class="gnb">
+  <div class="gnb__inner">
+    <div class="gnb__toparea">
+      <!-- 220114 gnb__titlebox 삭제 -->
+      <!-- <div class="gnb__titlebox">
+        <p class="gnb__title ft-sf-b">MENU</p>
+      </div> -->
+      <div class="gnb__head">
+        <!-- 220114 login info 수정 case | 로그인 상태 -->
+        <div class="gnb__headinner" style="display: none;">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <img src="../../images/common/profile.png" alt="이모지">
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">김*동</span>님
+              </a>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 있는 경우 -->
+            <p class="gnb__description">
+              <span class="gnb__phone-number ft-sf-m">010-12**-56**</span>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 없는 경우 -->
+            <p class="gnb__description" style="display: none;">
+              <span class="gnb__phone-number">보유하신 SKT 회선이 없습니다.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 로그인 상태 -->
+
+        <!-- 220114 login info 수정 case | 비로그인 상태 -->
+        <div class="gnb__headinner">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <!-- 프필 이미지 영역 -->
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">로그인</span>
+              </a>
+            </p>
+            <p class="gnb__description">
+              <!-- 0207 문구변경 -->
+              <span class="gnb__phone-number">T아이디로 로그인해 주세요.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 비로그인 상태 -->
+      </div>
+    </div>
+    <div class="gnb__scroll">
+      <div class="gnb__contents">
+        <div class="gnb__menu">
+          <ul class="gnb__accordion"> <!-- 220114 data-element="accordion" 삭제 -->
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">서비스</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0캠퍼스</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0히어로</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0틴</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">추천 요금제</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">데이터스테이션</a>
+                  </li> -->
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <!-- 0207 문구변경 -->
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">브랜드 &middot; 콘텐츠</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">ABOUT 0</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0잘알</a>
+                  </li> -->
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">MAGAZINE 0</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="gnb__anchor-wrap"> <!-- 220114 anchor-wrap 클래스 추가-->
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--event">이벤트</a> <!-- 220114 gnb__anchor--event 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <!-- 0204 active 삭제 -->
+              <a href="#none" class="gnb__anchor gnb__anchor--notice">공지사항</a> <!-- 220114 gnb__anchor--notice 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--faq">FAQ</a> <!-- 220114 gnb__anchor--faq 클래스 추가-->
+            </div>
+          </div>
+        </div>
+  
+        <!-- 220114 gnb__logout 삭제 | footer로 이동 -->
+        <!-- <div class="gnb__logout">
+          <button type="button" class="gnb__logout-button">
+            <span class="gnb__logout-text">로그아웃</span>
+          </button>
+        </div> -->
+      </div>
+      <div class="footer-wrap">
+    <div class="footer-loginbox">
+      <a href="#none" class="footer-login">로그아웃</a>
+    </div>
+    <div class="footer-bottom">
+        <div class="service-list">
+            <a href="">이용약관</a>
+            <a href="">개인정보처리방침</a>
+            <!-- 220121 메뉴 추가 -->
+            <a href="" class="footer-gnb-check">오픈소스 라이선스</a>
+        </div>
+        <!-- 220121 &copy; 텍스트 제거 -->
+        <div class="copyright">SK TELECOM CO. LTD</div>
+    </div>
+</div>
+      <button type="button" class="gnb__close" aria-label="메뉴 닫기"></button>
+    </div><!-- // scroll -->
+    
+  </div>
+</div>
+
+        <!-- main -->
+        <div id="main" class="sub-main">
+            <div class="cmps cmps06">
+                <div class="wrap">
+                    <h1 class="hidden">0 한동</h1>
+                    <h2 class="hidden">예비0캠 가입</h2>
+                    <div class="content-wrap">
+                        <div class="signup-content">
+                            <h4 class="tit2">이메일</h4>
+                            <div class="text-field">
+                                <!-- 0207 placeholder 내용 변경 -->
+                                <input type="email" id="schoolName" class="schoolname-input" placeholder="이메일 입력" aria-label="학교 이메일 입력" />
+                            </div>
+                        </div>
+                        <div class="signup-content">
+                            <h4 class="tit2">수험표</h4>
+                            <div class="file-field">
+                                <div class="text-field">
+                                    <!-- 0207 placeholder 내용 변경 -->
+                                    <input class="upload-name" placeholder="파일 검색" readonly="readonly">
+                                    <label for="file">첨부</label> 
+                                    <input type="file" id="file">
+                                </div>
+                            </div>
+                            <div class="attention-group">
+                                <i class="icon-attention"></i>
+                                <p class="attention-desc">
+                                    jpg, jpeg, png, pdf (최대 15MB) 첨부 가능합니다.<!-- 0304 문구수정  -->
+                                </p>
+                            </div>
+                        </div>
+                        <div class="signup-content">
+                            <div class="infomation">
+                                <div class="infomation__title">안내 사항</div> <!-- 0207 : 문구 변경 -->
+                                <ul class="infomation__list">
+                                    <li class="infomation__item">평일 기준 24시간 안에 인증 처리됩니다. (주말 제외)</li> <!-- 0207 : 문구 변경 -->
+                                    <li class="infomation__item">수험표 인증 시 사진과 주민등록번호 뒤 7자리는 가리고 첨부해주세요.</li> <!-- 0207 : 문구 변경 -->
+                                    <li class="infomation__item">수능 수험표 외 대학 입시 활동을 증빙할 수 있는 자료도 첨부하실 수 있습니다.(수시 합격증 등)</li> <!-- 0207 : 문구 변경 -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="signup-content check">
+                            <h4 class="tit2">개인정보 수집·이용 및 제공</h4> <!-- 0207 : 문구 변경 -->
+                            <div class="text-field">
+                                <div class="checkbox-field">
+                                    <div class="checkbox-group first">
+                                        <span class="checkbox-text">
+                                            <button type="button" onclick="layerOpen('terms01')">개인정보 수집·이용 및 제공에 동의합니다.(자세히 보기)</button> <!-- 0207 : 문구 변경 -->
+                                        </span>
+                                        <!-- 0112 disabled 추가 -->
+                                        <input type="checkbox" id="check1" class="input-check" disabled>
+                                        <!-- //0112 disabled 추가 -->
+                                    </div>
+                                    <!-- 210113 기획 삭제 -->
+                                    <!-- <div class="checkbox-group">
+                                        <span class="checkbox-text">
+                                             <button type="button" onclick="layerOpen('terms02')">위치정보 수집 및 이용에 동의합니다.</button>
+                                        </span>
+                                        <input type="checkbox" id="check2" class="input-check" disabled>
+                                    </div> -->
+                                    <!-- // 210113 기획 삭제 -->
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="signup-content certification complete"><!-- active 클래스 추가 시 활성 화(디자인 변경으로 불필요)-->
+                            <a href="#a" class="btn__square btn--full gray">인증 요청</a><!-- 0110 버튼 추가, 인증 완료 후 gray > blue 로 변경 --> <!-- 0207 : 문구 변경 -->
+                            <!-- 0204 삭제 -->
+                            <!-- <div class="signup-left-group">
+                                <div class="attention-group">
+                                    <i class="icon-attention"></i>
+                                    <p class="attention-desc">
+                                        인증결과는 문자로 안내드립니다.
+                                    </p>
+                                </div>
+                            </div> -->
+                            <!-- //0204 삭제 -->
+                            <!-- 0110 버튼 삭제
+                            <div class="signup-right-group">
+                                <a href="#" class="btn-certification">인증하기</a>
+                            </div> -->
+                            <!-- 0110 추가 -->
+                            <!-- 0124 문구 수정 -->
+                            <p class="dot dot--star">필수 항목을 모두 입력하고 약관에 동의해야 서비스에 가입하실 수 있습니다.</p> <!-- 0207 : 문구 변경 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // main -->
+        <div class="top-button">
+  <button type="button" class="top-button__anchor" aria-label="화면 상단으로 이동"></button>
+</div>
+        <!-- layerPop start -->
+        <div class="layerPopup layerPopup-button terms01" data-role="layerOpen">
+            <div class="layerPopup-header">
+                <!-- 0207 문구수정 -->
+                <div class="layerPopup-title">개인정보 수집&middot;이용 및 제공 동의</div>
+            </div>
+            <div class="layerPopup-contents">
+               <div class="terms">
+                    <!-- 0117 약관 내용 수정 -->
+                    <div class="terms__section">
+                        <div class="terms__main-text">(“O 캠퍼스) 서비스(이하 “서비스”라 한다)와 관련하여, 본인은 동의내용을 숙지하였으며, 이에 따라 본인의 개인정보를 귀사(SK텔레콤주식회사)가 수집 및 이용하는 것에 대해 동의합니다.</div>
+                    </div>
+                    <div class="terms__section">
+                        <div class="terms__title">1. 개인정보의 수집∙이용 목적</div>
+                        <ul class="terms__list">
+                            <li class="terms__item">사용자의 회선 번호를 수집함으로서 SKT와 제휴사는 데이터 혜택 및 제휴사 혜택을 모바일 쿠폰 형태로 제공하기 위해 수집합니다. </li>
+                            <li class="terms__item">사용자가 참여한 데이터 스테이션 내 프로그램으로부터 획득한 점수를 통해 선발된 고득점자에게 경품 당첨 여부를 알리기 위한 목적으로 활용합니다.</li>
+                        </ul>
+                        <div class="terms__title">2. 수집하는 개인정보의 항목</div>
+                        <ul class="terms__list">
+                            <li class="terms__item">수집하는 개인 정보는 고객의 전화번호 입니다.</li>
+                        </ul>
+                        <div class="terms__title">3. 개인정보의 보유 및 이용 기간</div>
+                        <ul class="terms__list">
+                            <li class="terms__item">(예시) 개인정보는 본 서비스를 제공하는 기간 동안에 보유 및 이용되고, 이용자의 서비스 해지(회원탈퇴)시 해당인의 개인정보가 열람 또는 이용될 수 없도록 파기 처리함. 단, 아래의 경우는 예외로 함.<br> (1) 법령에서 따로 정하는 경우에는 해당 기간까지 보유</li>
+                        </ul>
+                        <div class="terms__title">4. 본 동의는 서비스의 본질적 기능 제공을 위한 개인정보 수집/이용에 대한 동의로서, 동의를 하는 경우에만 서비스 이용이 가능합니다.</div>
+                        <div class="terms__title">5. 법령에 따른 개인정보의 수집/이용, 계약의 이행/편익제공을 위한 개인정보 처리위탁 및 개인정보 처리와 관련된 일반 사항은 서비스의 개인정보 처리방침에 따릅니다.</div>
+                    </div>
+                    <!-- //0117 약관 내용 수정 -->
+               </div>
+            </div>
+            <div class="layerPopup-full-button">
+                <!-- 0112 data-id="check1" (checkbox id와 동일하게) 추가 -->
+                <!-- 0124 버튼명 변경 -->
+                <button type="button" class="btn-laerPopup blue" data-id="check1" data-role="agree">인증 완료</button>
+                <!-- //0112 data-id="check1" (checkbox id와 동일하게) 추가 -->
+            </div>
+            <button type="button" class="layerPopup-close" data-popup="layerClose" aria-label="레이어팝업 닫기"></button>
+        </div>
+        <!-- //layerPop end -->
+
+        <!-- 210113 기획 삭제 -->
+        <!-- <div class="layerPopup layerPopup-button terms02" data-role="layerOpen">
+            <div class="layerPopup-header">
+                <div class="layerPopup-title">위치 정보수집 및 이용 약관</div>
+            </div>
+            <div class="layerPopup-contents">
+               <div class="terms">
+                   <div class="terms__section">
+                       <div class="terms__main-text">(“O 캠퍼스”) 서비스(이하 “서비스”라 한다)와 관련하여, 본인은 동의내용을 숙지하였으며, 이에 따라 귀사(SK텔레콤주식회사)가 수집한 본인의 개인위치정보를 이용하여 위치기반서비스를 제공하는 것에 대해 동의합니다.</div>
+                   </div>
+                   <div class="terms__section">
+                       <div class="terms__title">개인위치정보를 이용한 위치기반서비스 제공 동의</div>
+                       <ol class="terms__number-list">
+                           <li class="terms__number-item"><span class="number">(1)</span>본인은 서비스에서 제공되는 위치기반서비스를 이용하기 위하여, 아래 (2)의 내용 및 회사의 위치기반서비스 이용약관의 내용에 동의합니다. (www.tworld.co.kr에서 동 이용약관의 내용을 확인하실 수 있습니다)</li>
+                           <li class="terms__number-item"><span class="number">(2)</span>서비스에서 제공하는 위치기반서비스의 내용<br>- 캠퍼스 Zone 전용 데이터 혜택 제공 목적</li>
+                           <li class="terms__number-item"><span class="number">(3)</span>위치기반서비스 사업자의 상호, 주소, 전화번호 그 밖의 연락처 / 개인위치정보주체 및 법정대리인의 권리와 그 행사방법 / 위치기반서비스사업자가 제공하고자 하는 위치기반서비스의 내용 / 위치정보 이용∙제공사실 확인자료의 보유근거 및 보유기간 등은 회사의 위치기반 서비스 이용약관에 기재된 바에 따릅니다.</li>
+                       </ol>
+                   </div>
+               </div>
+            </div>
+            <div class="layerPopup-full-button">
+                <button type="button" class="btn-laerPopup blue" data-id="check2" data-role="agree">동의</button>
+            </div>
+            <button type="button" class="layerPopup-close" data-popup="layerClose" aria-label="레이어팝업 닫기"></button>
+        </div> -->
+        <!-- // 210113 기획 삭제 -->
+    </div>
+    <!-- lib js -->
+<script src="../../js/lib/jquery_3.6.0.js" type="text/javascript"></script>
+<script src="../../js/lib/swiper-7.4.1.min.js" type="text/javascript"></script>
+<script src="../../js/lib/pualugin.js" type="text/javascript"></script>
+<script src="../../js/lib/jquery-barcode.js" type="text/javascript"></script>
+<!-- js -->
+<script src="../../js/common.js" type="text/javascript"></script>
+
+</body>
+</html>

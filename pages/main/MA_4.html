@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0, viewport-fit=cover">
+
+  <title>0한동</title>
+  <link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+<div id="document" class="wrapper">
+    <!-- header -->
+    <header id="header">
+	<!-- 
+    <button id="btnMainMenu">▤</button>
+    <button id="btnMyPage">＠</button> 
+	-->
+	<div class="header-top">
+		<h1 class="hidden">0 한동</h1>
+		<div class="nav-btn-wrap">
+      <h2 class="header__title"></h2>
+			<div class="btn-arrow">
+				<a href="#" class="btn-prev white">
+					<img src="../../images/common/ico_arrow_prev_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next white">
+					<img src="../../images/common/ico_arrow_next_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-prev black">
+					<img src="../../images/common/ico_arrow_prev_b.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next black">
+					<img src="../../images/common/ico_arrow_next_b.png" alt="prev button">
+				</a>
+			</div>
+
+			<div class="btn-navi">
+				<a href="#" class="btn-menu white">
+					<img src="../../images/common/ico_menu_w.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close white">
+					<img src="../../images/common/ico_close_w.png" alt="close button">
+				</a>
+				<a href="#" class="btn-menu black">
+					<img src="../../images/common/ico_menu_b.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close black">
+					<img src="../../images/common/ico_close_b.png" alt="close button">
+				</a>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<!-- gnb -->
+<div id="gnb" class="gnb">
+  <div class="gnb__inner">
+    <div class="gnb__toparea">
+      <!-- 220114 gnb__titlebox 삭제 -->
+      <!-- <div class="gnb__titlebox">
+        <p class="gnb__title ft-sf-b">MENU</p>
+      </div> -->
+      <div class="gnb__head">
+        <!-- 220114 login info 수정 case | 로그인 상태 -->
+        <div class="gnb__headinner" style="display: none;">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <img src="../../images/common/profile.png" alt="이모지">
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">김*동</span>님
+              </a>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 있는 경우 -->
+            <p class="gnb__description">
+              <span class="gnb__phone-number ft-sf-m">010-12**-56**</span>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 없는 경우 -->
+            <p class="gnb__description" style="display: none;">
+              <span class="gnb__phone-number">보유하신 SKT 회선이 없습니다.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 로그인 상태 -->
+
+        <!-- 220114 login info 수정 case | 비로그인 상태 -->
+        <div class="gnb__headinner">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <!-- 프필 이미지 영역 -->
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">로그인</span>
+              </a>
+            </p>
+            <p class="gnb__description">
+              <!-- 0207 문구변경 -->
+              <span class="gnb__phone-number">T아이디로 로그인해 주세요.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 비로그인 상태 -->
+      </div>
+    </div>
+    <div class="gnb__scroll">
+      <div class="gnb__contents">
+        <div class="gnb__menu">
+          <ul class="gnb__accordion"> <!-- 220114 data-element="accordion" 삭제 -->
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">서비스</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0캠퍼스</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0히어로</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0틴</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">추천 요금제</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">데이터스테이션</a>
+                  </li> -->
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <!-- 0207 문구변경 -->
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">브랜드 &middot; 콘텐츠</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">ABOUT 0</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0잘알</a>
+                  </li> -->
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">MAGAZINE 0</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="gnb__anchor-wrap"> <!-- 220114 anchor-wrap 클래스 추가-->
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--event">이벤트</a> <!-- 220114 gnb__anchor--event 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <!-- 0204 active 삭제 -->
+              <a href="#none" class="gnb__anchor gnb__anchor--notice">공지사항</a> <!-- 220114 gnb__anchor--notice 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--faq">FAQ</a> <!-- 220114 gnb__anchor--faq 클래스 추가-->
+            </div>
+          </div>
+        </div>
+  
+        <!-- 220114 gnb__logout 삭제 | footer로 이동 -->
+        <!-- <div class="gnb__logout">
+          <button type="button" class="gnb__logout-button">
+            <span class="gnb__logout-text">로그아웃</span>
+          </button>
+        </div> -->
+      </div>
+      <div class="footer-wrap">
+    <div class="footer-loginbox">
+      <a href="#none" class="footer-login">로그아웃</a>
+    </div>
+    <div class="footer-bottom">
+        <div class="service-list">
+            <a href="">이용약관</a>
+            <a href="">개인정보처리방침</a>
+            <!-- 220121 메뉴 추가 -->
+            <a href="" class="footer-gnb-check">오픈소스 라이선스</a>
+        </div>
+        <!-- 220121 &copy; 텍스트 제거 -->
+        <div class="copyright">SK TELECOM CO. LTD</div>
+    </div>
+</div>
+      <button type="button" class="gnb__close" aria-label="메뉴 닫기"></button>
+    </div><!-- // scroll -->
+    
+  </div>
+</div>
+
+    <!-- // header -->
+    <!-- content-wrap -->
+    <div id="content-wrap" class="main">
+        <div class="content-main">
+            <div class="main-kv">
+                <div class="kv-slider swiper-container">
+                    <!-- 20220106 수정 -->
+                    <ul class="kv-image-list swiper-wrapper">
+                        <li class="kv-imagevent-item swiper-slide player1">
+                            <a href="#" class="kv-img kv1">
+                                <img src="../../images/main/main_kv_1.png" alt="">
+                            </a>
+                        </li>
+                        <li class="kv-imagevent-item swiper-slide player1">
+                            <a href="#" class="kv-img kv1">
+                                <img src="../../images/main/main_kv_2.png" alt="">
+                            </a>
+                        </li>
+                        <li class="kv-imagevent-item swiper-slide player1">
+                            <a href="#" class="kv-img kv1">
+                                <img src="../../images/main/main_kv_3.png" alt="">
+                            </a>
+                        </li>
+                        <!-- multi list -->
+                    </ul>
+                    <!-- //20220106 수정 -->
+                    <div class="kv-controller">
+                        <div class="kv-pagination swiper-pagination">
+                        </div>
+                    </div>
+                </div>
+                <div class="main-kv__bg">
+                  <img src="../../images/main/mask_w.png" alt="">
+                </div>
+            </div>
+            <div class="guide-content1">
+                <div class="tab-menu">
+                    <ul class="tab-list">
+                        <li class="tab-item y-camp active"><a href="#">0캠퍼스</a></li>
+                        <li class="tab-item y-tean"><a href="#">0틴</a></li>
+                        <li class="tab-item y-hero"><a href="#">0히어로</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="guide-content1">
+                <div class="coupon-content">
+                    <a href="#" class="coupon large more-benefit">
+                        <img class="more-benefit__image" src="../../images/main/bg_coupon_large_type1.png" alt="쿠폰">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="guide-content1 swipe">
+                <!-- 0112 삭제 <div class="title-box">                    
+                    <h3 class="tit">가입하면 언제나<br />받을 수 있는 혜택</h3>
+                </div> -->
+                <div class="event-content1">
+                    <div class="title-box"><!-- 0112 변경 -->                   
+                        <p class="tit__small">이벤트</p>
+                        <a href="#a" class="tit">지금 아니면 놓치는 혜택</a>
+                    </div>
+
+                    <div class="swiper-container benefit-content2">
+                        <ul class="swiper-wrapper benefit-list">
+                            <li class="swiper-slide benefit-item">
+                                <a href="#a" class="event__anchor">
+                                    <div class="event__img"><img src="../../images/main/event01.png" alt=""></div>
+                                    <span class="d-day">D-11</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide benefit-item">
+                                <a href="#a" class="event__anchor">
+                                    <div class="event__img"><img src="../../images/main/event02.png" alt=""></div>
+                                    <span class="d-day">D-11</span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide benefit-item">
+                                <a href="#a" class="event__anchor">
+                                    <div class="event__img"><img src="../../images/main/event01.png" alt=""></div>
+                                    <span class="d-day">D-11</span>
+                                </a>
+                            </li>
+                            <!-- 0112 삭제 <li class="swiper-slide benefit-item first">
+                                <a href="#" class="benefit-card">
+                                    <img src="../../images/main/img_banner_benefit_1.png" alt="" />
+                                </a>
+                                <a href="#" class="benefit-card-desc">
+                                    <span class="benefit-card-tit">
+                                        대학생 수험생을 위한<br />
+                                        우주패스 특별 할인 혜택 프로모션
+                                    </span>
+                                    <span class="benefit-card-date">
+                                        2021.11.1 ~ 12.31
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide benefit-item">
+                                <a href="#" class="benefit-card">
+                                    <img src="../../images/main/img_banner_benefit_1.png" alt="" />
+                                </a>
+                                <a href="#" class="benefit-card-desc">
+                                    <span class="benefit-card-tit">
+                                        대학생 수험생을 위한<br />
+                                        우주패스 특별 할인 혜택 프로모션
+                                    </span>
+                                    <span class="benefit-card-date">
+                                        2021.11.1 ~ 12.31
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="swiper-slide benefit-item">
+                                <a href="#" class="benefit-card">
+                                    <img src="../../images/main/img_banner_benefit_1.png" alt="" />
+                                </a>
+                                <a href="#" class="benefit-card-desc">
+                                    <span class="benefit-card-tit">
+                                        대학생 수험생을 위한<br />
+                                        우주패스 특별 할인 혜택 프로모션
+                                    </span>
+                                    <span class="benefit-card-date">
+                                        2021.11.1 ~ 12.31
+                                    </span>
+                                </a>
+                            </li> -->
+                        </ul>
+                        <!-- 0111 삭제 
+                        <div class="swiper-controller">
+                            <div class="swiper-pagination"></div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-content1">
+                <div class="event-content1">
+                    <div class="title-box">
+                        <p class="tit__small">이벤트</p>
+                        <a href="#a" class="tit">가입만해도 받는 혜택</a>
+                        <!-- 0112 변경 
+                        <a href="#" class="link">이벤트 <i class="icon-arrow blue"></i></a>
+                        <h3 class="tit">여기! 지금이 아니면<br />받을 수 없는 혜택</h3> -->
+                    </div>
+                    <div class="event-group1">
+                        <ul class="event-list">
+                            <li class="event-item">
+                                <a href="#">
+                                    <!-- <img src="../../images/main/icon_travel.png" class="event-icon1" alt="" /> -->
+                                    <!-- 0112 event-img 추가-->
+                                    <div class="event-img"><img src="../../images/main/icon_event01.png" alt="" /></div>
+                                    <div class="event-desc1">
+                                        <!-- 0112 삭제 <p class="date">D-7</p> -->
+                                        <p class="tit">T로밍카드 초대 50% 할인</p>
+                                        <p class="sub-tit">2022.01.22 ~ 2022.01.30</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="event-item">
+                                <a href="#">
+                                    <!-- <img src="../../images/main/icon_iphone13.png" class="event-icon1" alt="" /> -->
+                                    <div class="event-img"><img src="../../images/main/icon_event02.png" alt="" /></div>
+                                    <div class="event-desc1">
+                                        <!-- <p class="date">D-10</p> -->
+                                        <p class="tit">미리 준비하는 해외 여행</p>
+                                        <p class="sub-tit">2022.01.22 ~ 2022.01.30</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="event-item">
+                                <a href="#">
+                                    <!-- <img src="../../images/main/icon_flo.png" class="event-icon1" alt="" /> -->
+                                    <div class="event-img"><img src="../../images/main/icon_event03.png" alt="" /><i class="icon icon__new">NEW</i></div>
+                                    <div class="event-desc1">
+                                        <!-- <p class="date">D-14</p> -->
+                                        <p class="tit">스타벅스 커피 4잔 100% 증정</p>
+                                        <p class="sub-tit">캠퍼스 데이터와 FLO/ WAVVE 할인</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-content1 full">
+                <div class="banner-content rate-plan">
+                    <a href="#" class="banner-box2">
+                        <img class="banner-box2__image" src="../../images/main/bg_rate_plan_2.png" alt="배너광고">
+                    </a>
+                </div>
+            </div>
+            <div class="guide-content1 full">
+                <div class="magazine-content">
+                    <div class="title-box">
+                        <p class="tit__small">매거진 0</p>
+                        <a href="#a" class="tit ft-sf-b">Editor’s Pick</a>
+                        <!-- 0112 변경 <a href="#" class="link">메거진 <i class="icon-arrow blue"></i></a><br>
+                        <div class="flex-both">
+                            <h3 class="tit">Editor's Pick!</h3>
+                            <p class="more">더보기<i class="icon-arrow black"></i></p>
+                        </div> -->
+                    </div>
+                    <div class="magazine-group">
+                        <ul class="magazine0-list is-list">
+                            <li class="magazine0-list__item">
+                                <a href="#" class="magazine0-list__anchor">
+                                    <div class="magazine0-list__thumbnail">
+                                        <img src="../../images/main/thumb01.jpg" alt="">
+                                    </div>
+                                    <div class="magazine0-list__contents">
+                                        <div class="magazine0-list__title">다채로운 플레이 닌텐도 스위치</div>
+                                        <div class="magazine0-hash">#게임 #트렌드</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="magazine0-list__item">
+                                <a href="#" class="magazine0-list__anchor">
+                                    <div class="magazine0-list__thumbnail">
+                                        <img src="../../images/main/thumb02.jpg" alt="">
+                                    </div>
+                                    <div class="magazine0-list__contents">
+                                        <div class="magazine0-list__title">깊이 있는 사운드 BOSE 스피커빔</div>
+                                        <div class="magazine0-hash">#음악 #트렌드</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="magazine0-list__item">
+                                <a href="#" class="magazine0-list__anchor">
+                                    <div class="magazine0-list__thumbnail">
+                                        <img src="../../images/main/thumb03.jpg" alt="">
+                                    </div>
+                                    <div class="magazine0-list__contents">
+                                        <div class="magazine0-list__title">인테리어 필수 일광전구</div>
+                                        <div class="magazine0-hash">#생활 #가전 #인테리어</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="magazine0-list__item">
+                                <a href="#" class="magazine0-list__anchor">
+                                    <div class="magazine0-list__thumbnail">
+                                        <img src="../../images/main/thumb04.jpg" alt="">
+                                    </div>
+                                    <div class="magazine0-list__contents">
+                                        <div class="magazine0-list__title">홈카페의 완성 일리 커피머신</div>
+                                        <div class="magazine0-hash">#생활 #취미</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="guide-content1 full">
+                <div class="banner-content roaming-card">
+                    <a href="#" class="banner-box2" style="overflow: hidden;border-radius: 24px;">
+                        <img class="banner-box2__image" src="../../images/main/bg_baro.png" alt="배너광고">
+                    </a>
+                </div>
+            </div>
+            <div class="guide-content1">
+                <div class="board-content">
+                    <div class="title-box">
+                        <!-- 0112 삭제 <a href="#" class="link">FAQ <i class="icon-arrow blue"></i></a><br> -->
+                        <!-- 0112 변경 -->
+                        <p class="tit__small ft-sf-b">FAQ</p>
+                        <a href="#a" class="tit">자주 찾는 질문</a>
+                        <!-- 0112 삭제 <div class="flex-both">
+                            <h3 class="tit">자주 찾는 질문</h3>
+                            <p class="more">더보기<i class="icon-arrow black"></i></p>
+                        </div> -->
+                    </div>
+                    <div class="board">
+                        <ul class="board-list">
+                            <li class="board-item">
+                                <a href="#">
+                                    <span class="ft-sf-m spot-blue">Q.</span><!-- 0112 추가 -->
+                                    <span class="question">캠퍼스 전용 데이터 3GB는 언제 사용한지 알 수 있을까요?</span>
+                                    <!-- 0112 삭제 <i class="icon-arrow black"></i> -->
+                                </a>
+                            </li>
+                            <li class="board-item">
+                                <a href="#">
+                                    <span class="ft-sf-m spot-blue">Q.</span>
+                                    <span class="question">모이는 인원에 따라 어떻게 혜택이 다른가요?</span>
+                                    <!-- <i class="icon-arrow black"></i> -->
+                                </a>
+                            </li>
+                            <li class="board-item">
+                                <a href="#">
+                                    <span class="ft-sf-m spot-blue">Q.</span>
+                                    <span class="question">1주일 동안 이용할 수 있는 최대 데이터는 어떻게 되</span>                                            
+                                    <!-- <i class="icon-arrow black"></i> -->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <!-- // content-wrap -->
+    <!-- notice -->
+    <div class="footer-top">
+        <div class="swiper mySwiper footer-slide">
+            <ul class="notice-list swiper-wrapper">
+                <li class="notice-item swiper-slide">
+                    <a href="#a"><!-- 0112 삭제 <span class="strong">[공지]</span>--><i class="icon icon__bell new"></i>데이터 슈퍼패스 좀비 고등학교 제휴종료</a>
+                </li>
+                <li class="notice-item swiper-slide">
+                    <a href="#a"><!-- <span class="strong">[공지]</span>--><i class="icon icon__bell"></i>데이터 슈퍼패스 좀비 고등학교 제휴종료</a>
+                </li>
+                <li class="notice-item swiper-slide">
+                    <a href="#a"><!-- <span class="strong">[공지]</span>--><i class="icon icon__bell"></i>데이터 슈퍼패스 좀비 고등학교 제휴종료</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- // notice -->
+    <!-- top버튼 -->
+    <div class="top-button">
+  <button type="button" class="top-button__anchor" aria-label="화면 상단으로 이동"></button>
+</div>
+    <!-- // top버튼 -->
+    <!-- bottomSheet -->
+    <!-- 0112 수정 -->
+<div id="bottomSheet"">
+	<div class="bottom-sheet__wrap">
+		<!-- <button type="button" class="bottom-sheet__btn btn-show"></button>
+		<button type="button" class="bottom-sheet__btn btn-hide"></button> -->
+	</div>
+	<!-- 0119 수정 -->
+	<!-- case 01 미로그인시 -->
+	<div class="greeting-area" style="display: none;">
+		<!-- 0207 문구수정 -->
+		<div class="greeting title"><span class="spot-blue">회원가입 &middot; 로그인</span>하고</div>
+		<div class="greeting message">0한동의 혜택을 받아 보세요</div>
+		<button type="button" class="btn__small blue greeting__login-button">로그인</button>
+	</div>
+	<!-- //case 01 미로그인시 -->
+	<!-- case 02 로그인시 -->
+	<div class="greeting-area">
+		<div class="greeting title"><span class="spot-blue">김한동</span>님을 위한</div>
+		<!-- 0207 문구수정 -->
+		<div class="greeting message">0한동의 혜택을 확인해 보세요</div>
+	</div>
+	<!-- //case 02 로그인시 -->
+	<!-- case 03 오류시 -->
+	<div class="greeting-area" style="display: none;">
+		<div class="greeting message">0한동 고객님, 현재 접속이 원활하지 않네요.</div>
+		<div class="greeting message">아쉽지만, 우리 다시 만나요!</div>
+	</div>
+	<!-- //case 03 오류시 -->
+	<!-- //0119 수정 -->
+	<div class="bottom-sheet__pagination-box">
+		<div class="bottom-sheet__pagination"></div>
+	</div>
+	<div class="swiper-container bottom-sheet__swiper">
+		<div class="swiper-wrapper">
+			<div class="greeting-wrap swiper-slide">
+				<!-- 0119 수정 -->
+				<!-- case 01 로그인Y & 서비스 미가입시 -->
+				<div class="greeting-area">
+					<p class="name"><span class="spot-blue">한동</span>님을 위한</p>
+					<p class="notice">0한동의 혜택을</p>
+					<p class="notice">확인해 보세요</p>
+				</div>
+				<!-- //case 01 -->
+				<!-- case 02 로그인Y & 0캠퍼스 가입 -->
+				<!-- <div class="greeting-area">
+					<p class="name"><span class="spot-blue">한동</span>님,</p>
+					<p class="notice">0캠퍼스 <span class="spot-blue">LV.2</span> 혜택을</p>
+					<p class="notice">받고 있어요</p>
+				</div> -->
+				<!-- //case 02 -->
+				<!-- //0119 수정 -->
+			
+				<!-- 0119 수정 -->
+				<!-- case 01 -->
+				<div class="card myInfo">
+					<p class="card__subtitle">가입한 서비스가 없습니다.</p>
+					<a href="#a" class="myInfo__title">대학생을 위한 <span class="spot-blue">0캠퍼스</span> 추천</a>
+					<div class="my-profile">
+						<div class="my-profile__wrap">
+							<div class="category-info">
+								캠퍼스 전용데이터 
+								<span class="category-level">최대 3GB</span>
+							</div>
+							<div class="category-info">
+								FLO, Wavve
+								<span class="category-level">최대 90% 할인</span>
+							</div>
+						</div>
+						<div class="pic-profile">
+							<img class="pic-profile__img" src="../../images/common/img_bottomsheet_frofile.png" />
+						</div>
+					</div>
+				</div>
+				<!-- //case 01 -->
+				<!-- case 02 -->
+				<!-- <div class="card myInfo">
+					<p class="card__subtitle">나의 가입현황</p>
+					<a href="#a" class="myInfo__title">0캠퍼스</a>
+					<div class="my-profile">
+						<div class="my-profile__wrap">
+							<div class="category-info">
+								소속학교
+								<span class="category-level">서울대학교</span>
+							</div>
+							<div class="category-info">
+								혜택등급
+								<span class="category-level">LV2</span>
+							</div>
+						</div>
+						<div class="pic-profile">
+							<img class="pic-profile__img" src="../../images/common/img_bottomsheet_frofile.png" />
+						</div>
+					</div>
+				</div> -->
+				<!-- //case 02 -->
+				<!-- case 03 미가입 -->
+				<!-- <div class="card myInfo">
+					<p class="card__subtitle">가입한 서비스가 없습니다.</p>
+					<a href="#a" class="myInfo__title">SKT 10대, 20대 혜택 채널</a>
+					<div class="my-profile">
+						<div class="my-profile__wrap">
+							<div class="category-info">
+								가입 가능한 서비스를<br>확인해보세요
+							</div>
+						</div>
+						<div class="pic-profile">
+							<img class="pic-profile__img" src="../../images/common/img_bottomsheet_frofile.png" />
+						</div>
+					</div>
+				</div> -->
+				<!-- //case 03 미가입 -->
+				<!-- //0119 수정 -->
+			
+				<!-- 0119 수정 쿠폰 이미지 변경 -->
+				<div class="frame cate-coupon">
+					<!-- 0207 문구수정 -->
+					<div class="card__title">
+						MY 쿠폰
+					</div>
+					<div class="cate-coupon__content swiper-container">
+						<div class="card-list swiper-wrapper">
+							<a href="#" class="card cate-coupon__item swiper-slide">
+								<div class="cate-coupon__img"><img src="../../images/common/img_coupon_bg_normal.png" alt=""></div>
+								<div class="cate-coupon__bg">
+									<div class="cate-coupon__frofile">
+										<img class="cate-coupon__frofile__content" src="../../images/common/img_coupon_frofile.png" />
+									</div>
+									<div class="cate-coupon__text-box">
+										<div class="cate-coupon__text">
+											스코피 3
+										</div>
+										<div class="cate-coupon__desc">
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__desc-title">포토북 무료 제작쿠폰</p>
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__under-desc">소프트커버,  88, 24P</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="card cate-coupon__item swiper-slide">
+								<div class="cate-coupon__img"><img src="../../images/common/img_coupon_bg_normal.png" alt=""></div>
+								<div class="cate-coupon__bg">
+									<div class="cate-coupon__frofile">
+										<!-- 발급 완료시 추가 -->
+										<div class="cate-coupon__mask"><img src="../../images/common/icon_check.png">발급완료</div>
+										<!-- //발급 완료시 추가 -->
+										<img class="cate-coupon__frofile__content" src="../../images/common/img_coupon_frofile.png" />
+									</div>
+									<div class="cate-coupon__text-box">
+										<div class="cate-coupon__text">
+											스코피 3
+										</div>
+										<div class="cate-coupon__desc">
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__desc-title">포토북 무료 제작쿠폰</p>
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__under-desc">소프트커버,  88, 24P</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="card cate-coupon__item swiper-slide">
+								<div class="cate-coupon__img"><img src="../../images/common/img_coupon_bg_normal.png" alt=""></div>
+								<div class="cate-coupon__bg">
+									<div class="cate-coupon__frofile">
+										<img class="cate-coupon__frofile__content" src="../../images/common/img_coupon_frofile.png" />
+									</div>
+									<div class="cate-coupon__text-box">
+										<div class="cate-coupon__text">
+											스코피 3
+										</div>
+										<div class="cate-coupon__desc">
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__desc-title">포토북 무료 제작쿠폰</p>
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__under-desc">소프트커버,  88, 24P</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="card cate-coupon__item swiper-slide">
+								<div class="cate-coupon__img"><img src="../../images/common/img_coupon_bg_normal.png" alt=""></div>
+								<div class="cate-coupon__bg">
+									<div class="cate-coupon__frofile">
+										<img class="cate-coupon__frofile__content" src="../../images/common/img_coupon_frofile.png" />
+									</div>
+									<div class="cate-coupon__text-box">
+										<div class="cate-coupon__text">
+											스코피 3
+										</div>
+										<div class="cate-coupon__desc">
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__desc-title">포토북 무료 제작쿠폰</p>
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__under-desc">소프트커버,  88, 24P</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- //0119 수정 쿠폰 이미지 변경 -->
+
+				<!-- 0114 삭제 -->
+		<!-- <div class="bs-event">
+			<p class="card__subtitle">이벤트</p>
+			<div class="card__title">혜택 가득한 캠퍼스 라이프</div>
+			<div class="bs-event__wrap">
+				<ul class="bs-event__list">
+						<li class="bs-event__item">
+							<a class="bs-event__anchor" href="">
+								<img class="bs-event__thumbnail" src="../../images/content/bottom-sheet/icon_event01.png" alt="" />
+								<div class="bs-event__text-box">
+										<p class="bs-event__title">엘라고 무선충전기 증정</p>
+										<p class="bs-event__sub-title">2020.01.20 ~ 2021.02.22</p>
+								</div>
+							</a>
+						</li>
+						<li class="bs-event__item">
+							<a class="bs-event__anchor" href="">
+								<img class="bs-event__thumbnail" src="../../images/content/bottom-sheet/icon_event02.png" alt="" />
+								<div class="bs-event__text-box">
+										<p class="bs-event__title">구름처럼 폭신한 침구 10%</p>
+										<p class="bs-event__sub-title"><span class="ft-sf-m">2020.01.20 ~ 2021.02.22</p>
+								</div>
+							</a>
+						</li>
+						<li class="bs-event__item">
+							<a class="bs-event__anchor" href="">
+								<img class="bs-event__thumbnail" src="../../images/content/bottom-sheet/icon_event03.png" alt="" />
+								<div class="bs-event__text-box">
+										<p class="bs-event__title">드롭탑 커피 100% 증정</p>
+										<p class="bs-event__sub-title">2020.01.20 ~ 2021.02.22</p>
+								</div>
+							</a>
+						</li>
+				</ul>
+			</div>
+		</div> -->
+		<!--// 0114 삭제 -->
+
+			</div>
+
+			<div class="greeting-wrap swiper-slide">
+				<!-- 0119 수정 -->
+				<!-- case 01 로그인Y & 서비스 미가입시 -->
+				<div class="greeting-area">
+					<p class="name"><span class="spot-blue">한동</span>님을 위한</p>
+					<p class="notice">0한동의 혜택을</p>
+					<p class="notice">확인해 보세요</p>
+				</div>
+				<!-- //case 01 -->
+				<!-- case 02 로그인Y & 0히어로 가입 -->
+				<!-- <div class="greeting-area">
+					<p class="name"><span class="text--Borange">한동</span>님,</p>
+					<p class="notice">전역까지</p>
+					<p class="notice"><span class="text--Borange">183일</span> 남았어요</p>
+				</div> -->
+				<!-- //case 02 -->
+				<!-- case 03 로그인Y & 0히어로 가입 -->
+				<!-- <div class="greeting-area">
+					<p class="name"><span class="text--Borange">한동</span>님,</p>
+					<p class="notice"><span class="text--Borange">전역</span>을 진심으로</p>
+					<p class="notice">축하드립니다</p>
+				</div> -->
+				<!-- //case 03 -->
+				<!-- //0119 수정 -->
+			
+				<!-- 0119 수정 -->
+				<!-- case 01-->
+				<div class="card myInfo">
+					<p class="card__subtitle">가입한 서비스가 없습니다.</p>
+					<a href="#a" class="myInfo__title">군 장병을 위한 0히어로 추천</a>
+					<div class="my-profile">
+						<div class="my-profile__wrap">
+							<div class="category-info">
+								군 복무 라이프에 필요한  
+							</div>
+							<div class="category-info text--Borange">
+								전용 제휴 혜택
+							</div>
+						</div>
+						<div class="pic-profile">
+							<img class="pic-profile__img" src="../../images/common/img_bottomsheet_frofile02.png" />
+						</div>
+					</div>
+				</div>
+				<!-- //case 01-->
+				<!-- case 02-->
+				<!-- <div class="card myInfo">
+					<p class="card__subtitle">나의 가입현황</p>
+					<a href="#a" class="myInfo__title">0히어로</a>
+					<div class="my-profile">
+						<div class="my-profile__wrap">
+							<div class="category-info">
+								소속
+								<span class="category-level category-classes">육군</span>
+							</div>
+						</div>
+						<div class="pic-profile">
+							<img class="pic-profile__img" src="../../images/common/img_bottomsheet_frofile02.png" />
+						</div>
+					</div>
+				</div> -->
+				<!-- //case 02-->
+				<!-- case 03-->
+				<!-- <div class="card myInfo">
+					<p class="card__subtitle">나의 가입현황</p>
+					<a href="#a" class="myInfo__title">0히어로</a>
+					<div class="my-profile">
+						<div class="my-profile__wrap">
+							<div class="category-info">
+								소속
+								<span class="category-level category-classes">육군</span>
+							</div>
+							<div class="category-info text--Borange">
+								전역을 축하드립니다
+							</div>
+						</div>
+						<div class="pic-profile">
+							<img class="pic-profile__img" src="../../images/common/img_bottomsheet_frofile02.png" />
+						</div>
+					</div>
+				</div> -->
+				<!-- //case 03 -->
+				<!-- //0119 수정 -->
+			
+				<!-- 0119 수정 쿠폰 이미지 변경 -->
+				<div class="frame cate-coupon">
+					<!-- 0207 문구수정 -->
+					<div class="card__title">
+						MY 쿠폰
+					</div>
+					<div class="cate-coupon__content swiper-container">
+						<div class="card-list swiper-wrapper">
+							<a href="#" class="card cate-coupon__item swiper-slide">
+								<div class="cate-coupon__img"><img src="../../images/common/img_coupon_bg_normal_orange.png" alt=""></div>
+								<div class="cate-coupon__bg">
+									<div class="cate-coupon__frofile">
+										<!-- 발급 완료시 추가 -->
+										<div class="cate-coupon__mask"><img src="../../images/common/icon_check.png">발급완료</div>
+										<!-- //발급 완료시 추가 -->
+										<img class="cate-coupon__frofile__content" src="../../images/common/img_coupon_frofile.png" />
+									</div>
+									<div class="cate-coupon__text-box">
+										<div class="cate-coupon__text">
+											클래스 101-시그니처
+										</div>
+										<div class="cate-coupon__desc">
+											0히어로 특별
+										</div>
+                    <div class="cate-coupon__desc">
+											취미지원금 50,000원
+										</div>
+                    <div class="cate-coupon__desc">
+											쿠폰
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="card cate-coupon__item swiper-slide">
+								<div class="cate-coupon__img"><img src="../../images/common/img_coupon_bg_normal_orange.png" alt=""></div>
+								<div class="cate-coupon__bg">
+									<div class="cate-coupon__frofile">
+										<img class="cate-coupon__frofile__content" src="../../images/common/img_coupon_frofile.png" />
+									</div>
+									<div class="cate-coupon__text-box">
+										<div class="cate-coupon__text">
+											클래스 101-시그니처
+										</div>
+										<div class="cate-coupon__desc">
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__desc-title">포토북 무료 제작쿠폰</p>
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__under-desc">소프트커버,  88, 24P</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="card cate-coupon__item swiper-slide">
+								<div class="cate-coupon__img"><img src="../../images/common/img_coupon_bg_normal_orange.png" alt=""></div>
+								<div class="cate-coupon__bg">
+									<div class="cate-coupon__frofile">
+										<img class="cate-coupon__frofile__content" src="../../images/common/img_coupon_frofile.png" />
+									</div>
+									<div class="cate-coupon__text-box">
+										<div class="cate-coupon__text">
+											클래스 101-시그니처
+										</div>
+										<div class="cate-coupon__desc">
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__desc-title">포토북 무료 제작쿠폰</p>
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__under-desc">소프트커버,  88, 24P</p>
+										</div>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="card cate-coupon__item swiper-slide">
+								<div class="cate-coupon__img"><img src="../../images/common/img_coupon_bg_normal_orange.png" alt=""></div>
+								<div class="cate-coupon__bg">
+									<div class="cate-coupon__frofile">
+										<img class="cate-coupon__frofile__content" src="../../images/common/img_coupon_frofile.png" />
+									</div>
+									<div class="cate-coupon__text-box">
+										<div class="cate-coupon__text">
+											클래스 101-시그니처
+										</div>
+										<div class="cate-coupon__desc">
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__desc-title">포토북 무료 제작쿠폰</p>
+											<!-- 0120 수정 -->
+											<p class="cate-coupon__under-desc">소프트커버,  88, 24P</p>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- //0119 수정 쿠폰 이미지 변경 -->
+
+				<!-- 0114 삭제 -->
+		<!-- <div class="bs-event">
+			<p class="card__subtitle">이벤트</p>
+			<div class="card__title">혜택 가득한 캠퍼스 라이프</div>
+			<div class="bs-event__wrap">
+				<ul class="bs-event__list">
+						<li class="bs-event__item">
+							<a class="bs-event__anchor" href="">
+								<img class="bs-event__thumbnail" src="../../images/content/bottom-sheet/icon_event01.png" alt="" />
+								<div class="bs-event__text-box">
+										<p class="bs-event__title">엘라고 무선충전기 증정</p>
+										<p class="bs-event__sub-title">2020.01.20 ~ 2021.02.22</p>
+								</div>
+							</a>
+						</li>
+						<li class="bs-event__item">
+							<a class="bs-event__anchor" href="">
+								<img class="bs-event__thumbnail" src="../../images/content/bottom-sheet/icon_event02.png" alt="" />
+								<div class="bs-event__text-box">
+										<p class="bs-event__title">구름처럼 폭신한 침구 10%</p>
+										<p class="bs-event__sub-title"><span class="ft-sf-m">2020.01.20 ~ 2021.02.22</p>
+								</div>
+							</a>
+						</li>
+						<li class="bs-event__item">
+							<a class="bs-event__anchor" href="">
+								<img class="bs-event__thumbnail" src="../../images/content/bottom-sheet/icon_event03.png" alt="" />
+								<div class="bs-event__text-box">
+										<p class="bs-event__title">드롭탑 커피 100% 증정</p>
+										<p class="bs-event__sub-title">2020.01.20 ~ 2021.02.22</p>
+								</div>
+							</a>
+						</li>
+				</ul>
+			</div>
+		</div> -->
+		<!--// 0114 삭제 -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //0112 수정 -->
+
+    <!-- // bottomSheet -->
+</div>
+<!-- lib js -->
+<script src="../../js/lib/jquery_3.6.0.js" type="text/javascript"></script>
+<script src="../../js/lib/swiper-7.4.1.min.js" type="text/javascript"></script>
+<script src="../../js/lib/pualugin.js" type="text/javascript"></script>
+<script src="../../js/lib/jquery-barcode.js" type="text/javascript"></script>
+<!-- js -->
+<script src="../../js/common.js" type="text/javascript"></script>
+
+
+<script>
+$(document).ready(function() {
+// 220126 임시 주석
+// initialize();
+// afterIncludeHTML();
+    var swiper = new Swiper(".kv-slider", {
+        loop:true,
+        touchReleaseOnEdges:true,
+        pagination: {
+            el: ".kv-pagination",
+            clickable: true,
+        },
+    });
+    var swiper = new Swiper(".benefit-content2", {
+      loop:true,
+      touchReleaseOnEdges:true,
+      slidesPerView: "auto",
+      // pagination: {
+      //     el: ".swiper-pagination",
+      //     type: "fraction",
+      // }
+    }); 
+    var swiper = new Swiper(".footer-slide", {
+        direction: "vertical",
+        allowTouchMove : false,
+        loop:true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+    });
+    var swiper = new Swiper(".cate-coupon__content", {
+        loop:true,
+        touchReleaseOnEdges:true,
+        slidesPerView: "auto",
+    });
+    var swiper = new Swiper(".bottom-sheet__swiper", {
+        pagination: {
+            el: ".bottom-sheet__pagination",
+        },
+    });
+});
+</script>
+
+
+</body>
+</html>

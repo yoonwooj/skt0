@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0, viewport-fit=cover">
+
+    <title>0한동</title>
+    <link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/components.css">
+</head>
+
+<body>
+    <div id="document" class="wrapper">
+        <!-- header -->
+        <header id="header">
+	<!-- 
+    <button id="btnMainMenu">▤</button>
+    <button id="btnMyPage">＠</button> 
+	-->
+	<div class="header-top">
+		<h1 class="hidden">0 한동</h1>
+		<div class="nav-btn-wrap">
+      <h2 class="header__title"></h2>
+			<div class="btn-arrow">
+				<a href="#" class="btn-prev white">
+					<img src="../../images/common/ico_arrow_prev_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next white">
+					<img src="../../images/common/ico_arrow_next_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-prev black">
+					<img src="../../images/common/ico_arrow_prev_b.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next black">
+					<img src="../../images/common/ico_arrow_next_b.png" alt="prev button">
+				</a>
+			</div>
+
+			<div class="btn-navi">
+				<a href="#" class="btn-menu white">
+					<img src="../../images/common/ico_menu_w.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close white">
+					<img src="../../images/common/ico_close_w.png" alt="close button">
+				</a>
+				<a href="#" class="btn-menu black">
+					<img src="../../images/common/ico_menu_b.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close black">
+					<img src="../../images/common/ico_close_b.png" alt="close button">
+				</a>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<!-- gnb -->
+<div id="gnb" class="gnb">
+  <div class="gnb__inner">
+    <div class="gnb__toparea">
+      <!-- 220114 gnb__titlebox 삭제 -->
+      <!-- <div class="gnb__titlebox">
+        <p class="gnb__title ft-sf-b">MENU</p>
+      </div> -->
+      <div class="gnb__head">
+        <!-- 220114 login info 수정 case | 로그인 상태 -->
+        <div class="gnb__headinner" style="display: none;">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <img src="../../images/common/profile.png" alt="이모지">
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">김*동</span>님
+              </a>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 있는 경우 -->
+            <p class="gnb__description">
+              <span class="gnb__phone-number ft-sf-m">010-12**-56**</span>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 없는 경우 -->
+            <p class="gnb__description" style="display: none;">
+              <span class="gnb__phone-number">보유하신 SKT 회선이 없습니다.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 로그인 상태 -->
+
+        <!-- 220114 login info 수정 case | 비로그인 상태 -->
+        <div class="gnb__headinner">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <!-- 프필 이미지 영역 -->
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">로그인</span>
+              </a>
+            </p>
+            <p class="gnb__description">
+              <!-- 0207 문구변경 -->
+              <span class="gnb__phone-number">T아이디로 로그인해 주세요.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 비로그인 상태 -->
+      </div>
+    </div>
+    <div class="gnb__scroll">
+      <div class="gnb__contents">
+        <div class="gnb__menu">
+          <ul class="gnb__accordion"> <!-- 220114 data-element="accordion" 삭제 -->
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">서비스</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0캠퍼스</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0히어로</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0틴</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">추천 요금제</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">데이터스테이션</a>
+                  </li> -->
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <!-- 0207 문구변경 -->
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">브랜드 &middot; 콘텐츠</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">ABOUT 0</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0잘알</a>
+                  </li> -->
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">MAGAZINE 0</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="gnb__anchor-wrap"> <!-- 220114 anchor-wrap 클래스 추가-->
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--event">이벤트</a> <!-- 220114 gnb__anchor--event 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <!-- 0204 active 삭제 -->
+              <a href="#none" class="gnb__anchor gnb__anchor--notice">공지사항</a> <!-- 220114 gnb__anchor--notice 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--faq">FAQ</a> <!-- 220114 gnb__anchor--faq 클래스 추가-->
+            </div>
+          </div>
+        </div>
+  
+        <!-- 220114 gnb__logout 삭제 | footer로 이동 -->
+        <!-- <div class="gnb__logout">
+          <button type="button" class="gnb__logout-button">
+            <span class="gnb__logout-text">로그아웃</span>
+          </button>
+        </div> -->
+      </div>
+      <div class="footer-wrap">
+    <div class="footer-loginbox">
+      <a href="#none" class="footer-login">로그아웃</a>
+    </div>
+    <div class="footer-bottom">
+        <div class="service-list">
+            <a href="">이용약관</a>
+            <a href="">개인정보처리방침</a>
+            <!-- 220121 메뉴 추가 -->
+            <a href="" class="footer-gnb-check">오픈소스 라이선스</a>
+        </div>
+        <!-- 220121 &copy; 텍스트 제거 -->
+        <div class="copyright">SK TELECOM CO. LTD</div>
+    </div>
+</div>
+      <button type="button" class="gnb__close" aria-label="메뉴 닫기"></button>
+    </div><!-- // scroll -->
+    
+  </div>
+</div>
+
+        <!-- // header -->
+        <!-- main -->
+        <div id="main" class="sub-main">
+            <div class="story br11">
+                <div class="wrap">
+                    <h1 class="hidden">0 한동</h1>
+                    <!-- 0303 페이지 전체 문구수정 -->
+                    <h2 class="hidden">ABOUT 0</h2>
+                    <div class="app-contents">
+                        <div class="app-contents__section">
+                            <div class="story-detaile">
+                                <div class="story-detaile__top">
+                                    <div class="story-detaile__image"><img
+                                            src="../../images/content/story/img_story01.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="story-detaile__contents">
+                                <div class="story-detaile__title">0은 SK텔레콤의 1020 브랜드입니다.</div>
+                                <!-- 0311 문구수정 -->
+                                <div class="story-detaile__text">‘0(young, 영)’은 SK텔레콤의 통신 서비스가 갖는 가치를 넘어 10대, 20대를 응원하고
+                                    지지하는, Young을 지칭하는 새로운 이름이 되려고 합니다. 원하는 것과 좋아하는 것과 생각하는 것, 그 무엇이든 될 수 있는 0을 위한 즐거운
+                                    경험을 기대해주세요.</div>
+                            </div>
+                            <div class="story-detaile__top">
+                                <div class="story-detaile__image"><img src="../../images/content/story/img_story02.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="story-detaile__contents">
+                                <!-- 0126 오타 수정 -->
+                                <div class="story-detaile__big-title">0한동</div>
+                                <div class="story-detaile__text">0한동은 컬쳐브랜드 0의 서비스와 혜택을 만날 수 있는 전용 앱입니다. 대학생을 위한 ‘0캠퍼스‘,
+                                    10대 청소년을 위한 ‘0틴‘, 국군 병사를 위한 ‘0히어로’ 등 전용 서비스와, 0을 위한 재미있는 콘텐츠와 이벤트가 제공됩니다. 0텔레콤 1020
+                                    고객이라면 지금 바로 0한동에 가입하고, 나에게 맞는 서비스를 이용해보세요.</div>
+                                <div class="story-button-area">
+                                    <a href="#" class="story-button-area__anchor">0캠퍼스</a>
+                                    <a href="#" class="story-button-area__anchor">0틴</a>
+                                    <a href="#" class="story-button-area__anchor">0히어로</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //0303 페이지 전체 문구수정 -->
+                        <!-- 0303 삭제 -->
+                        <!-- <div class="story-detaile story-detaile--round">
+                                <div class="story-detaile__title">콜라보레이션</div>
+                                <div class="story-detaile__contents">
+                                    <div class="story-detaile__image"><img src="../../images/content/story/img_story03.jpg" alt=""></div>
+                                    <div class="story-detaile__text">[STATION X 0] 태연 (TAEYEON) X 멜로망스 'Page 0' MV</div>
+                                </div>
+                                <div class="story-detaile__contents">
+                                    <div class="story-detaile__image"><img src="../../images/content/story/img_story04.jpg" alt=""></div>
+                                    <div class="story-detaile__text">[STATION X 0] 찬열 (CHANYEOL) X 세훈 (SEHUN) 'We Young' MV</div>
+                                </div>
+                                <div class="story-detaile__contents">
+                                    <div class="story-detaile__image"><img src="../../images/content/story/img_story05.jpg" alt=""></div>
+                                    <div class="story-detaile__text"><[STATION X 0] 슬기(SEULGI) X 신비(여자친구) X 청하 X 소연 'Wow Thing' MV</div>
+                                </div>
+                                <div class="story-detaile__title">이벤트</div>
+                                <div class="story-detaile__contents">
+                                    <div class="story-detaile__image"><img src="../../images/content/story/img_story06.jpg" alt=""></div>
+                                    <div class="story-detaile__text">0FESTA with EXO</div>
+                                    <div class="story-detaile__date">일시 : 2021.11.18 ~ 2021.12.31</div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- //0303 삭제 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // main -->
+        <!-- top버튼 -->
+        <div class="top-button">
+  <button type="button" class="top-button__anchor" aria-label="화면 상단으로 이동"></button>
+</div>
+        <!-- // top버튼 -->
+    </div>
+    <!-- lib js -->
+<script src="../../js/lib/jquery_3.6.0.js" type="text/javascript"></script>
+<script src="../../js/lib/swiper-7.4.1.min.js" type="text/javascript"></script>
+<script src="../../js/lib/pualugin.js" type="text/javascript"></script>
+<script src="../../js/lib/jquery-barcode.js" type="text/javascript"></script>
+<!-- js -->
+<script src="../../js/common.js" type="text/javascript"></script>
+
+</body>
+
+</html>

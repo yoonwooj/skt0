@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0, viewport-fit=cover">
+
+   <title>0한동</title>
+   <link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+    <div id="document" class="wrapper">
+        <div class="onepass">
+            <img src="../../images/common/bg_onepass_hero.png" alt="" class="onepass__image">
+            <div class="onepass__box">
+                <i class="onepass__icon" aria-hidden="true"></i>
+                <!-- 0204 삭제 -->
+                <!-- <div class="onepass__text">이벤트와 혜택받기는 앱에서 가능합니다.</div> -->
+                <a href="#" class="onepass__anchor"><span class="ft-sf-b">0</span>한동 앱으로 보기</a>
+                <button type="button" class="onepass__close" aria-label="팝업 닫기"></button>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- lib js -->
+<script src="../../js/lib/jquery_3.6.0.js" type="text/javascript"></script>
+<script src="../../js/lib/swiper-7.4.1.min.js" type="text/javascript"></script>
+<script src="../../js/lib/pualugin.js" type="text/javascript"></script>
+<script src="../../js/lib/jquery-barcode.js" type="text/javascript"></script>
+<!-- js -->
+<script src="../../js/common.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function() {
+        $('.onepass__close').on('click',function(){
+            $('.onepass__box').fadeOut('fast')
+        });
+    });
+</script>
+</html>

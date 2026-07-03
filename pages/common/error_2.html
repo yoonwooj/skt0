@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0, viewport-fit=cover">
+
+   <title>0한동</title>
+    <style>
+        @font-face{font-family:'appleGothicNeo';font-weight:400;src:url(../../font/AppleSDGothioc/APPLESDGOTHICNEOR.woff) format("woff"),url(../../font/AppleSDGothioc/APPLESDGOTHICNEOR.otf) format("opentype"),url(../../font/AppleSDGothioc/APPLESDGOTHICNEOR.ttf) format("truetype")}
+        @font-face{font-family:'appleGothicNeo';font-weight:500;src:url(../../font/AppleSDGothioc/APPLESDGOTHICNEOM.woff) format("woff"),url(../../font/AppleSDGothioc/APPLESDGOTHICNEOM.otf) format("opentype"),url(../../font/AppleSDGothioc/APPLESDGOTHICNEOM.ttf) format("truetype")}
+        @font-face{font-family:'appleGothicNeo';font-weight:700;src:url(../../font/AppleSDGothioc/APPLESDGOTHICNEOB.woff) format("woff"),url(../../font/AppleSDGothioc/APPLESDGOTHICNEOB.otf) format("opentype"),url(../../font/AppleSDGothioc/APPLESDGOTHICNEOB.ttf) format("truetype")}
+        .wrapper{overflow-x:hidden;max-width:720px;margin:0 auto;font-family:'appleGothicNeo','NotoSansKR';letter-spacing:-0.5px}
+        .error{position:relative;height:100vh}
+        .error__contents{position:absolute;top:50%;left:50%;width:calc(100% - 40px);-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);text-align:center}
+        .error__contents:before{display:block;width:80px;height:80px;margin:0 auto;background:url(../../images/common/icon_error.png) 50% 50% no-repeat;background-size:80px 80px;content:''}
+        .error__title{margin-top:30px;font-size:17px;font-weight:700;line-height:17px;color:#222}
+        .error__sub-title{margin-top:15px;font-size:14px;line-height:20px;color:#222}
+        .error__text{margin-top:40px;font-size:14px;line-height:20px;color:#999}
+        .error__button-wrap{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;max-width:328px;margin:35px auto 0}
+        .error__button{display:inline-block;width:100%;margin:0 4px;font-size:16px;font-weight:700;line-height:50px;text-decoration:none;border-radius:8px}
+        .error__button--blue{color:#fff;background-color:#2d74f6}
+        .error__button--gray{color:#222;background-color:#e5e5e5}
+    </style>
+</head>
+<body>
+    <div id="document" class="wrapper">
+        <div class="error">
+            <div class="error__contents">
+                <div class="error__title">이용에 불편을 드려서 죄송합니다.</div>
+                <div class="error__sub-title">비정상적인 접근으로 페이지 로딩에 실패하였습니다.<br>정상적인 경로를 이용하여 주십시오.</div>
+                <div class="error__button-wrap">
+                    <a href="#" class="error__button error__button--blue">홈으로</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- lib js -->
+<script src="../../js/lib/jquery_3.6.0.js" type="text/javascript"></script>
+<script src="../../js/lib/swiper-7.4.1.min.js" type="text/javascript"></script>
+<script src="../../js/lib/pualugin.js" type="text/javascript"></script>
+<script src="../../js/lib/jquery-barcode.js" type="text/javascript"></script>
+<!-- js -->
+<script src="../../js/common.js" type="text/javascript"></script>
+
+</html>

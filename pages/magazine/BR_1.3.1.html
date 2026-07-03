@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1, user-scalable=0, viewport-fit=cover">
+
+	<title>0한동</title>
+	<link rel="stylesheet" href="../../css/common.css">
+<link rel="stylesheet" href="../../css/components.css">
+</head>
+<body>
+    <div id="document" class="wrapper">
+        <!-- header -->
+        <header id="header">
+	<!-- 
+    <button id="btnMainMenu">▤</button>
+    <button id="btnMyPage">＠</button> 
+	-->
+	<div class="header-top">
+		<h1 class="hidden">0 한동</h1>
+		<div class="nav-btn-wrap">
+      <h2 class="header__title"></h2>
+			<div class="btn-arrow">
+				<a href="#" class="btn-prev white">
+					<img src="../../images/common/ico_arrow_prev_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next white">
+					<img src="../../images/common/ico_arrow_next_w.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-prev black">
+					<img src="../../images/common/ico_arrow_prev_b.png" alt="prev button">
+				</a>
+				<a href="#" class="btn-next black">
+					<img src="../../images/common/ico_arrow_next_b.png" alt="prev button">
+				</a>
+			</div>
+
+			<div class="btn-navi">
+				<a href="#" class="btn-menu white">
+					<img src="../../images/common/ico_menu_w.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close white">
+					<img src="../../images/common/ico_close_w.png" alt="close button">
+				</a>
+				<a href="#" class="btn-menu black">
+					<img src="../../images/common/ico_menu_b.png" alt="menu button">
+				</a>
+				<a href="#" class="btn-close black">
+					<img src="../../images/common/ico_close_b.png" alt="close button">
+				</a>
+			</div>
+
+		</div>
+	</div>
+</header>
+
+<!-- gnb -->
+<div id="gnb" class="gnb">
+  <div class="gnb__inner">
+    <div class="gnb__toparea">
+      <!-- 220114 gnb__titlebox 삭제 -->
+      <!-- <div class="gnb__titlebox">
+        <p class="gnb__title ft-sf-b">MENU</p>
+      </div> -->
+      <div class="gnb__head">
+        <!-- 220114 login info 수정 case | 로그인 상태 -->
+        <div class="gnb__headinner" style="display: none;">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <img src="../../images/common/profile.png" alt="이모지">
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">김*동</span>님
+              </a>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 있는 경우 -->
+            <p class="gnb__description">
+              <span class="gnb__phone-number ft-sf-m">010-12**-56**</span>
+            </p>
+            <!-- 0224 회선 | SKT 회선이 없는 경우 -->
+            <p class="gnb__description" style="display: none;">
+              <span class="gnb__phone-number">보유하신 SKT 회선이 없습니다.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 로그인 상태 -->
+
+        <!-- 220114 login info 수정 case | 비로그인 상태 -->
+        <div class="gnb__headinner">
+          <div class="gnb__account">
+            <div class="gnb__mypage">
+              <span class="gnb__mypage-image">
+                <!-- 프필 이미지 영역 -->
+              </span>
+            </div>
+          </div>
+          <div class="gnb__infomation">
+            <p class="gnb__name-area">
+              <a href="#none">
+                <span class="name">로그인</span>
+              </a>
+            </p>
+            <p class="gnb__description">
+              <!-- 0207 문구변경 -->
+              <span class="gnb__phone-number">T아이디로 로그인해 주세요.</span>
+            </p>
+          </div>
+        </div>
+        <!-- // 220114 login info 수정 case | 비로그인 상태 -->
+      </div>
+    </div>
+    <div class="gnb__scroll">
+      <div class="gnb__contents">
+        <div class="gnb__menu">
+          <ul class="gnb__accordion"> <!-- 220114 data-element="accordion" 삭제 -->
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">서비스</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0캠퍼스</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0히어로</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0틴</a>
+                  </li>
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">추천 요금제</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">데이터스테이션</a>
+                  </li> -->
+                </ul>
+              </div>
+            </li>
+            <li class="gnb__accordion-item" data-element="accordion__item">
+              <!-- 0207 문구변경 -->
+              <div class="gnb__accordion-anchor" data-element="accordion__anchor">브랜드 &middot; 콘텐츠</div> <!-- 220114 a태그에서 div태그로 수정 -->
+              <div class="gnb__accordion-panel" data-element="accordion__panel">
+                <ul class="gnb__accordion-depth">
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">ABOUT 0</a>
+                  </li>
+                  <!-- <li class="gnb__accordion-depthitem">
+                    <a href="#none" class="gnb__accordion-link">0잘알</a>
+                  </li> -->
+                  <li class="gnb__accordion-depthitem">
+                    <!-- 0207 문구변경 -->
+                    <a href="#none" class="gnb__accordion-link">MAGAZINE 0</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div class="gnb__anchor-wrap"> <!-- 220114 anchor-wrap 클래스 추가-->
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--event">이벤트</a> <!-- 220114 gnb__anchor--event 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <!-- 0204 active 삭제 -->
+              <a href="#none" class="gnb__anchor gnb__anchor--notice">공지사항</a> <!-- 220114 gnb__anchor--notice 클래스 추가-->
+            </div>
+            <div class="gnb__anchorlist">
+              <a href="#none" class="gnb__anchor gnb__anchor--faq">FAQ</a> <!-- 220114 gnb__anchor--faq 클래스 추가-->
+            </div>
+          </div>
+        </div>
+  
+        <!-- 220114 gnb__logout 삭제 | footer로 이동 -->
+        <!-- <div class="gnb__logout">
+          <button type="button" class="gnb__logout-button">
+            <span class="gnb__logout-text">로그아웃</span>
+          </button>
+        </div> -->
+      </div>
+      <div class="footer-wrap">
+    <div class="footer-loginbox">
+      <a href="#none" class="footer-login">로그아웃</a>
+    </div>
+    <div class="footer-bottom">
+        <div class="service-list">
+            <a href="">이용약관</a>
+            <a href="">개인정보처리방침</a>
+            <!-- 220121 메뉴 추가 -->
+            <a href="" class="footer-gnb-check">오픈소스 라이선스</a>
+        </div>
+        <!-- 220121 &copy; 텍스트 제거 -->
+        <div class="copyright">SK TELECOM CO. LTD</div>
+    </div>
+</div>
+      <button type="button" class="gnb__close" aria-label="메뉴 닫기"></button>
+    </div><!-- // scroll -->
+    
+  </div>
+</div>
+
+        <!-- // header -->
+        <!-- main -->
+        <div id="main" class="sub-main">
+            <div class="magazine br1321">
+                <div class="wrap">
+                    <h1 class="hidden">0 한동</h1>
+                    <!-- 0207 문구수정 -->
+                    <h2 class="hidden">MAGAZINE 0</h2>
+                    <div class="app-contents">
+                        <div class="app-contents__section">
+                            <div class="magazine-detaile">
+                                <div class="magazine-detaile__top">
+                                    <div class="magazine-detaile__image"><img src="../../images/content/magazine/img_magazine01.jpg" alt=""></div>
+                                    <div class="magazine-detaile__top-contents">
+                                        <div class="magazine-detaile__main-title">발뮤다 가습기 Humidifier</div>
+                                        <div class="magazine-detaile__sub-title">건조한 겨울철, 우리집을 촉촉하게 지키는 법</div>
+                                        <!-- 0120 수정 -->
+                                        <span class="magazine-detaile__hash">#생활 #건강</span>
+                                        <span class="magazine-detaile__date">2021.12.03</span>
+                                    </div>
+                                </div>
+                                <div class="magazine-detaile__contents">
+                                    <div class="magazine-detaile__title">건조한 공기가 감도는 겨울, 잠에서 깨어났을 때 목이 아프거나, 눈이 뻑뻑해지고, 피부가 건조해져 트는 경험이 있는 0라면, </div>
+                                    <div class="magazine-detaile__text">지금 시작되는 글에 집중해 주길 바란다. 그런 현상을 막기 위해 일부러 수건을 적셔 습도를 유지하는 일도 더러 보이는데, 그렇다고 집의 습도만을 높인다면 금세 곰팡이와 세균이 번식하기 쉬운 환경으로 변한다. 사람이 살아가기에는 알맞은 습도가 정해져 있다. 매번 집의 습도를 혼자 컨트롤할 순 없지 않은가. 바쁜 일상을 살아가느라 습도 관리에 신경쓰기 어려운 우리 0들을 위해, 오늘은 건조한 겨울 공기에게서 우리집을 촉촉하게 지켜줄 ‘발뮤다 가습기’를 소개한다</div>
+                                </div>
+                                <div class="magazine-detaile__top">
+                                    <div class="magazine-detaile__image"><img src="../../images/content/magazine/img_magazine02.jpg" alt=""></div>
+                                </div>
+                                <div class="magazine-detaile__contents">
+                                    <div class="magazine-detaile__title">버뮤다 가습기의 겉모습은 ‘항아리’를 연상케 한다. </div>
+                                    <div class="magazine-detaile__text">실제로 발뮤다의 CEO 이자 치프 디자이너인 테라오 겐은 한국 백자에서 모티브를 얻었다고 한다. 궁극적으로 사람들에게 도움이 되는 것을 만들겠다는 사명을 가지고 운영하는 발뮤다는 가전제품의 기술에 집중한다. 또한, 가전제품이라는 ‘도구’를 통해 우리에게 감동과 놀라움을 주겠다고 말한다. 그만큼 디자인과 기술에 쏟는 애정이 이들의 제품에 고스란히 녹여져 있다. 디자인과 스타일에 민감한 0들에게도 이는 중요한 매력 포인트가 될 것이다.
+                                    </div>
+                                </div>
+                                <div class="magazine-detaile__top">
+                                    <div class="magazine-detaile__image"><img src="../../images/content/magazine/img_magazine03.jpg" alt=""></div>
+                                </div>
+                                <div class="magazine-detaile__contents">
+                                    <div class="magazine-detaile__title">발뮤다는 ‘자연을 닮은 것이 진정한 기술’이라는 독특한 운영 철학을 가지고 있는데,</div>
+                                    <div class="magazine-detaile__text">오늘 소개할 가습기에서도 이 면모를 찾아볼 수 있다. 가습기는 크게 가열식, 초음파식, 기화식 가습기로 나눌 수 있는데, 기화식이 자연의 방식과 가장 유사하기 때문에 발뮤다는 이와 같은 가습 방식을 선택했다. 기화식은 자연 증발의 원리를 이용해 수증기가 뿜어져 나오는 방식으로 수분의 입자가 아주 미세하다. 쉽게 말해 컵에 담긴 물이 저절로 줄어드는 것과 같은 맥락이며, 방 안에 빨래를 널어두는 것과 같은 효과를 볼 수 있다. 그렇다면 방 안 곳곳에 빨래를 널 텐가, 가습기 하나로 촉촉함과 공간을 동시에 지킬 텐가.</div>
+                                </div>
+                                <div class="magazine-detaile__top">
+                                    <div class="magazine-detaile__image"><img src="../../images/content/magazine/img_magazine04.jpg" alt=""></div>
+                                </div>
+                                <div class="magazine-detaile__contents">
+                                    <div class="magazine-detaile__text">발뮤다 가습기는 물 항아리와 닮은 점이 있다. 디자인적으로도 표현 되었지만 항아리의 곡선형 구조를 통해 물의 무게를 분산시켜 견디는 점까지 똑같이 설계했다. 또한, 제품으로 흡입된 먼지를 효소 필터에 통과시켜 먼지와 세균을 거르고 청정해진 공기를 수분 가득한 가습필터에 통과시켜 적절한 습도를 부여한다. 세균과 곰팡이 번식에서 안전한 습도를 유지하기에 위생적이다. 우리 0들의 건강까지도 지켜줄 것이다.</div>
+                                </div>
+                                <div class="magazine-detaile__top">
+                                    <div class="magazine-detaile__image"><img src="../../images/content/magazine/img_magazine05.jpg" alt=""></div>
+                                </div>
+                                <div class="magazine-detaile__contents">
+                                    <div class="magazine-detaile__title">발뮤다 가습기의 또 다른 매력은 ‘편리함’이다.</div>
+                                    <div class="magazine-detaile__text">발뮤다 가습기의 또 다른 매력은 ‘편리함’이다. 물을 채울 땐 항아리에 물을 붓듯이 EL(Electro Luminescence) 디스플레이가 보이는 화면 위로 그저 물만 부으면 된다. 본체에서 급수 용기를 통째로 분리가 가능해, 세척 또한 편리하게 할 수 있어 깨끗한 기기 관리가 가능하다. 편리함은 바쁜 현대 생활에 유용한 포인트가 된다.</div>
+                                    <div class="magazine-detaile__text">조작법에선 발뮤다 가습기만의 특별함을 엿볼 수 있는데, EL 디스플레이는 급수의 시작과 끝을 화면전환을 통해 나타내주며 가습기의 상태를 알기 쉽게 전달해 준다. 그 외의 조작은 본체 상부 컨트롤 링을 통해 가능하다. 링을 회전시키거나 누르는 것으로 모든 조작이 가능해 사용자가 누구든 편리하게 제어 가능하다. 물독을 형상화하여 디자인된 EL 디스플레이는 고급스러움을 자아내며 디자인적으로도 특별한 존재임을 각인시킨다.</div>
+                                    <div class="magazine-detaile__text">적절한 가습으로 최적의 실내 상태를 유지해 주는 발뮤다 가습기와 건강하고 촉촉한 겨울을 지내보는 것은 어떨까. </div>
+                                </div>
+                                <div class="magazine-detaile__top">
+                                    <div class="magazine-detaile__image"><img src="../../images/content/magazine/img_magazine06.jpg" alt=""></div>
+                                </div>
+                                <div class="magazine-detaile__contents">
+                                    <div class="magazine-detaile__title">매거진0 큐레이션</div>
+                                    <ul class="magazine-detaile__list">
+                                        <li class="magazine-detaile__item">- 청결하고 쾌적한 방을 원하는 0</li>
+                                        <li class="magazine-detaile__item">- 특별한 관리없이 촉촉한 피부를 원하는 0</li>
+                                        <li class="magazine-detaile__item">- 건강한 겨울을 만들고 싶은 0</li>
+                                    </ul>
+                                </div>
+                                <!-- 0124 변경 -->
+                                <div class="magazine-detaile magazine-detaile--gray magazine-detaile__inner">
+                                    <div class="magazine-detaile__title">매거진0 래플 이벤트</div>
+                                    <ul class="magazine-detaile__list">
+                                        <li class="magazine-detaile__item">- 기간 : 2021년 12월 13일(월) ~ 12월 20일(월)</li>
+                                        <li class="magazine-detaile__item">- 대상 : 만 29세 이하 SK텔레콤 이용 고객 <br>(단, 미성년자는 응모 불가)</li>
+                                        <li class="magazine-detaile__item">- 혜택 : 발뮤다 청정 기화식 가습기 Humidifier (3명)</li>
+                                        <li class="magazine-detaile__item">- 참여 방법 : 0한동 앱 [매거진0 No.13] 포스트에서 응모</li>
+                                        <li class="magazine-detaile__item">- 당첨자 발표 : 2021년 12월 23일(목) 0한동 앱 My 쿠폰을 통해 개별 고지</li>
+                                        <li class="magazine-detaile__item">- 경품 발송 전에 SK텔레콤 회선을 해지하거나 0한동 앱에서 탈퇴한다면 당첨이 취소될 수 있는 점 유의 부탁드립니다.</li>
+                                    </ul>
+                                </div>
+                            </div><!--// -->
+                            <div class="magazine-detaile magazine-detaile--gray">
+                                <!-- 0124 삭제 <div class="magazine-detaile__title">매거진0 래플 이벤트</div> 
+                                <ul class="magazine-detaile__list">
+                                    <li class="magazine-detaile__item">- 기간 : 2021년 12월 13일(월) ~ 12월 20일(월)</li>
+                                    <li class="magazine-detaile__item">- 대상 : 만 29세 이하 SK텔레콤 이용 고객 <br>(단, 미성년자는 응모 불가)</li>
+                                    <li class="magazine-detaile__item">- 혜택 : 발뮤다 청정 기화식 가습기 Humidifier (3명)</li>
+                                    <li class="magazine-detaile__item">- 참여 방법 : 0한동 앱 [매거진0 No.13] 포스트에서 응모</li>
+                                    <li class="magazine-detaile__item">- 당첨자 발표 : 2021년 12월 23일(목) 0한동 앱 My 쿠폰을 통해 개별 고지</li>
+                                    <li class="magazine-detaile__item">- 경품 발송 전에 SK텔레콤 회선을 해지하거나 0한동 앱에서 탈퇴한다면 당첨이 취소될 수 있는 점 유의 부탁드립니다.</li>
+                                </ul> -->
+                                <!-- 0207 문구수정 / 활성화 -->
+                                <a href="#" class="btn__square btn--full blue" onclick="layerOpen('popMagazine')">이벤트 자세히 보기</a>
+                                <!-- 비활성화 -->
+                                <!-- <a href="#" class="btn__square btn--full gray2">종료된 이벤트입니다</a> -->
+                                <div class="magazine-detaile__title mt50">매거진0 래플 이벤트 안내</div>
+                                <ul class="magazine-detaile__list">
+                                    <li class="magazine-detaile__item">- 이 이벤트는 만 29세 이하 SK텔레콤 이용 고객만 응모하실 수 있습니다.(단, 미성년자는 참여가 불가능합니다.) <br>지정된 기간 중 한 번 응모하실 수 있으며, 응모 고객 중 무작위 추첨을 통해 당첨자를 선발합니다.</li>
+                                    <li class="magazine-detaile__item">- 당첨자 발표는 0한동 앱 My쿠폰을 통해 개별 고지됩니다. <br>경품 이용 및 제세공과금 처리를 위해 당첨자 대상 운영사무국에서 별도로 연락드릴 예정입니다. 3회 이상 연락이 닿지 않는 경우, 당첨이 취소될 수 있습니다.</li>
+                                    <li class="magazine-detaile__item">- 제세공과금 발생 시 SK텔레콤이 전액 부담하며, 제세공과금 처리 및 경품 배송을 위해 개인정보(주소, 신분증 사본) 추가 수집 및 이용 동의 등을 요청할 수 있습니다. <br>비정상적인 방식으로 이벤트에 응모한 사실이 확인되면 당첨이 취소될 수 있습니다.</li>
+                                    <li class="magazine-detaile__item">- 래플 이벤트는 SK텔레콤 및 제휴사의 사정에 따라 변경되거나 사전 종료될 수 있습니다.</li>
+                                    <li class="magazine-detaile__item">- 경품 이미지는 실물과 다를 수 있으며, SK텔레콤㈜ 및 제휴사의 사정에 따라 경품의 종류 및 수량이 변경될 수 있습니다.</li>
+                                    <li class="magazine-detaile__item">- 코로나 19 확산과 관련해 서울시 사회적 거리두기 단계 격상 시 관련 조치에 따라 출입 및 이용이 제한될 수 있습니다.</li>
+                                </ul>
+                                <div class="magazine-detaile__title">매거진0 관련 문의</div>
+                                <!-- 0124 class 추가 -->
+                                <ul class="magazine-detaile__list magazine-detaile__list--info">
+                                    <!-- 0124 br 위치 수정 -->
+                                    <li class="magazine-detaile__item">전화 : 070-4255-0856<br>(평일 오전 10시~오후 5시, 점심시간 낮 12시~오후 1시, 유료)</li>
+                                    <li class="magazine-detaile__item">메일 : <a href="mailto:0handong@planall.co.kr" class="magazine-detaile__anchor ft-sf-m">0handong@planall.co.kr</a></li>
+                                </ul>
+                                <!-- 0207 문구수정 -->
+                                <div class="magazine-detaile__title magazine-detaile__title--center">매거진0 공유하기</div>
+                                <div class="share-list">
+                                    <a href="#" class="share-anchor kakao"><span class="hidden">카카오톡 공유하기</span></a>
+                                    <a href="#" class="share-anchor twitter"><span class="hidden">트위터 공유하기</span></a>
+                                    <a href="#" class="share-anchor facebook"><span class="hidden">페이스북 메신저 공유하기</span></a>
+                                    <a href="#" class="share-anchor linkcopy"><span class="hidden">URL 공유하기</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // main -->
+        <!-- top버튼 -->
+        <div class="top-button">
+  <button type="button" class="top-button__anchor" aria-label="화면 상단으로 이동"></button>
+</div>
+        <!-- // top버튼 -->
+        <!-- layerPop start -->
+        <div class="layerPopup layerPopup-button popMagazine" data-role="layerOpen">
+            <div class="layerPopup-contents popMagazine__contents">
+                <img src="../../images/content/magazine/img_magazine_detail.jpg" alt="">
+            </div>
+            <div class="layerPopup-full-button">
+                <!-- 응모 전 -->
+                <a href="#" class="btn__square btn--full blue nextPopup" onclick="layerOpen('terms01')">응모하기</a><!-- 0127 nextPopup 클래스 추가-->
+                <!-- 0207 문구수정 / 응모 후 -->
+                <!-- <a href="#" class="btn__square btn--full gray">응모 완료</a> -->
+                <!-- 0207 문구수정 / 이벤트 발표 후 -->
+                <!-- <a href="#" class="btn__square btn--full blue">결과 보기</a> -->
+            </div>
+            <button type="button" class="layerPopup-close" data-popup="layerClose" aria-label="레이어팝업 닫기"></button>
+        </div>
+        <!-- //layerPop end -->
+
+        <div class="layerPopup layerPopup-button terms01 cover" data-role="layerOpen">
+            <div class="layerPopup-header">
+                <div class="layerPopup-title">고객 정보수집 및 이용 약관</div>
+            </div>
+            <div class="layerPopup-contents">
+                <div class="terms">
+                    <!-- 0117 약관 내용 수정 -->
+                    <div class="terms__section">
+                        <div class="terms__main-text">(“이벤트”) 서비스(이하 “서비스”라 한다)와 관련하여, 본인은 동의내용을 숙지하였으며, 이에 따라 본인의 개인정보를 귀사(SK텔레콤주식회사)가 수집 및 이용하는 것에 대해 동의합니다.</div>
+                    </div>
+                    <div class="terms__section">
+                        <div class="terms__title">1. 개인정보의 수집∙이용 목적</div>
+                        <ul class="terms__list">
+                            <li class="terms__item">사용자의 회선 번호를 수집함으로서 SKT와 제휴사는 데이터 혜택 및 제휴사 혜택을 모바일 쿠폰 형태로 제공하기 위해 수집합니다.&nbsp;</li>
+                            <li class="terms__item">사용자가 참여한 데이터 스테이션 내 프로그램으로부터 획득한 점수를 통해 선발된 고득점자에게 경품 당첨 여부를 알리기 위한 목적으로 활용합니다.</li>
+                        </ul>
+                        <div class="terms__title">2. 수집하는 개인정보의 항목</div>
+                        <ul class="terms__list">
+                            <li class="terms__item">수집하는 개인 정보는 고객의 전화번호 입니다.</li>
+                        </ul>
+                        <div class="terms__title">3. 개인정보의 보유 및 이용 기간</div>
+                        <ul class="terms__list">
+                            <li class="terms__item">(예시) 개인정보는 본 서비스를 제공하는 기간 동안에 보유 및 이용되고, 이용자의 서비스 해지(회원탈퇴)시 해당인의 개인정보가 열람 또는 이용될 수 없도록 파기 처리함. 단, 아래의 경우는 예외로 함.<br>&nbsp;(1) 법령에서 따로 정하는 경우에는 해당 기간까지 보유</li>
+                        </ul>
+                        <div class="terms__title">4. 본 동의는 서비스의 본질적 기능 제공을 위한 개인정보 수집/이용에 대한 동의로서, 동의를 하는 경우에만 서비스 이용이 가능합니다.</div>
+                        <div class="terms__title">5. 법령에 따른 개인정보의 수집/이용, 계약의 이행/편익제공을 위한 개인정보 처리위탁 및 개인정보 처리와 관련된 일반 사항은 서비스의 개인정보 처리방침에 따릅니다.</div>
+                    </div>
+                    <!-- //0117 약관 내용 수정 -->
+                </div>
+            </div>
+            <div class="layerPopup-full-button">
+                <button type="button" class="btn-laerPopup blue">동의</button>
+            </div>
+            <button type="button" class="layerPopup-close mask" data-popup="layerClose" aria-label="레이어팝업 닫기"></button><!-- 0127 mask 클래스 추가/ 팝업은 닫히고 body-mask 는 그데로 일때 -->
+        </div>
+    </div>
+    <!-- lib js -->
+<script src="../../js/lib/jquery_3.6.0.js" type="text/javascript"></script>
+<script src="../../js/lib/swiper-7.4.1.min.js" type="text/javascript"></script>
+<script src="../../js/lib/pualugin.js" type="text/javascript"></script>
+<script src="../../js/lib/jquery-barcode.js" type="text/javascript"></script>
+<!-- js -->
+<script src="../../js/common.js" type="text/javascript"></script>
+
+</body>
+</html>
